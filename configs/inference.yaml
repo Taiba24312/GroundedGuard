@@ -1,0 +1,9 @@
+# Module 6: checkpoints served by groundedguard.inference.predictor (--model <name>).
+# Thresholds are read from the frozen pre-registration file that lists the checkpoint.
+
+default_model: modernbert
+models:
+  modernbert:   # full context (8192 tokens); frozen in outputs/module5b/frozen_choice.json (seed 42)
+    checkpoint: checkpoints/modernbert_lr5e-5_s42
+  distilbert:   # fast / low-memory option, 512-token windows; frozen in outputs/module5/frozen_choice.json (seed 42)
+    checkpoint: checkpoints/B_min_full_e8

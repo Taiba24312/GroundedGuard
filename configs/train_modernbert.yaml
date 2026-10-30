@@ -1,0 +1,27 @@
+# Module 5b: ModernBERT-base on the FULL context (one window per response, MAX_LEN 8192).
+# Same recipe as the frozen DistilBERT config B_min_full_e8, except the encoder, the windows
+# file and token-based batching. Every key can be overridden from the CLI.
+
+model_name: answerdotai/ModernBERT-base  # must match the tokenizer used to build *_windows_modernbert.pkl
+lr: 5.0e-5                            # tuned over {2e-5, 5e-5} on dev
+weight_decay: 0.01
+warmup_ratio: 0.1
+epochs: 8
+grad_clip: 1.0
+max_windows_per_batch: 256            # effectively unlimited; the token budget below binds
+eval_max_windows_per_batch: 256
+max_tokens_per_batch: 65536           # padded tokens per train batch (windows x longest window)
+eval_max_tokens_per_batch: 131072
+attn_implementation: sdpa             # flash_attention_2 only if flash-attn is installed
+bf16: true
+seed: 42
+pos_weight: full
+aggregation: min                      # a no-op with one window per response
+tau: 1.0
+windows_suffix: _modernbert
+num_workers: 2
+log_every: 100
+runs_csv: outputs/module5b/runs.csv # one row per run is appended here
+
+max_train_responses: null
+eval_on_train: false

@@ -1,0 +1,56 @@
+=== demo 1: fully supported
+{
+  "has_hallucination": false,
+  "response_score": 0.7520125508308411,
+  "spans": [],
+  "threshold": 0.85,
+  "model": "answerdotai/ModernBERT-base (modernbert_lr5e-5_s42)",
+  "windowed": false,
+  "n_windows": 1,
+  "latency_ms": 617.4761101137847
+}
+
+The Riverside Public Library opened in 1998. Members can borrow up to 15 items at a time for three weeks.
+
+=== demo 2: changed number (15 -> 25 items)
+{
+  "has_hallucination": true,
+  "response_score": 0.9908744096755981,
+  "spans": [
+    {
+      "start": 45,
+      "end": 105,
+      "text": "Members can borrow up to 25 items at a time for three weeks.",
+      "score": 0.9908744096755981
+    }
+  ],
+  "threshold": 0.85,
+  "model": "answerdotai/ModernBERT-base (modernbert_lr5e-5_s42)",
+  "windowed": false,
+  "n_windows": 1,
+  "latency_ms": 601.6117779072374
+}
+
+The Riverside Public Library opened in 1998. [[Members can borrow up to 25 items at a time for three weeks.]]
+
+=== demo 3: added unsupported fact
+{
+  "has_hallucination": true,
+  "response_score": 0.9919379353523254,
+  "spans": [
+    {
+      "start": 106,
+      "end": 177,
+      "text": "The library also has a rooftop café that serves free coffee to members.",
+      "score": 0.9919379353523254
+    }
+  ],
+  "threshold": 0.85,
+  "model": "answerdotai/ModernBERT-base (modernbert_lr5e-5_s42)",
+  "windowed": false,
+  "n_windows": 1,
+  "latency_ms": 599.9595201574266
+}
+
+The Riverside Public Library opened in 1998. Members can borrow up to 15 items at a time for three weeks. [[The library also has a rooftop café that serves free coffee to members.]]
+

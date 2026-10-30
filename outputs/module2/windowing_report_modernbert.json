@@ -1,0 +1,298 @@
+{
+  "config": {
+    "tokenizer": "answerdotai/ModernBERT-base",
+    "max_len": 8192,
+    "stride": 128,
+    "min_context_tokens": 64
+  },
+  "data2txt_serialization": {
+    "official_str_dict": {
+      "n": 1033,
+      "min": 318,
+      "p50": 672,
+      "p90": 958.8,
+      "p95": 1073.2,
+      "p99": 1371.2,
+      "max": 1925,
+      "mean": 712.4
+    },
+    "compact_ours": {
+      "n": 1033,
+      "min": 285,
+      "p50": 607,
+      "p90": 887.8,
+      "p95": 996.8,
+      "p99": 1285.7,
+      "max": 1850,
+      "mean": 649.0
+    },
+    "token_reduction_%": 8.9
+  },
+  "train": {
+    "responses": 14047,
+    "windows": 14047,
+    "skipped_response_too_long": [],
+    "positive_token_%": 5.51,
+    "windows_per_response": {
+      "n": 14047,
+      "min": 1,
+      "p50": 1,
+      "p90": 1.0,
+      "p95": 1.0,
+      "p99": 1.0,
+      "max": 1,
+      "mean": 1.0
+    },
+    "windows_per_response_by_task": {
+      "Data2txt": {
+        "n": 4995,
+        "min": 1,
+        "p50": 1,
+        "p90": 1.0,
+        "p95": 1.0,
+        "p99": 1.0,
+        "max": 1,
+        "mean": 1.0
+      },
+      "QA": {
+        "n": 4597,
+        "min": 1,
+        "p50": 1,
+        "p90": 1.0,
+        "p95": 1.0,
+        "p99": 1.0,
+        "max": 1,
+        "mean": 1.0
+      },
+      "Summary": {
+        "n": 4455,
+        "min": 1,
+        "p50": 1,
+        "p90": 1.0,
+        "p95": 1.0,
+        "p99": 1.0,
+        "max": 1,
+        "mean": 1.0
+      }
+    },
+    "single_window_%_by_task": {
+      "Data2txt": 100.0,
+      "QA": 100.0,
+      "Summary": 100.0
+    },
+    "window_lengths": {
+      "n": 14047,
+      "min": 169,
+      "p50": 674,
+      "p90": 1154.0,
+      "p95": 1404.0,
+      "p99": 1994.7,
+      "max": 2617,
+      "mean": 737.5
+    },
+    "alignment": {
+      "oracle_char_metric": {
+        "All": {
+          "precision": 0.9995,
+          "recall": 1.0,
+          "f1": 0.9997
+        },
+        "Data2txt": {
+          "precision": 0.9992,
+          "recall": 1.0,
+          "f1": 0.9996
+        },
+        "QA": {
+          "precision": 0.9997,
+          "recall": 1.0,
+          "f1": 0.9998
+        },
+        "Summary": {
+          "precision": 0.9995,
+          "recall": 1.0,
+          "f1": 0.9998
+        }
+      },
+      "gold_spans": 11808,
+      "spans_with_no_labeled_token": 0
+    }
+  },
+  "dev": {
+    "responses": 895,
+    "windows": 895,
+    "skipped_response_too_long": [],
+    "positive_token_%": 5.02,
+    "windows_per_response": {
+      "n": 895,
+      "min": 1,
+      "p50": 1,
+      "p90": 1.0,
+      "p95": 1.0,
+      "p99": 1.0,
+      "max": 1,
+      "mean": 1.0
+    },
+    "windows_per_response_by_task": {
+      "Data2txt": {
+        "n": 300,
+        "min": 1,
+        "p50": 1.0,
+        "p90": 1.0,
+        "p95": 1.0,
+        "p99": 1.0,
+        "max": 1,
+        "mean": 1.0
+      },
+      "QA": {
+        "n": 295,
+        "min": 1,
+        "p50": 1,
+        "p90": 1.0,
+        "p95": 1.0,
+        "p99": 1.0,
+        "max": 1,
+        "mean": 1.0
+      },
+      "Summary": {
+        "n": 300,
+        "min": 1,
+        "p50": 1.0,
+        "p90": 1.0,
+        "p95": 1.0,
+        "p99": 1.0,
+        "max": 1,
+        "mean": 1.0
+      }
+    },
+    "single_window_%_by_task": {
+      "Data2txt": 100.0,
+      "QA": 100.0,
+      "Summary": 100.0
+    },
+    "window_lengths": {
+      "n": 895,
+      "min": 193,
+      "p50": 666,
+      "p90": 1166.0,
+      "p95": 1401.6,
+      "p99": 1927.7,
+      "max": 2525,
+      "mean": 732.4
+    },
+    "alignment": {
+      "oracle_char_metric": {
+        "All": {
+          "precision": 0.9997,
+          "recall": 1.0,
+          "f1": 0.9998
+        },
+        "Data2txt": {
+          "precision": 0.9996,
+          "recall": 1.0,
+          "f1": 0.9998
+        },
+        "QA": {
+          "precision": 0.9997,
+          "recall": 1.0,
+          "f1": 0.9999
+        },
+        "Summary": {
+          "precision": 0.9997,
+          "recall": 1.0,
+          "f1": 0.9999
+        }
+      },
+      "gold_spans": 773,
+      "spans_with_no_labeled_token": 0
+    }
+  },
+  "test": {
+    "responses": 2675,
+    "windows": 2675,
+    "skipped_response_too_long": [],
+    "positive_token_%": 4.08,
+    "windows_per_response": {
+      "n": 2675,
+      "min": 1,
+      "p50": 1,
+      "p90": 1.0,
+      "p95": 1.0,
+      "p99": 1.0,
+      "max": 1,
+      "mean": 1.0
+    },
+    "windows_per_response_by_task": {
+      "Data2txt": {
+        "n": 900,
+        "min": 1,
+        "p50": 1.0,
+        "p90": 1.0,
+        "p95": 1.0,
+        "p99": 1.0,
+        "max": 1,
+        "mean": 1.0
+      },
+      "QA": {
+        "n": 875,
+        "min": 1,
+        "p50": 1,
+        "p90": 1.0,
+        "p95": 1.0,
+        "p99": 1.0,
+        "max": 1,
+        "mean": 1.0
+      },
+      "Summary": {
+        "n": 900,
+        "min": 1,
+        "p50": 1.0,
+        "p90": 1.0,
+        "p95": 1.0,
+        "p99": 1.0,
+        "max": 1,
+        "mean": 1.0
+      }
+    },
+    "single_window_%_by_task": {
+      "Data2txt": 100.0,
+      "QA": 100.0,
+      "Summary": 100.0
+    },
+    "window_lengths": {
+      "n": 2675,
+      "min": 191,
+      "p50": 669,
+      "p90": 1212.2,
+      "p95": 1412.0,
+      "p99": 1899.8,
+      "max": 2387,
+      "mean": 729.3
+    },
+    "alignment": {
+      "oracle_char_metric": {
+        "All": {
+          "precision": 0.9996,
+          "recall": 1.0,
+          "f1": 0.9998
+        },
+        "Data2txt": {
+          "precision": 0.9993,
+          "recall": 1.0,
+          "f1": 0.9997
+        },
+        "QA": {
+          "precision": 0.9999,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "Summary": {
+          "precision": 0.9997,
+          "recall": 1.0,
+          "f1": 0.9999
+        }
+      },
+      "gold_spans": 1517,
+      "spans_with_no_labeled_token": 0
+    }
+  }
+}

@@ -1,0 +1,246 @@
+{
+  "config": {
+    "tokenizer": "distilbert-base-uncased",
+    "max_len": 512,
+    "stride": 64,
+    "min_context_tokens": 64
+  },
+  "data2txt_serialization": {
+    "official_str_dict": {
+      "n": 1033,
+      "min": 363,
+      "p50": 732,
+      "p90": 1022.8,
+      "p95": 1134.8,
+      "p99": 1454.7,
+      "max": 1930,
+      "mean": 773.1
+    },
+    "compact_ours": {
+      "n": 1033,
+      "min": 276,
+      "p50": 586,
+      "p90": 858.8,
+      "p95": 967.4,
+      "p99": 1259.0,
+      "max": 1762,
+      "mean": 626.4
+    },
+    "token_reduction_%": 18.97
+  },
+  "train": {
+    "responses": 14041,
+    "windows": 36182,
+    "skipped_response_too_long": [
+      {
+        "id": "2280",
+        "task_type": "Summary",
+        "response_tokens": 797,
+        "prefix_tokens": 0
+      },
+      {
+        "id": "12962",
+        "task_type": "QA",
+        "response_tokens": 486,
+        "prefix_tokens": 10
+      },
+      {
+        "id": "13767",
+        "task_type": "QA",
+        "response_tokens": 451,
+        "prefix_tokens": 10
+      },
+      {
+        "id": "14937",
+        "task_type": "QA",
+        "response_tokens": 466,
+        "prefix_tokens": 7
+      },
+      {
+        "id": "15509",
+        "task_type": "QA",
+        "response_tokens": 433,
+        "prefix_tokens": 14
+      },
+      {
+        "id": "17690",
+        "task_type": "QA",
+        "response_tokens": 448,
+        "prefix_tokens": 8
+      }
+    ],
+    "positive_token_%": 5.6,
+    "windows_per_response": {
+      "n": 14041,
+      "min": 1,
+      "p50": 2,
+      "p90": 5,
+      "p95": 6,
+      "p99": 10.0,
+      "max": 47,
+      "mean": 2.6
+    },
+    "windows_per_response_by_task": {
+      "Data2txt": {
+        "n": 4995,
+        "min": 1,
+        "p50": 3,
+        "p90": 5.0,
+        "p95": 6.0,
+        "p99": 9.0,
+        "max": 24,
+        "mean": 3.1
+      },
+      "QA": {
+        "n": 4592,
+        "min": 1,
+        "p50": 1.0,
+        "p90": 2.0,
+        "p95": 3.0,
+        "p99": 5.0,
+        "max": 11,
+        "mean": 1.5
+      },
+      "Summary": {
+        "n": 4454,
+        "min": 1,
+        "p50": 2.0,
+        "p90": 6.0,
+        "p95": 8.0,
+        "p99": 13.0,
+        "max": 47,
+        "mean": 3.1
+      }
+    },
+    "single_window_%_by_task": {
+      "Data2txt": 0.8,
+      "QA": 61.11,
+      "Summary": 20.21
+    },
+    "window_lengths": {
+      "n": 36182,
+      "min": 93,
+      "p50": 512.0,
+      "p90": 512.0,
+      "p95": 512.0,
+      "p99": 512.0,
+      "max": 512,
+      "mean": 458.1
+    },
+    "alignment": {
+      "oracle_char_metric": {
+        "All": {
+          "precision": 0.9992,
+          "recall": 1.0,
+          "f1": 0.9996
+        },
+        "Data2txt": {
+          "precision": 0.9992,
+          "recall": 1.0,
+          "f1": 0.9996
+        },
+        "QA": {
+          "precision": 0.9991,
+          "recall": 1.0,
+          "f1": 0.9995
+        },
+        "Summary": {
+          "precision": 0.9997,
+          "recall": 1.0,
+          "f1": 0.9998
+        }
+      },
+      "gold_spans": 11788,
+      "spans_with_no_labeled_token": 0
+    }
+  },
+  "dev": {
+    "responses": 895,
+    "windows": 2363,
+    "skipped_response_too_long": [],
+    "positive_token_%": 5.14,
+    "windows_per_response": {
+      "n": 895,
+      "min": 1,
+      "p50": 2,
+      "p90": 5.0,
+      "p95": 6.0,
+      "p99": 13.0,
+      "max": 29,
+      "mean": 2.6
+    },
+    "windows_per_response_by_task": {
+      "Data2txt": {
+        "n": 300,
+        "min": 1,
+        "p50": 3.0,
+        "p90": 5.0,
+        "p95": 6.0,
+        "p99": 11.0,
+        "max": 15,
+        "mean": 3.0
+      },
+      "QA": {
+        "n": 295,
+        "min": 1,
+        "p50": 1,
+        "p90": 2.0,
+        "p95": 3.0,
+        "p99": 6.1,
+        "max": 13,
+        "mean": 1.7
+      },
+      "Summary": {
+        "n": 300,
+        "min": 1,
+        "p50": 2.0,
+        "p90": 6.0,
+        "p95": 8.0,
+        "p99": 17.1,
+        "max": 29,
+        "mean": 3.2
+      }
+    },
+    "single_window_%_by_task": {
+      "Data2txt": 1.0,
+      "QA": 50.85,
+      "Summary": 26.33
+    },
+    "window_lengths": {
+      "n": 2363,
+      "min": 153,
+      "p50": 512,
+      "p90": 512.0,
+      "p95": 512.0,
+      "p99": 512.0,
+      "max": 512,
+      "mean": 458.9
+    },
+    "alignment": {
+      "oracle_char_metric": {
+        "All": {
+          "precision": 0.9995,
+          "recall": 1.0,
+          "f1": 0.9997
+        },
+        "Data2txt": {
+          "precision": 0.9996,
+          "recall": 1.0,
+          "f1": 0.9998
+        },
+        "QA": {
+          "precision": 0.9992,
+          "recall": 1.0,
+          "f1": 0.9996
+        },
+        "Summary": {
+          "precision": 0.9999,
+          "recall": 1.0,
+          "f1": 0.9999
+        }
+      },
+      "gold_spans": 773,
+      "spans_with_no_labeled_token": 0
+    }
+  }
+}

@@ -1,0 +1,171 @@
+Loading weights:   0%|          | 0/136 [00:00<?, ?it/s]Loading weights: 100%|██████████| 136/136 [00:00<00:00, 5928.90it/s]
+[transformers] [1mModernBertForTokenClassification LOAD REPORT[0m from: answerdotai/ModernBERT-base
+Key               | Status     | 
+------------------+------------+-
+decoder.bias      | UNEXPECTED | 
+classifier.bias   | MISSING    | 
+classifier.weight | MISSING    | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+- MISSING:	those params were newly initialized because missing from the checkpoint. Consider training on your downstream task.
+model_name: answerdotai/ModernBERT-base
+lr: 2.0e-05
+weight_decay: 0.01
+warmup_ratio: 0.1
+epochs: 8
+grad_clip: 1.0
+max_windows_per_batch: 256
+eval_max_windows_per_batch: 256
+max_tokens_per_batch: 65536
+eval_max_tokens_per_batch: 131072
+attn_implementation: sdpa
+bf16: true
+seed: 42
+pos_weight: full
+aggregation: min
+tau: 1.0
+windows_suffix: _modernbert
+num_workers: 2
+log_every: 100
+runs_csv: outputs/module5b/runs.csv
+max_train_responses: null
+eval_on_train: false
+config_diff: lr=2e-05
+run_name: modernbert_lr2e-5_s42
+config_file: configs/train_modernbert.yaml
+resolved:
+  pos_weight_value: 17.143758073094748
+  train_pos_tokens: 131610
+  train_neg_tokens: 2256290
+  n_train_responses: 14047
+  n_train_windows: 14047
+  windows_stride: 128
+  n_dev_responses: 895
+  total_steps: 1461
+  warmup_steps: 146
+  thresholds:
+  - 0.05
+  - 0.1
+  - 0.15
+  - 0.2
+  - 0.25
+  - 0.3
+  - 0.35
+  - 0.4
+  - 0.45
+  - 0.5
+  - 0.55
+  - 0.6
+  - 0.65
+  - 0.7
+  - 0.75
+  - 0.8
+  - 0.85
+  - 0.9
+  - 0.95
+  device: NVIDIA RTX PRO 6000 Blackwell Server Edition
+  bf16_active: true
+  torch: 2.11.0+cu128
+  transformers: 5.21.1
+  started_at: '2026-10-29 20:12:50'
+
+  step 100/1461  loss(last 100) 1.2523  lr 1.37e-05
+Writing model shards:   0%|          | 0/1 [00:00<?, ?it/s]Writing model shards: 100%|██████████| 1/1 [00:00<00:00,  1.24it/s]Writing model shards: 100%|██████████| 1/1 [00:00<00:00,  1.24it/s]
+
+[epoch 1/8] train loss 1.1191 | dev best threshold 0.8 | dev All span F1 0.3685  (new best, saved) | train 146.3s eval 4.7s | peak GPU 47.2 GiB
+                         task          n |  case P  case R case F1 |  span P  span R span F1
+--------------------------------------------------------------------------------------------
+dev ep1 @0.8             QA          295 |  0.6406  0.8283  0.7225 |  0.3675  0.6118  0.4592
+dev ep1 @0.8             Summary     300 |  0.5217  0.4528  0.4848 |  0.2590  0.1910  0.2199
+dev ep1 @0.8             Data2txt    300 |  0.7176  0.8952  0.7966 |  0.2525  0.4620  0.3266
+dev ep1 @0.8             All         895 |  0.6598  0.7663  0.7090 |  0.3032  0.4695  0.3685
+  step 200/1461  loss(last 100) 0.7930  lr 1.92e-05
+  step 300/1461  loss(last 100) 0.8089  lr 1.77e-05
+Writing model shards:   0%|          | 0/1 [00:00<?, ?it/s]Writing model shards: 100%|██████████| 1/1 [00:01<00:00,  2.00s/it]Writing model shards: 100%|██████████| 1/1 [00:01<00:00,  2.00s/it]
+
+[epoch 2/8] train loss 0.7845 | dev best threshold 0.85 | dev All span F1 0.4377  (new best, saved) | train 168.0s eval 4.8s | peak GPU 47.18 GiB
+                         task          n |  case P  case R case F1 |  span P  span R span F1
+--------------------------------------------------------------------------------------------
+dev ep2 @0.85            QA          295 |  0.7789  0.7475  0.7629 |  0.4662  0.6260  0.5344
+dev ep2 @0.85            Summary     300 |  0.6027  0.4151  0.4916 |  0.3359  0.1954  0.2471
+dev ep2 @0.85            Data2txt    300 |  0.7589  0.9143  0.8294 |  0.3456  0.4853  0.4037
+dev ep2 @0.85            All         895 |  0.7363  0.7470  0.7416 |  0.3986  0.4854  0.4377
+  step 400/1461  loss(last 100) 0.6965  lr 1.61e-05
+  step 500/1461  loss(last 100) 0.6288  lr 1.46e-05
+Writing model shards:   0%|          | 0/1 [00:00<?, ?it/s]Writing model shards: 100%|██████████| 1/1 [00:01<00:00,  1.91s/it]Writing model shards: 100%|██████████| 1/1 [00:01<00:00,  1.91s/it]
+
+[epoch 3/8] train loss 0.6403 | dev best threshold 0.8 | dev All span F1 0.4583  (new best, saved) | train 168.7s eval 4.4s | peak GPU 47.18 GiB
+                         task          n |  case P  case R case F1 |  span P  span R span F1
+--------------------------------------------------------------------------------------------
+dev ep3 @0.8             QA          295 |  0.8171  0.6768  0.7403 |  0.4847  0.5688  0.5234
+dev ep3 @0.8             Summary     300 |  0.6939  0.3208  0.4387 |  0.4444  0.1602  0.2355
+dev ep3 @0.8             Data2txt    300 |  0.7975  0.9190  0.8540 |  0.3866  0.5692  0.4605
+dev ep3 @0.8             All         895 |  0.7882  0.7084  0.7462 |  0.4314  0.4887  0.4583
+  step 600/1461  loss(last 100) 0.4814  lr 1.31e-05
+  step 700/1461  loss(last 100) 0.4739  lr 1.16e-05
+Writing model shards:   0%|          | 0/1 [00:00<?, ?it/s]Writing model shards: 100%|██████████| 1/1 [00:01<00:00,  1.77s/it]Writing model shards: 100%|██████████| 1/1 [00:01<00:00,  1.77s/it]
+
+[epoch 4/8] train loss 0.4795 | dev best threshold 0.9 | dev All span F1 0.4586  (new best, saved) | train 183.3s eval 5.1s | peak GPU 47.18 GiB
+                         task          n |  case P  case R case F1 |  span P  span R span F1
+--------------------------------------------------------------------------------------------
+dev ep4 @0.9             QA          295 |  0.7952  0.6667  0.7253 |  0.4859  0.5165  0.5007
+dev ep4 @0.9             Summary     300 |  0.6026  0.4434  0.5109 |  0.2901  0.1972  0.2348
+dev ep4 @0.9             Data2txt    300 |  0.8197  0.9095  0.8623 |  0.4783  0.5334  0.5043
+dev ep4 @0.9             All         895 |  0.7716  0.7325  0.7515 |  0.4566  0.4605  0.4586
+  step 800/1461  loss(last 100) 0.3704  lr 1.01e-05
+  step 900/1461  loss(last 100) 0.3634  lr 8.53e-06
+Writing model shards:   0%|          | 0/1 [00:00<?, ?it/s]Writing model shards: 100%|██████████| 1/1 [00:01<00:00,  1.78s/it]Writing model shards: 100%|██████████| 1/1 [00:01<00:00,  1.78s/it]
+
+[epoch 5/8] train loss 0.3655 | dev best threshold 0.85 | dev All span F1 0.4707  (new best, saved) | train 168.7s eval 4.3s | peak GPU 47.18 GiB
+                         task          n |  case P  case R case F1 |  span P  span R span F1
+--------------------------------------------------------------------------------------------
+dev ep5 @0.85            QA          295 |  0.7586  0.6667  0.7097 |  0.5098  0.5283  0.5189
+dev ep5 @0.85            Summary     300 |  0.6154  0.3774  0.4678 |  0.3056  0.1506  0.2017
+dev ep5 @0.85            Data2txt    300 |  0.8112  0.9000  0.8533 |  0.4608  0.5813  0.5141
+dev ep5 @0.85            All         895 |  0.7662  0.7108  0.7375 |  0.4663  0.4752  0.4707
+  step 1000/1461  loss(last 100) 0.2744  lr 7.01e-06
+
+[epoch 6/8] train loss 0.2734 | dev best threshold 0.85 | dev All span F1 0.4661 | train 183.8s eval 4.7s | peak GPU 47.18 GiB
+                         task          n |  case P  case R case F1 |  span P  span R span F1
+--------------------------------------------------------------------------------------------
+dev ep6 @0.85            QA          295 |  0.7368  0.7071  0.7216 |  0.5053  0.5316  0.5181
+dev ep6 @0.85            Summary     300 |  0.5422  0.4245  0.4762 |  0.2893  0.1846  0.2253
+dev ep6 @0.85            Data2txt    300 |  0.7765  0.9429  0.8516 |  0.4085  0.6426  0.4995
+dev ep6 @0.85            All         895 |  0.7229  0.7542  0.7382 |  0.4309  0.5076  0.4661
+  step 1100/1461  loss(last 100) 0.1899  lr 5.49e-06
+  step 1200/1461  loss(last 100) 0.2074  lr 3.97e-06
+
+[epoch 7/8] train loss 0.2056 | dev best threshold 0.9 | dev All span F1 0.4663 | train 183.2s eval 5.0s | peak GPU 47.18 GiB
+                         task          n |  case P  case R case F1 |  span P  span R span F1
+--------------------------------------------------------------------------------------------
+dev ep7 @0.9             QA          295 |  0.7614  0.6768  0.7166 |  0.5063  0.5280  0.5169
+dev ep7 @0.9             Summary     300 |  0.5625  0.4245  0.4839 |  0.2594  0.1652  0.2019
+dev ep7 @0.9             Data2txt    300 |  0.8043  0.9000  0.8494 |  0.4581  0.5847  0.5137
+dev ep7 @0.9             All         895 |  0.7469  0.7253  0.7359 |  0.4539  0.4793  0.4663
+  step 1300/1461  loss(last 100) 0.1836  lr 2.45e-06
+  step 1400/1461  loss(last 100) 0.1662  lr 9.28e-07
+
+[epoch 8/8] train loss 0.1680 | dev best threshold 0.9 | dev All span F1 0.4617 | train 183.7s eval 5.0s | peak GPU 47.18 GiB
+                         task          n |  case P  case R case F1 |  span P  span R span F1
+--------------------------------------------------------------------------------------------
+dev ep8 @0.9             QA          295 |  0.7882  0.6768  0.7283 |  0.5321  0.4863  0.5082
+dev ep8 @0.9             Summary     300 |  0.5479  0.3774  0.4469 |  0.2885  0.1527  0.1997
+dev ep8 @0.9             Data2txt    300 |  0.8202  0.8905  0.8539 |  0.4728  0.5557  0.5109
+dev ep8 @0.9             All         895 |  0.7617  0.7084  0.7341 |  0.4758  0.4484  0.4617
+
+====================================================================================================
+per-epoch dev summary (modernbert_lr2e-5_s42), best epoch 5
+====================================================================================================
+ ep    loss   thr | caseF1 |  spanP  spanR spanF1 |      QA F1 Summary F1 Data2tx F1 | train s eval s   GiB
+-----------------------------------------------------------------------------------------------------------
+  1  1.1191  0.80 | 0.7090 | 0.3032 0.4695 0.3685 |     0.4592     0.2199     0.3266 |   146.3    4.7  47.2
+  2  0.7845  0.85 | 0.7416 | 0.3986 0.4854 0.4377 |     0.5344     0.2471     0.4037 |   168.0    4.8  47.2
+  3  0.6403  0.80 | 0.7462 | 0.4314 0.4887 0.4583 |     0.5234     0.2355     0.4605 |   168.7    4.4  47.2
+  4  0.4795  0.90 | 0.7515 | 0.4566 0.4605 0.4586 |     0.5007     0.2348     0.5043 |   183.3    5.1  47.2
+  5  0.3655  0.85 | 0.7375 | 0.4663 0.4752 0.4707 |     0.5189     0.2017     0.5141 |   168.7    4.3  47.2  *best
+  6  0.2734  0.85 | 0.7382 | 0.4309 0.5076 0.4661 |     0.5181     0.2253     0.4995 |   183.8    4.7  47.2
+  7  0.2056  0.90 | 0.7359 | 0.4539 0.4793 0.4663 |     0.5169     0.2019     0.5137 |   183.2    5.0  47.2
+  8  0.1680  0.90 | 0.7341 | 0.4758 0.4484 0.4617 |     0.5082     0.1997     0.5109 |   183.7    5.0  47.2
+
+saved -> /mnt/drive/home/melange/clinical_rag/GroundedGuard/checkpoints/modernbert_lr2e-5_s42  (best epoch 5, dev All span F1 0.4707); row added to outputs/module5b/runs.csv

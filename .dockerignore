@@ -1,0 +1,10 @@
+data/
+checkpoints/
+outputs/
+tests/
+scripts/
+examples/
+.vscode/
+.git/
+**/__pycache__/
+*.log

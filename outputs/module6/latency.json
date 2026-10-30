@@ -1,0 +1,54 @@
+{
+  "gpu": "NVIDIA RTX PRO 6000 Blackwell Server Edition",
+  "cpu_threads": 4,
+  "batch": 1,
+  "n_responses": 200,
+  "warmup": 10,
+  "sample": "dev, random.Random(42)",
+  "results": [
+    {
+      "model": "modernbert",
+      "checkpoint": "checkpoints/modernbert_lr5e-5_s42",
+      "device": "cuda",
+      "precision": "bf16",
+      "threads": null,
+      "n": 200,
+      "median_ms": 16.771701048128307,
+      "p95_ms": 18.72486954089254,
+      "mean_n_windows": 1
+    },
+    {
+      "model": "modernbert",
+      "checkpoint": "checkpoints/modernbert_lr5e-5_s42",
+      "device": "cpu",
+      "precision": "fp32",
+      "threads": 4,
+      "n": 200,
+      "median_ms": 945.2884135534987,
+      "p95_ms": 1686.6436950862392,
+      "mean_n_windows": 1
+    },
+    {
+      "model": "distilbert",
+      "checkpoint": "checkpoints/B_min_full_e8",
+      "device": "cuda",
+      "precision": "bf16",
+      "threads": null,
+      "n": 200,
+      "median_ms": 6.292617530561984,
+      "p95_ms": 7.983998861163853,
+      "mean_n_windows": 2.755
+    },
+    {
+      "model": "distilbert",
+      "checkpoint": "checkpoints/B_min_full_e8",
+      "device": "cpu",
+      "precision": "fp32",
+      "threads": 4,
+      "n": 200,
+      "median_ms": 410.04106507170945,
+      "p95_ms": 1267.9776432691142,
+      "mean_n_windows": 2.755
+    }
+  ]
+}

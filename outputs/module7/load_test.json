@@ -1,0 +1,45 @@
+{
+  "url": "http://127.0.0.1:8000",
+  "server": {
+    "status": "ok",
+    "model": "answerdotai/ModernBERT-base (modernbert_lr5e-5_s42)",
+    "precision": "fp32",
+    "device": "cuda",
+    "threshold": 0.85,
+    "version": "0.1.0"
+  },
+  "bodies": "200 dev responses, random.Random(42)",
+  "tasks": {
+    "qa": 75,
+    "summary": 68,
+    "data2txt": 57
+  },
+  "sequential": {
+    "requests": 200,
+    "errors": 0,
+    "error_statuses": [],
+    "wall_s": 3.5194845870137215,
+    "throughput_rps": 56.826502590170385,
+    "client_latency_ms": {
+      "p50": 16.464296611957252,
+      "p95": 22.807236423250288,
+      "p99": 30.040069622918928,
+      "max": 79.92108492180705
+    },
+    "server_model_ms_median": 14.63931449688971
+  },
+  "concurrent_4x50": {
+    "requests": 200,
+    "errors": 0,
+    "error_statuses": [],
+    "wall_s": 3.1247218858916312,
+    "throughput_rps": 64.00569628388881,
+    "client_latency_ms": {
+      "p50": 60.84791058674455,
+      "p95": 72.86929158726707,
+      "p99": 76.35524025652556,
+      "max": 80.15243709087372
+    },
+    "server_model_ms_median": 14.657460036687553
+  }
+}

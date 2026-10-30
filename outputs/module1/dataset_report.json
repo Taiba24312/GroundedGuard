@@ -1,0 +1,434 @@
+{
+  "schema": {
+    "response": {
+      "id": {
+        "present_in": 17790,
+        "types": {
+          "str": 17790
+        }
+      },
+      "labels": {
+        "present_in": 17790,
+        "types": {
+          "list": 17790
+        }
+      },
+      "model": {
+        "present_in": 17790,
+        "types": {
+          "str": 17790
+        }
+      },
+      "quality": {
+        "present_in": 17790,
+        "types": {
+          "str": 17790
+        }
+      },
+      "response": {
+        "present_in": 17790,
+        "types": {
+          "str": 17790
+        }
+      },
+      "source_id": {
+        "present_in": 17790,
+        "types": {
+          "str": 17790
+        }
+      },
+      "split": {
+        "present_in": 17790,
+        "types": {
+          "str": 17790
+        }
+      },
+      "temperature": {
+        "present_in": 17790,
+        "types": {
+          "float": 17790
+        }
+      }
+    },
+    "source": {
+      "prompt": {
+        "present_in": 2965,
+        "types": {
+          "str": 2965
+        }
+      },
+      "source": {
+        "present_in": 2965,
+        "types": {
+          "str": 2965
+        }
+      },
+      "source_id": {
+        "present_in": 2965,
+        "types": {
+          "str": 2965
+        }
+      },
+      "source_info": {
+        "present_in": 2965,
+        "types": {
+          "str": 943,
+          "dict": 2022
+        }
+      },
+      "task_type": {
+        "present_in": 2965,
+        "types": {
+          "str": 2965
+        }
+      }
+    },
+    "label": {
+      "due_to_null": {
+        "present_in": 14289,
+        "types": {
+          "bool": 14289
+        }
+      },
+      "end": {
+        "present_in": 14289,
+        "types": {
+          "int": 14289
+        }
+      },
+      "implicit_true": {
+        "present_in": 14289,
+        "types": {
+          "bool": 14289
+        }
+      },
+      "label_type": {
+        "present_in": 14289,
+        "types": {
+          "str": 14289
+        }
+      },
+      "meta": {
+        "present_in": 14289,
+        "types": {
+          "str": 14200,
+          "NoneType": 89
+        }
+      },
+      "start": {
+        "present_in": 14289,
+        "types": {
+          "int": 14289
+        }
+      },
+      "text": {
+        "present_in": 14289,
+        "types": {
+          "str": 14289
+        }
+      }
+    },
+    "missing_vs_readme": {
+      "response": [],
+      "source": [],
+      "label": []
+    },
+    "extra_vs_readme": {
+      "response": [],
+      "source": [],
+      "label": [
+        "due_to_null",
+        "implicit_true",
+        "meta"
+      ]
+    }
+  },
+  "ids": {
+    "n_responses": 17790,
+    "n_sources": 2965,
+    "duplicate_response_ids": 0,
+    "duplicate_source_ids": 0,
+    "responses_with_unknown_source": 0,
+    "sources_without_responses": 0,
+    "responses_per_source": {
+      "6": 2965
+    }
+  },
+  "splits": {
+    "responses_per_split": {
+      "train": 15090,
+      "test": 2700
+    },
+    "responses_per_split_and_task": {
+      "test|Data2txt": 900,
+      "test|QA": 900,
+      "test|Summary": 900,
+      "train|Data2txt": 5298,
+      "train|QA": 5034,
+      "train|Summary": 4758
+    },
+    "sources_in_multiple_splits": 0,
+    "example_leaking_source_ids": []
+  },
+  "hallucination": {
+    "overall": {
+      "all": {
+        "responses": 17790,
+        "hallucinated": 7664,
+        "rate_%": 43.08,
+        "spans": 14289
+      }
+    },
+    "by_split": {
+      "test": {
+        "responses": 2700,
+        "hallucinated": 943,
+        "rate_%": 34.93,
+        "spans": 1533
+      },
+      "train": {
+        "responses": 15090,
+        "hallucinated": 6721,
+        "rate_%": 44.54,
+        "spans": 12756
+      }
+    },
+    "by_task": {
+      "Data2txt": {
+        "responses": 6198,
+        "hallucinated": 4254,
+        "rate_%": 68.64,
+        "spans": 9290
+      },
+      "QA": {
+        "responses": 5934,
+        "hallucinated": 1724,
+        "rate_%": 29.05,
+        "spans": 2927
+      },
+      "Summary": {
+        "responses": 5658,
+        "hallucinated": 1686,
+        "rate_%": 29.8,
+        "spans": 2072
+      }
+    },
+    "by_model": {
+      "gpt-3.5-turbo-0613": {
+        "responses": 2965,
+        "hallucinated": 401,
+        "rate_%": 13.52,
+        "spans": 533
+      },
+      "gpt-4-0613": {
+        "responses": 2965,
+        "hallucinated": 406,
+        "rate_%": 13.69,
+        "spans": 485
+      },
+      "llama-2-13b-chat": {
+        "responses": 2965,
+        "hallucinated": 1677,
+        "rate_%": 56.56,
+        "spans": 3799
+      },
+      "llama-2-70b-chat": {
+        "responses": 2965,
+        "hallucinated": 1395,
+        "rate_%": 47.05,
+        "spans": 2608
+      },
+      "llama-2-7b-chat": {
+        "responses": 2965,
+        "hallucinated": 1832,
+        "rate_%": 61.79,
+        "spans": 3302
+      },
+      "mistral-7B-instruct": {
+        "responses": 2965,
+        "hallucinated": 1953,
+        "rate_%": 65.87,
+        "spans": 3562
+      }
+    }
+  },
+  "labels": {
+    "n_spans": 14289,
+    "label_type_counts": {
+      "Evident Baseless Info": 6237,
+      "Evident Conflict": 5324,
+      "Subtle Baseless Info": 2527,
+      "Subtle Conflict": 201
+    },
+    "label_type_by_task": {
+      "Data2txt": {
+        "Evident Conflict": 4174,
+        "Evident Baseless Info": 3618,
+        "Subtle Baseless Info": 1435,
+        "Subtle Conflict": 63
+      },
+      "QA": {
+        "Evident Baseless Info": 1562,
+        "Subtle Baseless Info": 893,
+        "Evident Conflict": 423,
+        "Subtle Conflict": 49
+      },
+      "Summary": {
+        "Evident Baseless Info": 1057,
+        "Evident Conflict": 727,
+        "Subtle Baseless Info": 199,
+        "Subtle Conflict": 89
+      }
+    },
+    "flag_values": {
+      "due_to_null": {
+        "False": 12647,
+        "True": 1642
+      },
+      "implicit_true": {
+        "False": 12361,
+        "True": 1928
+      }
+    },
+    "quality_counts": {
+      "good": 17617,
+      "incorrect_refusal": 144,
+      "truncated": 29
+    },
+    "offset_check": {
+      "exact_match": 14289,
+      "match_after_strip": 0,
+      "bad_bounds": 0,
+      "text_mismatch": 0,
+      "exact_match_%": 100.0
+    },
+    "overlap": {
+      "overlapping_span_pairs": 125,
+      "responses_with_overlap": 115
+    },
+    "span_length_chars": {
+      "n": 14289,
+      "min": 1,
+      "p50": 32,
+      "p90": 111.0,
+      "p95": 154.0,
+      "p99": 328.0,
+      "max": 1441,
+      "mean": 52.9
+    },
+    "spans_per_response": {
+      "n": 17790,
+      "min": 0,
+      "p50": 0.0,
+      "p90": 2.0,
+      "p95": 3.0,
+      "p99": 5.0,
+      "max": 14,
+      "mean": 0.8
+    }
+  },
+  "sources": {
+    "task_counts": {
+      "Summary": 943,
+      "Data2txt": 1033,
+      "QA": 989
+    },
+    "task_and_origin": {
+      "Data2txt|Yelp": 1033,
+      "QA|MARCO": 989,
+      "Summary|CNN/DM": 628,
+      "Summary|Recent News": 315
+    },
+    "source_info_type_by_task": {
+      "Summary": {
+        "str": 943
+      },
+      "Data2txt": {
+        "dict": 1033
+      },
+      "QA": {
+        "dict": 989
+      }
+    },
+    "source_info_dict_keys_by_task": {
+      "Data2txt": {
+        "name": 1033,
+        "address": 1033,
+        "city": 1033,
+        "state": 1033,
+        "categories": 1033,
+        "hours": 1033,
+        "attributes": 1033,
+        "business_stars": 1033,
+        "review_info": 1033
+      },
+      "QA": {
+        "question": 989,
+        "passages": 989
+      }
+    }
+  },
+  "char_lengths": {
+    "response": {
+      "n": 17790,
+      "min": 7,
+      "p50": 758.5,
+      "p90": 1300.0,
+      "p95": 1448.0,
+      "p99": 1740.0,
+      "max": 4007,
+      "mean": 797.7
+    },
+    "context_estimate": {
+      "n": 2965,
+      "min": 522,
+      "p50": 2012,
+      "p90": 4126.8,
+      "p95": 5310.2,
+      "p99": 8215.7,
+      "max": 10664,
+      "mean": 2378.8
+    }
+  },
+  "token_lengths": {
+    "tokenizer": "distilbert-base-uncased",
+    "note": "context = raw source_info (dicts JSON-serialized); an estimate, not the final input format",
+    "response_tokens": {
+      "n": 17790,
+      "min": 1,
+      "p50": 158.0,
+      "p90": 268.0,
+      "p95": 295.5,
+      "p99": 360.0,
+      "max": 797,
+      "mean": 165.3
+    },
+    "context_tokens": {
+      "n": 2965,
+      "min": 151,
+      "p50": 542,
+      "p90": 1025.0,
+      "p95": 1236.0,
+      "p99": 1777.5,
+      "max": 2293,
+      "mean": 611.4
+    },
+    "pair_tokens": {
+      "n": 17790,
+      "min": 184,
+      "p50": 710.0,
+      "p90": 1240.0,
+      "p95": 1456.0,
+      "p99": 2014.1,
+      "max": 2612,
+      "mean": 779.6
+    },
+    "responses_alone_over_512": 1,
+    "pairs_over_512_%_by_task": {
+      "Data2txt": 99.95,
+      "QA": 44.03,
+      "Summary": 78.53
+    },
+    "pairs_over_512_%_overall": 74.49
+  }
+}

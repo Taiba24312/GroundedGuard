@@ -1,0 +1,22 @@
+{
+  "question": "When did the Riverside Public Library open, and how many items can members borrow?",
+  "passages_file": "examples/demo_context.txt",
+  "demos": [
+    {
+      "name": "demo 1: fully supported",
+      "response": "The Riverside Public Library opened in 1998. Members can borrow up to 15 items at a time for three weeks."
+    },
+    {
+      "name": "demo 2: changed number (15 -> 25 items)",
+      "response": "The Riverside Public Library opened in 1998. Members can borrow up to 25 items at a time for three weeks."
+    },
+    {
+      "name": "demo 3: added unsupported fact",
+      "response": "The Riverside Public Library opened in 1998. Members can borrow up to 15 items at a time for three weeks. The library also has a rooftop café that serves free coffee to members."
+    },
+    {
+      "name": "demo 4: supported paraphrase",
+      "response": "Library cards are free for residents, and members can borrow up to 15 items at a time."
+    }
+  ]
+}

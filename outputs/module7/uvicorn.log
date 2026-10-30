@@ -1,0 +1,826 @@
+INFO:     Started server process [2291440]
+INFO:     Waiting for application startup.
+Loading weights:   0%|          | 0/138 [00:00<?, ?it/s]Loading weights: 100%|██████████| 138/138 [00:00<00:00, 5569.48it/s]
+2026-10-30 10:59:57,903 INFO groundedguard.api {"event": "model_loaded", "model": "answerdotai/ModernBERT-base (modernbert_lr5e-5_s42)", "device": "cuda", "precision": "fp32", "threshold": 0.85, "warmup_ms": 503.0}
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
+2026-10-30 10:59:58,905 INFO groundedguard.api {"request_id": "b1a7c7679019488b", "method": "GET", "path": "/health", "status": 200, "latency_ms": 2.63}
+INFO:     127.0.0.1:48368 - "GET /health HTTP/1.1" 200 OK
+2026-10-30 10:59:59,175 INFO groundedguard.api {"request_id": "a2561140105944f4", "method": "GET", "path": "/health", "status": 200, "latency_ms": 0.82}
+INFO:     127.0.0.1:48378 - "GET /health HTTP/1.1" 200 OK
+2026-10-30 10:59:59,255 INFO groundedguard.api {"request_id": "83bb0aafee314b1c", "method": "POST", "path": "/detect", "status": 200, "latency_ms": 78.37, "tasks": ["qa"], "n_inputs": 1, "response_chars": [540], "context_chars": [1331]}
+INFO:     127.0.0.1:48378 - "POST /detect HTTP/1.1" 200 OK
+2026-10-30 10:59:59,278 INFO groundedguard.api {"request_id": "3c7c32987d574566", "method": "POST", "path": "/detect", "status": 200, "latency_ms": 21.02, "tasks": ["summary"], "n_inputs": 1, "response_chars": [668], "context_chars": [3252]}
+INFO:     127.0.0.1:48378 - "POST /detect HTTP/1.1" 200 OK
+2026-10-30 10:59:59,297 INFO groundedguard.api {"request_id": "0f59c261420b45db", "method": "POST", "path": "/detect", "status": 200, "latency_ms": 16.26, "tasks": ["summary"], "n_inputs": 1, "response_chars": [571], "context_chars": [2009]}
+INFO:     127.0.0.1:48378 - "POST /detect HTTP/1.1" 200 OK
+2026-10-30 10:59:59,314 INFO groundedguard.api {"request_id": "0fd40ed864a74e90", "method": "POST", "path": "/detect", "status": 200, "latency_ms": 15.27, "tasks": ["qa"], "n_inputs": 1, "response_chars": [996], "context_chars": [1749]}
+INFO:     127.0.0.1:48378 - "POST /detect HTTP/1.1" 200 OK
+2026-10-30 10:59:59,330 INFO groundedguard.api {"request_id": "4c7aa925ddfc4b20", "method": "POST", "path": "/detect", "status": 200, "latency_ms": 15.26, "tasks": ["summary"], "n_inputs": 1, "response_chars": [494], "context_chars": [2437]}
+INFO:     127.0.0.1:48378 - "POST /detect HTTP/1.1" 200 OK
+2026-10-30 10:59:59,346 INFO groundedguard.api {"request_id": "bb83373b8cb44e46", "method": "POST", "path": "/detect", "status": 200, "latency_ms": 14.57, "tasks": ["summary"], "n_inputs": 1, "response_chars": [405], "context_chars": [1679]}
+INFO:     127.0.0.1:48378 - "POST /detect HTTP/1.1" 200 OK
+2026-10-30 10:59:59,362 INFO groundedguard.api {"request_id": "e99bc07a93df41aa", "method": "POST", "path": "/detect", "status": 200, "latency_ms": 15.49, "tasks": ["summary"], "n_inputs": 1, "response_chars": [400], "context_chars": [2055]}
+INFO:     127.0.0.1:48378 - "POST /detect HTTP/1.1" 200 OK
+2026-10-30 10:59:59,378 INFO groundedguard.api {"request_id": "8295a53c9b32443f", "method": "POST", "path": "/detect", "status": 200, "latency_ms": 14.88, "tasks": ["summary"], "n_inputs": 1, "response_chars": [446], "context_chars": [2046]}
+INFO:     127.0.0.1:48378 - "POST /detect HTTP/1.1" 200 OK
+2026-10-30 10:59:59,394 INFO groundedguard.api {"request_id": "b0dcf1f8d9884823", "method": "POST", "path": "/detect", "status": 200, "latency_ms": 14.62, "tasks": ["qa"], "n_inputs": 1, "response_chars": [925], "context_chars": [1095]}
+INFO:     127.0.0.1:48378 - "POST /detect HTTP/1.1" 200 OK
+2026-10-30 10:59:59,410 INFO groundedguard.api {"request_id": "8c92c8b6c13c4c49", "method": "POST", "path": "/detect", "status": 200, "latency_ms": 15.03, "tasks": ["summary"], "n_inputs": 1, "response_chars": [402], "context_chars": [1518]}
+INFO:     127.0.0.1:48378 - "POST /detect HTTP/1.1" 200 OK
+2026-10-30 10:59:59,426 INFO groundedguard.api {"request_id": "63bd4b6352b04be1", "method": "POST", "path": "/detect", "status": 200, "latency_ms": 15.37, "tasks": ["qa"], "n_inputs": 1, "response_chars": [282], "context_chars": [899]}
+INFO:     127.0.0.1:48378 - "POST /detect HTTP/1.1" 200 OK
+2026-10-30 10:59:59,442 INFO groundedguard.api {"request_id": "a0bcc651a0924953", "method": "POST", "path": "/detect", "status": 200, "latency_ms": 14.83, "tasks": ["qa"], "n_inputs": 1, "response_chars": [1304], "context_chars": [1749]}
+INFO:     127.0.0.1:48378 - "POST /detect HTTP/1.1" 200 OK
+2026-10-30 10:59:59,459 INFO groundedguard.api {"request_id": "be776ec05b91475b", "method": "POST", "path": "/detect", "status": 200, "latency_ms": 16.08, "tasks": ["data2txt"], "n_inputs": 1, "response_chars": [970], "context_chars": [1908]}
+INFO:     127.0.0.1:48378 - "POST /detect HTTP/1.1" 200 OK
+2026-10-30 10:59:59,487 INFO groundedguard.api {"request_id": "445f7667b53d4073", "method": "POST", "path": "/detect", "status": 200, "latency_ms": 26.38, "tasks": ["summary"], "n_inputs": 1, "response_chars": [880], "context_chars": [7671]}
+INFO:     127.0.0.1:48378 - "POST /detect HTTP/1.1" 200 OK
+2026-10-30 10:59:59,503 INFO groundedguard.api {"request_id": "023727d45d11443b", "method": "POST", "path": "/detect", "status": 200, "latency_ms": 15.09, "tasks": ["qa"], "n_inputs": 1, "response_chars": [278], "context_chars": [1284]}
+INFO:     127.0.0.1:48378 - "POST /detect HTTP/1.1" 200 OK
+2026-10-30 10:59:59,521 INFO groundedguard.api {"request_id": "309d8735acf44875", "method": "POST", "path": "/detect", "status": 200, "latency_ms": 16.86, "tasks": ["data2txt"], "n_inputs": 1, "response_chars": [757], "context_chars": [3236]}
+INFO:     127.0.0.1:48378 - "POST /detect HTTP/1.1" 200 OK
+2026-10-30 10:59:59,537 INFO groundedguard.api {"request_id": "a5c1a1bb42404752", "method": "POST", "path": "/detect", "status": 200, "latency_ms": 14.91, "tasks": ["summary"], "n_inputs": 1, "response_chars": [560], "context_chars": [2786]}
+INFO:     127.0.0.1:48378 - "POST /detect HTTP/1.1" 200 OK
+2026-10-30 10:59:59,558 INFO groundedguard.api {"request_id": "d3c54d66cc5b41c1", "method": "POST", "path": "/detect", "status": 200, "latency_ms": 20.41, "tasks": ["summary"], "n_inputs": 1, "response_chars": [695], "context_chars": [2786]}
+INFO:     127.0.0.1:48378 - "POST /detect HTTP/1.1" 200 OK
+2026-10-30 10:59:59,576 INFO groundedguard.api {"request_id": "722f8a697737495f", "method": "POST", "path": "/detect", "status": 200, "latency_ms": 15.9, "tasks": ["summary"], "n_inputs": 1, "response_chars": [595], "context_chars": [1718]}
+INFO:     127.0.0.1:48378 - "POST /detect HTTP/1.1" 200 OK
+2026-10-30 10:59:59,592 INFO groundedguard.api {"request_id": "fd973ed99f054cfd", "method": "POST", "path": "/detect", "status": 200, "latency_ms": 15.55, "tasks": ["summary"], "n_inputs": 1, "response_chars": [550], "context_chars": [2061]}
+INFO:     127.0.0.1:48378 - "POST /detect HTTP/1.1" 200 OK
+2026-10-30 10:59:59,608 INFO groundedguard.api {"request_id": "3ce4b6bcb6b54eac", "method": "POST", "path": "/detect", "status": 200, "latency_ms": 14.96, "tasks": ["summary"], "n_inputs": 1, "response_chars": [476], "context_chars": [2306]}
+INFO:     127.0.0.1:48378 - "POST /detect HTTP/1.1" 200 OK
+2026-10-30 10:59:59,627 INFO groundedguard.api {"request_id": "2ee229d78da44174", "method": "POST", "path": "/detect", "status": 200, "latency_ms": 17.53, "tasks": ["data2txt"], "n_inputs": 1, "response_chars": [1260], "context_chars": [2536]}
+INFO:     127.0.0.1:48378 - "POST /detect HTTP/1.1" 200 OK
+2026-10-30 10:59:59,643 INFO groundedguard.api {"request_id": "9aea1f6b60644e14", "method": "POST", "path": "/detect", "status": 200, "latency_ms": 15.25, "tasks": ["qa"], "n_inputs": 1, "response_chars": [1374], "context_chars": [1622]}
+INFO:     127.0.0.1:48378 - "POST /detect HTTP/1.1" 200 OK
+2026-10-30 10:59:59,659 INFO groundedguard.api {"request_id": "782e1ff00b7f4c07", "method": "POST", "path": "/detect", "status": 200, "latency_ms": 14.52, "tasks": ["summary"], "n_inputs": 1, "response_chars": [468], "context_chars": [2009]}
+INFO:     127.0.0.1:48378 - "POST /detect HTTP/1.1" 200 OK
+2026-10-30 10:59:59,682 INFO groundedguard.api {"request_id": "6ec1e8af263542d3", "method": "POST", "path": "/detect", "status": 200, "latency_ms": 21.72, "tasks": ["data2txt"], "n_inputs": 1, "response_chars": [1184], "context_chars": [4382]}
+INFO:     127.0.0.1:48378 - "POST /detect HTTP/1.1" 200 OK
+2026-10-30 10:59:59,701 INFO groundedguard.api {"request_id": "b32b4d02e2074545", "method": "POST", "path": "/detect", "status": 200, "latency_ms": 18.09, "tasks": ["summary"], "n_inputs": 1, "response_chars": [844], "context_chars": [4683]}
+INFO:     127.0.0.1:48378 - "POST /detect HTTP/1.1" 200 OK
+2026-10-30 10:59:59,717 INFO groundedguard.api {"request_id": "5ec10eeefad041e3", "method": "POST", "path": "/detect", "status": 200, "latency_ms": 15.5, "tasks": ["qa"], "n_inputs": 1, "response_chars": [477], "context_chars": [2128]}
+INFO:     127.0.0.1:48378 - "POST /detect HTTP/1.1" 200 OK
+2026-10-30 10:59:59,733 INFO groundedguard.api {"request_id": "8a6305de18fa4497", "method": "POST", "path": "/detect", "status": 200, "latency_ms": 14.49, "tasks": ["qa"], "n_inputs": 1, "response_chars": [427], "context_chars": [953]}
+INFO:     127.0.0.1:48378 - "POST /detect HTTP/1.1" 200 OK
+2026-10-30 10:59:59,750 INFO groundedguard.api {"request_id": "5345ddbe31394548", "method": "POST", "path": "/detect", "status": 200, "latency_ms": 15.74, "tasks": ["qa"], "n_inputs": 1, "response_chars": [994], "context_chars": [2060]}
+INFO:     127.0.0.1:48378 - "POST /detect HTTP/1.1" 200 OK
+2026-10-30 10:59:59,765 INFO groundedguard.api {"request_id": "4ebe3582f19840d9", "method": "POST", "path": "/detect", "status": 200, "latency_ms": 14.8, "tasks": ["qa"], "n_inputs": 1, "response_chars": [631], "context_chars": [913]}
+INFO:     127.0.0.1:48378 - "POST /detect HTTP/1.1" 200 OK
+2026-10-30 10:59:59,782 INFO groundedguard.api {"request_id": "c5616cbc7175436a", "method": "POST", "path": "/detect", "status": 200, "latency_ms": 15.58, "tasks": ["data2txt"], "n_inputs": 1, "response_chars": [682], "context_chars": [1463]}
+INFO:     127.0.0.1:48378 - "POST /detect HTTP/1.1" 200 OK
+2026-10-30 10:59:59,798 INFO groundedguard.api {"request_id": "d279ae551276490f", "method": "POST", "path": "/detect", "status": 200, "latency_ms": 14.63, "tasks": ["summary"], "n_inputs": 1, "response_chars": [395], "context_chars": [2061]}
+INFO:     127.0.0.1:48378 - "POST /detect HTTP/1.1" 200 OK
+2026-10-30 10:59:59,815 INFO groundedguard.api {"request_id": "cfd76782c05749ee", "method": "POST", "path": "/detect", "status": 200, "latency_ms": 15.9, "tasks": ["data2txt"], "n_inputs": 1, "response_chars": [615], "context_chars": [1511]}
+INFO:     127.0.0.1:48378 - "POST /detect HTTP/1.1" 200 OK
+2026-10-30 10:59:59,830 INFO groundedguard.api {"request_id": "c8b87bb25c8a40b6", "method": "POST", "path": "/detect", "status": 200, "latency_ms": 14.35, "tasks": ["qa"], "n_inputs": 1, "response_chars": [993], "context_chars": [1284]}
+INFO:     127.0.0.1:48378 - "POST /detect HTTP/1.1" 200 OK
+2026-10-30 10:59:59,846 INFO groundedguard.api {"request_id": "3a9355cfba1b4be8", "method": "POST", "path": "/detect", "status": 200, "latency_ms": 14.85, "tasks": ["summary"], "n_inputs": 1, "response_chars": [862], "context_chars": [2096]}
+INFO:     127.0.0.1:48378 - "POST /detect HTTP/1.1" 200 OK
+2026-10-30 10:59:59,862 INFO groundedguard.api {"request_id": "b180c80e7cbe4402", "method": "POST", "path": "/detect", "status": 200, "latency_ms": 14.97, "tasks": ["qa"], "n_inputs": 1, "response_chars": [1131], "context_chars": [1858]}
+INFO:     127.0.0.1:48378 - "POST /detect HTTP/1.1" 200 OK
+2026-10-30 10:59:59,877 INFO groundedguard.api {"request_id": "02bb80a985cb4e3a", "method": "POST", "path": "/detect", "status": 200, "latency_ms": 14.34, "tasks": ["summary"], "n_inputs": 1, "response_chars": [409], "context_chars": [1609]}
+INFO:     127.0.0.1:48378 - "POST /detect HTTP/1.1" 200 OK
+2026-10-30 10:59:59,893 INFO groundedguard.api {"request_id": "bf960d02c516418b", "method": "POST", "path": "/detect", "status": 200, "latency_ms": 14.99, "tasks": ["qa"], "n_inputs": 1, "response_chars": [674], "context_chars": [836]}
+INFO:     127.0.0.1:48378 - "POST /detect HTTP/1.1" 200 OK
+2026-10-30 10:59:59,910 INFO groundedguard.api {"request_id": "a6507b55451e4fd8", "method": "POST", "path": "/detect", "status": 200, "latency_ms": 15.18, "tasks": ["qa"], "n_inputs": 1, "response_chars": [824], "context_chars": [1858]}
+INFO:     127.0.0.1:48378 - "POST /detect HTTP/1.1" 200 OK
+2026-10-30 10:59:59,940 INFO groundedguard.api {"request_id": "9f1c5474e98d44ca", "method": "POST", "path": "/detect", "status": 200, "latency_ms": 28.94, "tasks": ["summary"], "n_inputs": 1, "response_chars": [1618], "context_chars": [7978]}
+INFO:     127.0.0.1:48378 - "POST /detect HTTP/1.1" 200 OK
+2026-10-30 10:59:59,956 INFO groundedguard.api {"request_id": "46d76996b83b4e26", "method": "POST", "path": "/detect", "status": 200, "latency_ms": 15.56, "tasks": ["qa"], "n_inputs": 1, "response_chars": [934], "context_chars": [2060]}
+INFO:     127.0.0.1:48378 - "POST /detect HTTP/1.1" 200 OK
+2026-10-30 10:59:59,972 INFO groundedguard.api {"request_id": "36df9c3ee9784309", "method": "POST", "path": "/detect", "status": 200, "latency_ms": 14.27, "tasks": ["qa"], "n_inputs": 1, "response_chars": [383], "context_chars": [913]}
+INFO:     127.0.0.1:48378 - "POST /detect HTTP/1.1" 200 OK
+2026-10-30 10:59:59,987 INFO groundedguard.api {"request_id": "938fc1f627434492", "method": "POST", "path": "/detect", "status": 200, "latency_ms": 14.9, "tasks": ["data2txt"], "n_inputs": 1, "response_chars": [756], "context_chars": [1735]}
+INFO:     127.0.0.1:48378 - "POST /detect HTTP/1.1" 200 OK
+2026-10-30 11:00:00,004 INFO groundedguard.api {"request_id": "32586e0916124e0d", "method": "POST", "path": "/detect", "status": 200, "latency_ms": 15.27, "tasks": ["qa"], "n_inputs": 1, "response_chars": [866], "context_chars": [1210]}
+INFO:     127.0.0.1:48378 - "POST /detect HTTP/1.1" 200 OK
+2026-10-30 11:00:00,026 INFO groundedguard.api {"request_id": "6251eac28de6430e", "method": "POST", "path": "/detect", "status": 200, "latency_ms": 20.89, "tasks": ["summary"], "n_inputs": 1, "response_chars": [953], "context_chars": [5814]}
+INFO:     127.0.0.1:48378 - "POST /detect HTTP/1.1" 200 OK
+2026-10-30 11:00:00,042 INFO groundedguard.api {"request_id": "b4599bd8486743f7", "method": "POST", "path": "/detect", "status": 200, "latency_ms": 15.42, "tasks": ["summary"], "n_inputs": 1, "response_chars": [545], "context_chars": [2444]}
+INFO:     127.0.0.1:48378 - "POST /detect HTTP/1.1" 200 OK
+2026-10-30 11:00:00,058 INFO groundedguard.api {"request_id": "9277c1f75dee44e3", "method": "POST", "path": "/detect", "status": 200, "latency_ms": 14.84, "tasks": ["qa"], "n_inputs": 1, "response_chars": [1183], "context_chars": [822]}
+INFO:     127.0.0.1:48378 - "POST /detect HTTP/1.1" 200 OK
+2026-10-30 11:00:00,074 INFO groundedguard.api {"request_id": "3edd7dd1d19c4b80", "method": "POST", "path": "/detect", "status": 200, "latency_ms": 14.39, "tasks": ["data2txt"], "n_inputs": 1, "response_chars": [1153], "context_chars": [1430]}
+INFO:     127.0.0.1:48378 - "POST /detect HTTP/1.1" 200 OK
+2026-10-30 11:00:00,089 INFO groundedguard.api {"request_id": "aa843ee4a33643bb", "method": "POST", "path": "/detect", "status": 200, "latency_ms": 14.77, "tasks": ["qa"], "n_inputs": 1, "response_chars": [1162], "context_chars": [2006]}
+INFO:     127.0.0.1:48378 - "POST /detect HTTP/1.1" 200 OK
+2026-10-30 11:00:00,105 INFO groundedguard.api {"request_id": "d63da2e64d604e4c", "method": "POST", "path": "/detect", "status": 200, "latency_ms": 14.88, "tasks": ["summary"], "n_inputs": 1, "response_chars": [370], "context_chars": [1718]}
+INFO:     127.0.0.1:48378 - "POST /detect HTTP/1.1" 200 OK
+2026-10-30 11:00:00,121 INFO groundedguard.api {"request_id": "26addb8730e24e2d", "method": "POST", "path": "/detect", "status": 200, "latency_ms": 14.95, "tasks": ["data2txt"], "n_inputs": 1, "response_chars": [827], "context_chars": [1777]}
+INFO:     127.0.0.1:48378 - "POST /detect HTTP/1.1" 200 OK
+2026-10-30 11:00:00,144 INFO groundedguard.api {"request_id": "7d35f2ce6f2e4ba1", "method": "POST", "path": "/detect", "status": 200, "latency_ms": 21.41, "tasks": ["summary"], "n_inputs": 1, "response_chars": [1078], "context_chars": [6017]}
+INFO:     127.0.0.1:48378 - "POST /detect HTTP/1.1" 200 OK
+2026-10-30 11:00:00,160 INFO groundedguard.api {"request_id": "07fdec3001b44671", "method": "POST", "path": "/detect", "status": 200, "latency_ms": 15.39, "tasks": ["data2txt"], "n_inputs": 1, "response_chars": [1432], "context_chars": [2053]}
+INFO:     127.0.0.1:48378 - "POST /detect HTTP/1.1" 200 OK
+2026-10-30 11:00:00,177 INFO groundedguard.api {"request_id": "ddf07760939f4454", "method": "POST", "path": "/detect", "status": 200, "latency_ms": 15.44, "tasks": ["data2txt"], "n_inputs": 1, "response_chars": [1259], "context_chars": [1735]}
+INFO:     127.0.0.1:48378 - "POST /detect HTTP/1.1" 200 OK
+2026-10-30 11:00:00,192 INFO groundedguard.api {"request_id": "11f1727321ff4e41", "method": "POST", "path": "/detect", "status": 200, "latency_ms": 14.49, "tasks": ["qa"], "n_inputs": 1, "response_chars": [883], "context_chars": [1571]}
+INFO:     127.0.0.1:48378 - "POST /detect HTTP/1.1" 200 OK
+2026-10-30 11:00:00,209 INFO groundedguard.api {"request_id": "cdfc55c0ce26495d", "method": "POST", "path": "/detect", "status": 200, "latency_ms": 15.35, "tasks": ["summary"], "n_inputs": 1, "response_chars": [506], "context_chars": [2401]}
+INFO:     127.0.0.1:48378 - "POST /detect HTTP/1.1" 200 OK
+2026-10-30 11:00:00,225 INFO groundedguard.api {"request_id": "46cf1f78e13a4df3", "method": "POST", "path": "/detect", "status": 200, "latency_ms": 15.54, "tasks": ["qa"], "n_inputs": 1, "response_chars": [1196], "context_chars": [1858]}
+INFO:     127.0.0.1:48378 - "POST /detect HTTP/1.1" 200 OK
+2026-10-30 11:00:00,241 INFO groundedguard.api {"request_id": "b9f4733dfd6840d0", "method": "POST", "path": "/detect", "status": 200, "latency_ms": 14.66, "tasks": ["summary"], "n_inputs": 1, "response_chars": [418], "context_chars": [1137]}
+INFO:     127.0.0.1:48378 - "POST /detect HTTP/1.1" 200 OK
+2026-10-30 11:00:00,256 INFO groundedguard.api {"request_id": "b92de5c9bd944700", "method": "POST", "path": "/detect", "status": 200, "latency_ms": 14.24, "tasks": ["qa"], "n_inputs": 1, "response_chars": [505], "context_chars": [1177]}
+INFO:     127.0.0.1:48378 - "POST /detect HTTP/1.1" 200 OK
+2026-10-30 11:00:00,273 INFO groundedguard.api {"request_id": "21169eb994654e94", "method": "POST", "path": "/detect", "status": 200, "latency_ms": 16.08, "tasks": ["data2txt"], "n_inputs": 1, "response_chars": [633], "context_chars": [2940]}
+INFO:     127.0.0.1:48378 - "POST /detect HTTP/1.1" 200 OK
+2026-10-30 11:00:00,290 INFO groundedguard.api {"request_id": "ca66715b3e044c58", "method": "POST", "path": "/detect", "status": 200, "latency_ms": 15.21, "tasks": ["data2txt"], "n_inputs": 1, "response_chars": [555], "context_chars": [1406]}
+INFO:     127.0.0.1:48378 - "POST /detect HTTP/1.1" 200 OK
+2026-10-30 11:00:00,307 INFO groundedguard.api {"request_id": "0bf07b1498f14455", "method": "POST", "path": "/detect", "status": 200, "latency_ms": 15.97, "tasks": ["summary"], "n_inputs": 1, "response_chars": [965], "context_chars": [3304]}
+INFO:     127.0.0.1:48378 - "POST /detect HTTP/1.1" 200 OK
+2026-10-30 11:00:00,322 INFO groundedguard.api {"request_id": "d4358afb500841d3", "method": "POST", "path": "/detect", "status": 200, "latency_ms": 14.65, "tasks": ["data2txt"], "n_inputs": 1, "response_chars": [612], "context_chars": [1777]}
+INFO:     127.0.0.1:48378 - "POST /detect HTTP/1.1" 200 OK
+2026-10-30 11:00:00,338 INFO groundedguard.api {"request_id": "3cca009e258b4014", "method": "POST", "path": "/detect", "status": 200, "latency_ms": 14.03, "tasks": ["summary"], "n_inputs": 1, "response_chars": [423], "context_chars": [1552]}
+INFO:     127.0.0.1:48378 - "POST /detect HTTP/1.1" 200 OK
+2026-10-30 11:00:00,354 INFO groundedguard.api {"request_id": "b999fde925bf4fcb", "method": "POST", "path": "/detect", "status": 200, "latency_ms": 14.93, "tasks": ["data2txt"], "n_inputs": 1, "response_chars": [1436], "context_chars": [1666]}
+INFO:     127.0.0.1:48378 - "POST /detect HTTP/1.1" 200 OK
+2026-10-30 11:00:00,370 INFO groundedguard.api {"request_id": "f1a3f086b8b2444f", "method": "POST", "path": "/detect", "status": 200, "latency_ms": 15.07, "tasks": ["data2txt"], "n_inputs": 1, "response_chars": [829], "context_chars": [1721]}
+INFO:     127.0.0.1:48378 - "POST /detect HTTP/1.1" 200 OK
+2026-10-30 11:00:00,385 INFO groundedguard.api {"request_id": "ee9af8b6d7fa4bdd", "method": "POST", "path": "/detect", "status": 200, "latency_ms": 14.7, "tasks": ["qa"], "n_inputs": 1, "response_chars": [104], "context_chars": [884]}
+INFO:     127.0.0.1:48378 - "POST /detect HTTP/1.1" 200 OK
+2026-10-30 11:00:00,402 INFO groundedguard.api {"request_id": "92d99ec14255454f", "method": "POST", "path": "/detect", "status": 200, "latency_ms": 15.33, "tasks": ["qa"], "n_inputs": 1, "response_chars": [802], "context_chars": [1341]}
+INFO:     127.0.0.1:48378 - "POST /detect HTTP/1.1" 200 OK
+2026-10-30 11:00:00,418 INFO groundedguard.api {"request_id": "998294106ebb45c5", "method": "POST", "path": "/detect", "status": 200, "latency_ms": 15.41, "tasks": ["data2txt"], "n_inputs": 1, "response_chars": [1295], "context_chars": [2053]}
+INFO:     127.0.0.1:48378 - "POST /detect HTTP/1.1" 200 OK
+2026-10-30 11:00:00,434 INFO groundedguard.api {"request_id": "36c1f834ad7c48ac", "method": "POST", "path": "/detect", "status": 200, "latency_ms": 14.85, "tasks": ["data2txt"], "n_inputs": 1, "response_chars": [870], "context_chars": [2127]}
+INFO:     127.0.0.1:48378 - "POST /detect HTTP/1.1" 200 OK
+2026-10-30 11:00:00,450 INFO groundedguard.api {"request_id": "c472b42f883949ba", "method": "POST", "path": "/detect", "status": 200, "latency_ms": 14.53, "tasks": ["summary"], "n_inputs": 1, "response_chars": [565], "context_chars": [2291]}
+INFO:     127.0.0.1:48378 - "POST /detect HTTP/1.1" 200 OK
+2026-10-30 11:00:00,466 INFO groundedguard.api {"request_id": "2a4677391ed6455d", "method": "POST", "path": "/detect", "status": 200, "latency_ms": 14.75, "tasks": ["qa"], "n_inputs": 1, "response_chars": [247], "context_chars": [1021]}
+INFO:     127.0.0.1:48378 - "POST /detect HTTP/1.1" 200 OK
+2026-10-30 11:00:00,485 INFO groundedguard.api {"request_id": "107785ffc52b4c47", "method": "POST", "path": "/detect", "status": 200, "latency_ms": 18.27, "tasks": ["summary"], "n_inputs": 1, "response_chars": [992], "context_chars": [4263]}
+INFO:     127.0.0.1:48378 - "POST /detect HTTP/1.1" 200 OK
+2026-10-30 11:00:00,500 INFO groundedguard.api {"request_id": "78b74ebd087e4f86", "method": "POST", "path": "/detect", "status": 200, "latency_ms": 14.06, "tasks": ["summary"], "n_inputs": 1, "response_chars": [338], "context_chars": [1137]}
+INFO:     127.0.0.1:48378 - "POST /detect HTTP/1.1" 200 OK
+2026-10-30 11:00:00,516 INFO groundedguard.api {"request_id": "856539ca4d674fc0", "method": "POST", "path": "/detect", "status": 200, "latency_ms": 14.54, "tasks": ["qa"], "n_inputs": 1, "response_chars": [721], "context_chars": [1868]}
+INFO:     127.0.0.1:48378 - "POST /detect HTTP/1.1" 200 OK
+2026-10-30 11:00:00,531 INFO groundedguard.api {"request_id": "f4376014e3d64438", "method": "POST", "path": "/detect", "status": 200, "latency_ms": 14.87, "tasks": ["summary"], "n_inputs": 1, "response_chars": [455], "context_chars": [2055]}
+INFO:     127.0.0.1:48378 - "POST /detect HTTP/1.1" 200 OK
+2026-10-30 11:00:00,546 INFO groundedguard.api {"request_id": "a006c86a52d5467b", "method": "POST", "path": "/detect", "status": 200, "latency_ms": 13.96, "tasks": ["qa"], "n_inputs": 1, "response_chars": [287], "context_chars": [896]}
+INFO:     127.0.0.1:48378 - "POST /detect HTTP/1.1" 200 OK
+2026-10-30 11:00:00,563 INFO groundedguard.api {"request_id": "742e9d5c9917491c", "method": "POST", "path": "/detect", "status": 200, "latency_ms": 15.4, "tasks": ["summary"], "n_inputs": 1, "response_chars": [586], "context_chars": [2024]}
+INFO:     127.0.0.1:48378 - "POST /detect HTTP/1.1" 200 OK
+2026-10-30 11:00:00,578 INFO groundedguard.api {"request_id": "24d1341695f7449d", "method": "POST", "path": "/detect", "status": 200, "latency_ms": 14.1, "tasks": ["summary"], "n_inputs": 1, "response_chars": [353], "context_chars": [1552]}
+INFO:     127.0.0.1:48378 - "POST /detect HTTP/1.1" 200 OK
+2026-10-30 11:00:00,593 INFO groundedguard.api {"request_id": "e9e90fa7de0c4454", "method": "POST", "path": "/detect", "status": 200, "latency_ms": 14.14, "tasks": ["qa"], "n_inputs": 1, "response_chars": [562], "context_chars": [1940]}
+INFO:     127.0.0.1:48378 - "POST /detect HTTP/1.1" 200 OK
+2026-10-30 11:00:00,608 INFO groundedguard.api {"request_id": "1b826fc627ed4bca", "method": "POST", "path": "/detect", "status": 200, "latency_ms": 14.05, "tasks": ["summary"], "n_inputs": 1, "response_chars": [365], "context_chars": [1518]}
+INFO:     127.0.0.1:48378 - "POST /detect HTTP/1.1" 200 OK
+2026-10-30 11:00:00,625 INFO groundedguard.api {"request_id": "9dcb1f6fbddb4bd8", "method": "POST", "path": "/detect", "status": 200, "latency_ms": 15.46, "tasks": ["qa"], "n_inputs": 1, "response_chars": [1121], "context_chars": [1820]}
+INFO:     127.0.0.1:48378 - "POST /detect HTTP/1.1" 200 OK
+2026-10-30 11:00:00,641 INFO groundedguard.api {"request_id": "11cc0bd3f8fa4663", "method": "POST", "path": "/detect", "status": 200, "latency_ms": 15.43, "tasks": ["qa"], "n_inputs": 1, "response_chars": [894], "context_chars": [1776]}
+INFO:     127.0.0.1:48378 - "POST /detect HTTP/1.1" 200 OK
+2026-10-30 11:00:00,658 INFO groundedguard.api {"request_id": "084e5f81267a4f21", "method": "POST", "path": "/detect", "status": 200, "latency_ms": 15.75, "tasks": ["data2txt"], "n_inputs": 1, "response_chars": [1172], "context_chars": [1994]}
+INFO:     127.0.0.1:48378 - "POST /detect HTTP/1.1" 200 OK
+2026-10-30 11:00:00,673 INFO groundedguard.api {"request_id": "8076e1e2bc90413b", "method": "POST", "path": "/detect", "status": 200, "latency_ms": 14.24, "tasks": ["qa"], "n_inputs": 1, "response_chars": [242], "context_chars": [1668]}
+INFO:     127.0.0.1:48378 - "POST /detect HTTP/1.1" 200 OK
+2026-10-30 11:00:00,690 INFO groundedguard.api {"request_id": "8831f02d79534b12", "method": "POST", "path": "/detect", "status": 200, "latency_ms": 15.96, "tasks": ["data2txt"], "n_inputs": 1, "response_chars": [1173], "context_chars": [2563]}
+INFO:     127.0.0.1:48378 - "POST /detect HTTP/1.1" 200 OK
+2026-10-30 11:00:00,718 INFO groundedguard.api {"request_id": "9ab98461c36d409d", "method": "POST", "path": "/detect", "status": 200, "latency_ms": 26.72, "tasks": ["summary"], "n_inputs": 1, "response_chars": [1021], "context_chars": [7978]}
+INFO:     127.0.0.1:48378 - "POST /detect HTTP/1.1" 200 OK
+2026-10-30 11:00:00,737 INFO groundedguard.api {"request_id": "e17cd45840414cb8", "method": "POST", "path": "/detect", "status": 200, "latency_ms": 17.39, "tasks": ["data2txt"], "n_inputs": 1, "response_chars": [1431], "context_chars": [2417]}
+INFO:     127.0.0.1:48378 - "POST /detect HTTP/1.1" 200 OK
+2026-10-30 11:00:00,753 INFO groundedguard.api {"request_id": "cc6981559b1a4071", "method": "POST", "path": "/detect", "status": 200, "latency_ms": 15.45, "tasks": ["data2txt"], "n_inputs": 1, "response_chars": [604], "context_chars": [1894]}
+INFO:     127.0.0.1:48378 - "POST /detect HTTP/1.1" 200 OK
+2026-10-30 11:00:00,768 INFO groundedguard.api {"request_id": "09cc447569764951", "method": "POST", "path": "/detect", "status": 200, "latency_ms": 14.1, "tasks": ["summary"], "n_inputs": 1, "response_chars": [348], "context_chars": [1056]}
+INFO:     127.0.0.1:48378 - "POST /detect HTTP/1.1" 200 OK
+2026-10-30 11:00:00,784 INFO groundedguard.api {"request_id": "9b94454cf622422e", "method": "POST", "path": "/detect", "status": 200, "latency_ms": 14.23, "tasks": ["qa"], "n_inputs": 1, "response_chars": [636], "context_chars": [975]}
+INFO:     127.0.0.1:48378 - "POST /detect HTTP/1.1" 200 OK
+2026-10-30 11:00:00,800 INFO groundedguard.api {"request_id": "88427205dc0f490f", "method": "POST", "path": "/detect", "status": 200, "latency_ms": 14.87, "tasks": ["summary"], "n_inputs": 1, "response_chars": [354], "context_chars": [2401]}
+INFO:     127.0.0.1:48378 - "POST /detect HTTP/1.1" 200 OK
+2026-10-30 11:00:00,816 INFO groundedguard.api {"request_id": "27d1b9df50504841", "method": "POST", "path": "/detect", "status": 200, "latency_ms": 15.54, "tasks": ["qa"], "n_inputs": 1, "response_chars": [1087], "context_chars": [1847]}
+INFO:     127.0.0.1:48378 - "POST /detect HTTP/1.1" 200 OK
+2026-10-30 11:00:00,832 INFO groundedguard.api {"request_id": "a31117fe165d48f8", "method": "POST", "path": "/detect", "status": 200, "latency_ms": 14.41, "tasks": ["qa"], "n_inputs": 1, "response_chars": [772], "context_chars": [1160]}
+INFO:     127.0.0.1:48378 - "POST /detect HTTP/1.1" 200 OK
+2026-10-30 11:00:00,848 INFO groundedguard.api {"request_id": "625df9688c594f82", "method": "POST", "path": "/detect", "status": 200, "latency_ms": 15.22, "tasks": ["qa"], "n_inputs": 1, "response_chars": [1385], "context_chars": [953]}
+INFO:     127.0.0.1:48378 - "POST /detect HTTP/1.1" 200 OK
+2026-10-30 11:00:00,864 INFO groundedguard.api {"request_id": "ddbe06cb1fe74e39", "method": "POST", "path": "/detect", "status": 200, "latency_ms": 15.04, "tasks": ["summary"], "n_inputs": 1, "response_chars": [744], "context_chars": [2729]}
+INFO:     127.0.0.1:48378 - "POST /detect HTTP/1.1" 200 OK
+2026-10-30 11:00:00,879 INFO groundedguard.api {"request_id": "3a19dea924674861", "method": "POST", "path": "/detect", "status": 200, "latency_ms": 14.46, "tasks": ["qa"], "n_inputs": 1, "response_chars": [1030], "context_chars": [1571]}
+INFO:     127.0.0.1:48378 - "POST /detect HTTP/1.1" 200 OK
+2026-10-30 11:00:00,895 INFO groundedguard.api {"request_id": "b69ed3acf135420a", "method": "POST", "path": "/detect", "status": 200, "latency_ms": 14.9, "tasks": ["qa"], "n_inputs": 1, "response_chars": [749], "context_chars": [898]}
+INFO:     127.0.0.1:48378 - "POST /detect HTTP/1.1" 200 OK
+2026-10-30 11:00:00,914 INFO groundedguard.api {"request_id": "a2137989dcdc4f04", "method": "POST", "path": "/detect", "status": 200, "latency_ms": 17.91, "tasks": ["summary"], "n_inputs": 1, "response_chars": [1123], "context_chars": [3681]}
+INFO:     127.0.0.1:48378 - "POST /detect HTTP/1.1" 200 OK
+2026-10-30 11:00:00,931 INFO groundedguard.api {"request_id": "46472cb6df0d4787", "method": "POST", "path": "/detect", "status": 200, "latency_ms": 15.46, "tasks": ["data2txt"], "n_inputs": 1, "response_chars": [885], "context_chars": [1406]}
+INFO:     127.0.0.1:48378 - "POST /detect HTTP/1.1" 200 OK
+2026-10-30 11:00:00,947 INFO groundedguard.api {"request_id": "d96194deecca41ce", "method": "POST", "path": "/detect", "status": 200, "latency_ms": 15.45, "tasks": ["qa"], "n_inputs": 1, "response_chars": [2334], "context_chars": [1177]}
+INFO:     127.0.0.1:48378 - "POST /detect HTTP/1.1" 200 OK
+2026-10-30 11:00:00,963 INFO groundedguard.api {"request_id": "0ce4b4c84df04d57", "method": "POST", "path": "/detect", "status": 200, "latency_ms": 14.95, "tasks": ["qa"], "n_inputs": 1, "response_chars": [377], "context_chars": [1679]}
+INFO:     127.0.0.1:48378 - "POST /detect HTTP/1.1" 200 OK
+2026-10-30 11:00:00,997 INFO groundedguard.api {"request_id": "a277939a072a4fa5", "method": "POST", "path": "/detect", "status": 200, "latency_ms": 32.9, "tasks": ["summary"], "n_inputs": 1, "response_chars": [2042], "context_chars": [7978]}
+INFO:     127.0.0.1:48378 - "POST /detect HTTP/1.1" 200 OK
+2026-10-30 11:00:01,014 INFO groundedguard.api {"request_id": "b44e3009a0f441b4", "method": "POST", "path": "/detect", "status": 200, "latency_ms": 16.07, "tasks": ["data2txt"], "n_inputs": 1, "response_chars": [772], "context_chars": [2940]}
+INFO:     127.0.0.1:48378 - "POST /detect HTTP/1.1" 200 OK
+2026-10-30 11:00:01,031 INFO groundedguard.api {"request_id": "6bfb5dd059c1440b", "method": "POST", "path": "/detect", "status": 200, "latency_ms": 15.27, "tasks": ["data2txt"], "n_inputs": 1, "response_chars": [737], "context_chars": [1777]}
+INFO:     127.0.0.1:48378 - "POST /detect HTTP/1.1" 200 OK
+2026-10-30 11:00:01,047 INFO groundedguard.api {"request_id": "bf8a5aff86234f78", "method": "POST", "path": "/detect", "status": 200, "latency_ms": 15.61, "tasks": ["summary"], "n_inputs": 1, "response_chars": [548], "context_chars": [2437]}
+INFO:     127.0.0.1:48378 - "POST /detect HTTP/1.1" 200 OK
+2026-10-30 11:00:01,063 INFO groundedguard.api {"request_id": "6ddca1b06a614593", "method": "POST", "path": "/detect", "status": 200, "latency_ms": 14.32, "tasks": ["qa"], "n_inputs": 1, "response_chars": [488], "context_chars": [1331]}
+INFO:     127.0.0.1:48378 - "POST /detect HTTP/1.1" 200 OK
+2026-10-30 11:00:01,078 INFO groundedguard.api {"request_id": "1aa84946f3744189", "method": "POST", "path": "/detect", "status": 200, "latency_ms": 14.39, "tasks": ["qa"], "n_inputs": 1, "response_chars": [472], "context_chars": [2078]}
+INFO:     127.0.0.1:48378 - "POST /detect HTTP/1.1" 200 OK
+2026-10-30 11:00:01,100 INFO groundedguard.api {"request_id": "cc3759b5b6f24ec9", "method": "POST", "path": "/detect", "status": 200, "latency_ms": 20.99, "tasks": ["data2txt"], "n_inputs": 1, "response_chars": [734], "context_chars": [4382]}
+INFO:     127.0.0.1:48378 - "POST /detect HTTP/1.1" 200 OK
+2026-10-30 11:00:01,117 INFO groundedguard.api {"request_id": "c47b06e6f7654261", "method": "POST", "path": "/detect", "status": 200, "latency_ms": 15.5, "tasks": ["summary"], "n_inputs": 1, "response_chars": [440], "context_chars": [2061]}
+INFO:     127.0.0.1:48378 - "POST /detect HTTP/1.1" 200 OK
+2026-10-30 11:00:01,132 INFO groundedguard.api {"request_id": "ad4f7449c1e14be2", "method": "POST", "path": "/detect", "status": 200, "latency_ms": 14.57, "tasks": ["qa"], "n_inputs": 1, "response_chars": [707], "context_chars": [1160]}
+INFO:     127.0.0.1:48378 - "POST /detect HTTP/1.1" 200 OK
+2026-10-30 11:00:01,149 INFO groundedguard.api {"request_id": "d5f99deffcbc497b", "method": "POST", "path": "/detect", "status": 200, "latency_ms": 15.96, "tasks": ["data2txt"], "n_inputs": 1, "response_chars": [785], "context_chars": [2278]}
+INFO:     127.0.0.1:48378 - "POST /detect HTTP/1.1" 200 OK
+2026-10-30 11:00:01,170 INFO groundedguard.api {"request_id": "a3036ba50df14855", "method": "POST", "path": "/detect", "status": 200, "latency_ms": 19.07, "tasks": ["summary"], "n_inputs": 1, "response_chars": [942], "context_chars": [5044]}
+INFO:     127.0.0.1:48378 - "POST /detect HTTP/1.1" 200 OK
+2026-10-30 11:00:01,186 INFO groundedguard.api {"request_id": "4398b08465e54546", "method": "POST", "path": "/detect", "status": 200, "latency_ms": 15.66, "tasks": ["summary"], "n_inputs": 1, "response_chars": [514], "context_chars": [2306]}
+INFO:     127.0.0.1:48378 - "POST /detect HTTP/1.1" 200 OK
+2026-10-30 11:00:01,202 INFO groundedguard.api {"request_id": "a79dc2faaa9e45ba", "method": "POST", "path": "/detect", "status": 200, "latency_ms": 15.07, "tasks": ["qa"], "n_inputs": 1, "response_chars": [496], "context_chars": [913]}
+INFO:     127.0.0.1:48378 - "POST /detect HTTP/1.1" 200 OK
+2026-10-30 11:00:01,219 INFO groundedguard.api {"request_id": "9e880f748d424025", "method": "POST", "path": "/detect", "status": 200, "latency_ms": 15.72, "tasks": ["data2txt"], "n_inputs": 1, "response_chars": [819], "context_chars": [1781]}
+INFO:     127.0.0.1:48378 - "POST /detect HTTP/1.1" 200 OK
+2026-10-30 11:00:01,236 INFO groundedguard.api {"request_id": "14460295bc254d95", "method": "POST", "path": "/detect", "status": 200, "latency_ms": 15.67, "tasks": ["data2txt"], "n_inputs": 1, "response_chars": [888], "context_chars": [1573]}
+INFO:     127.0.0.1:48378 - "POST /detect HTTP/1.1" 200 OK
+2026-10-30 11:00:01,252 INFO groundedguard.api {"request_id": "d29a86359e0d4732", "method": "POST", "path": "/detect", "status": 200, "latency_ms": 14.57, "tasks": ["summary"], "n_inputs": 1, "response_chars": [304], "context_chars": [2401]}
+INFO:     127.0.0.1:48378 - "POST /detect HTTP/1.1" 200 OK
+2026-10-30 11:00:01,271 INFO groundedguard.api {"request_id": "1d60e3f6c8ad40a7", "method": "POST", "path": "/detect", "status": 200, "latency_ms": 18.44, "tasks": ["summary"], "n_inputs": 1, "response_chars": [1241], "context_chars": [4263]}
+INFO:     127.0.0.1:48378 - "POST /detect HTTP/1.1" 200 OK
+2026-10-30 11:00:01,287 INFO groundedguard.api {"request_id": "95c8e45e156f4160", "method": "POST", "path": "/detect", "status": 200, "latency_ms": 14.86, "tasks": ["summary"], "n_inputs": 1, "response_chars": [592], "context_chars": [2444]}
+INFO:     127.0.0.1:48378 - "POST /detect HTTP/1.1" 200 OK
+2026-10-30 11:00:01,306 INFO groundedguard.api {"request_id": "4e6beedec9e9499b", "method": "POST", "path": "/detect", "status": 200, "latency_ms": 17.48, "tasks": ["data2txt"], "n_inputs": 1, "response_chars": [1063], "context_chars": [3380]}
+INFO:     127.0.0.1:48378 - "POST /detect HTTP/1.1" 200 OK
+2026-10-30 11:00:01,322 INFO groundedguard.api {"request_id": "07279c926a1048ef", "method": "POST", "path": "/detect", "status": 200, "latency_ms": 15.56, "tasks": ["qa"], "n_inputs": 1, "response_chars": [573], "context_chars": [2128]}
+INFO:     127.0.0.1:48378 - "POST /detect HTTP/1.1" 200 OK
+2026-10-30 11:00:01,338 INFO groundedguard.api {"request_id": "016fd671179c4493", "method": "POST", "path": "/detect", "status": 200, "latency_ms": 14.87, "tasks": ["data2txt"], "n_inputs": 1, "response_chars": [1091], "context_chars": [1781]}
+INFO:     127.0.0.1:48378 - "POST /detect HTTP/1.1" 200 OK
+2026-10-30 11:00:01,354 INFO groundedguard.api {"request_id": "515931e3adda4348", "method": "POST", "path": "/detect", "status": 200, "latency_ms": 14.76, "tasks": ["summary"], "n_inputs": 1, "response_chars": [635], "context_chars": [2444]}
+INFO:     127.0.0.1:48378 - "POST /detect HTTP/1.1" 200 OK
+2026-10-30 11:00:01,370 INFO groundedguard.api {"request_id": "85d4d935f9d54353", "method": "POST", "path": "/detect", "status": 200, "latency_ms": 15.14, "tasks": ["qa"], "n_inputs": 1, "response_chars": [1402], "context_chars": [1886]}
+INFO:     127.0.0.1:48378 - "POST /detect HTTP/1.1" 200 OK
+2026-10-30 11:00:01,386 INFO groundedguard.api {"request_id": "2f2f65726d334851", "method": "POST", "path": "/detect", "status": 200, "latency_ms": 15.28, "tasks": ["data2txt"], "n_inputs": 1, "response_chars": [1303], "context_chars": [2114]}
+INFO:     127.0.0.1:48378 - "POST /detect HTTP/1.1" 200 OK
+2026-10-30 11:00:01,403 INFO groundedguard.api {"request_id": "b9a2f2e79aa84e0a", "method": "POST", "path": "/detect", "status": 200, "latency_ms": 15.59, "tasks": ["data2txt"], "n_inputs": 1, "response_chars": [727], "context_chars": [2057]}
+INFO:     127.0.0.1:48378 - "POST /detect HTTP/1.1" 200 OK
+2026-10-30 11:00:01,419 INFO groundedguard.api {"request_id": "b88826be531543cb", "method": "POST", "path": "/detect", "status": 200, "latency_ms": 14.61, "tasks": ["qa"], "n_inputs": 1, "response_chars": [816], "context_chars": [1331]}
+INFO:     127.0.0.1:48378 - "POST /detect HTTP/1.1" 200 OK
+2026-10-30 11:00:01,438 INFO groundedguard.api {"request_id": "9752a5d1056b4835", "method": "POST", "path": "/detect", "status": 200, "latency_ms": 18.09, "tasks": ["data2txt"], "n_inputs": 1, "response_chars": [1319], "context_chars": [2940]}
+INFO:     127.0.0.1:48378 - "POST /detect HTTP/1.1" 200 OK
+2026-10-30 11:00:01,457 INFO groundedguard.api {"request_id": "5f13cebe4525474e", "method": "POST", "path": "/detect", "status": 200, "latency_ms": 18.48, "tasks": ["summary"], "n_inputs": 1, "response_chars": [869], "context_chars": [4902]}
+INFO:     127.0.0.1:48378 - "POST /detect HTTP/1.1" 200 OK
+2026-10-30 11:00:01,473 INFO groundedguard.api {"request_id": "45f8f68ed97c4258", "method": "POST", "path": "/detect", "status": 200, "latency_ms": 14.69, "tasks": ["summary"], "n_inputs": 1, "response_chars": [614], "context_chars": [2401]}
+INFO:     127.0.0.1:48378 - "POST /detect HTTP/1.1" 200 OK
+2026-10-30 11:00:01,489 INFO groundedguard.api {"request_id": "7446f8f15fcb494e", "method": "POST", "path": "/detect", "status": 200, "latency_ms": 14.91, "tasks": ["qa"], "n_inputs": 1, "response_chars": [1030], "context_chars": [2006]}
+INFO:     127.0.0.1:48378 - "POST /detect HTTP/1.1" 200 OK
+2026-10-30 11:00:01,505 INFO groundedguard.api {"request_id": "8611bc9c7a1042c0", "method": "POST", "path": "/detect", "status": 200, "latency_ms": 14.93, "tasks": ["summary"], "n_inputs": 1, "response_chars": [656], "context_chars": [2655]}
+INFO:     127.0.0.1:48378 - "POST /detect HTTP/1.1" 200 OK
+2026-10-30 11:00:01,521 INFO groundedguard.api {"request_id": "253163cbd7cb4a19", "method": "POST", "path": "/detect", "status": 200, "latency_ms": 14.65, "tasks": ["qa"], "n_inputs": 1, "response_chars": [920], "context_chars": [1847]}
+INFO:     127.0.0.1:48378 - "POST /detect HTTP/1.1" 200 OK
+2026-10-30 11:00:01,537 INFO groundedguard.api {"request_id": "979eb8e4e9404730", "method": "POST", "path": "/detect", "status": 200, "latency_ms": 15.14, "tasks": ["data2txt"], "n_inputs": 1, "response_chars": [653], "context_chars": [1406]}
+INFO:     127.0.0.1:48378 - "POST /detect HTTP/1.1" 200 OK
+2026-10-30 11:00:01,552 INFO groundedguard.api {"request_id": "fb84993693f4479d", "method": "POST", "path": "/detect", "status": 200, "latency_ms": 14.5, "tasks": ["summary"], "n_inputs": 1, "response_chars": [681], "context_chars": [2610]}
+INFO:     127.0.0.1:48378 - "POST /detect HTTP/1.1" 200 OK
+2026-10-30 11:00:01,569 INFO groundedguard.api {"request_id": "ec785cb68a9546ab", "method": "POST", "path": "/detect", "status": 200, "latency_ms": 15.83, "tasks": ["data2txt"], "n_inputs": 1, "response_chars": [995], "context_chars": [1466]}
+INFO:     127.0.0.1:48378 - "POST /detect HTTP/1.1" 200 OK
+2026-10-30 11:00:01,589 INFO groundedguard.api {"request_id": "0d636f8d89ff4667", "method": "POST", "path": "/detect", "status": 200, "latency_ms": 18.33, "tasks": ["data2txt"], "n_inputs": 1, "response_chars": [954], "context_chars": [3130]}
+INFO:     127.0.0.1:48378 - "POST /detect HTTP/1.1" 200 OK
+2026-10-30 11:00:01,604 INFO groundedguard.api {"request_id": "398c7215cb1f4f37", "method": "POST", "path": "/detect", "status": 200, "latency_ms": 14.24, "tasks": ["data2txt"], "n_inputs": 1, "response_chars": [684], "context_chars": [1466]}
+INFO:     127.0.0.1:48378 - "POST /detect HTTP/1.1" 200 OK
+2026-10-30 11:00:01,620 INFO groundedguard.api {"request_id": "30e8ab35dff04240", "method": "POST", "path": "/detect", "status": 200, "latency_ms": 14.5, "tasks": ["data2txt"], "n_inputs": 1, "response_chars": [842], "context_chars": [1573]}
+INFO:     127.0.0.1:48378 - "POST /detect HTTP/1.1" 200 OK
+2026-10-30 11:00:01,637 INFO groundedguard.api {"request_id": "de13de404dab4530", "method": "POST", "path": "/detect", "status": 200, "latency_ms": 16.5, "tasks": ["qa"], "n_inputs": 1, "response_chars": [605], "context_chars": [1759]}
+INFO:     127.0.0.1:48378 - "POST /detect HTTP/1.1" 200 OK
+2026-10-30 11:00:01,654 INFO groundedguard.api {"request_id": "2f69f8d65513415e", "method": "POST", "path": "/detect", "status": 200, "latency_ms": 15.56, "tasks": ["qa"], "n_inputs": 1, "response_chars": [417], "context_chars": [883]}
+INFO:     127.0.0.1:48378 - "POST /detect HTTP/1.1" 200 OK
+2026-10-30 11:00:01,672 INFO groundedguard.api {"request_id": "9f2aa544f0194097", "method": "POST", "path": "/detect", "status": 200, "latency_ms": 16.5, "tasks": ["summary"], "n_inputs": 1, "response_chars": [460], "context_chars": [2046]}
+INFO:     127.0.0.1:48378 - "POST /detect HTTP/1.1" 200 OK
+2026-10-30 11:00:01,690 INFO groundedguard.api {"request_id": "80a2791d395f45f3", "method": "POST", "path": "/detect", "status": 200, "latency_ms": 17.15, "tasks": ["data2txt"], "n_inputs": 1, "response_chars": [970], "context_chars": [2536]}
+INFO:     127.0.0.1:48378 - "POST /detect HTTP/1.1" 200 OK
+2026-10-30 11:00:01,709 INFO groundedguard.api {"request_id": "b25a22c9ca694936", "method": "POST", "path": "/detect", "status": 200, "latency_ms": 18.02, "tasks": ["data2txt"], "n_inputs": 1, "response_chars": [1540], "context_chars": [2593]}
+INFO:     127.0.0.1:48378 - "POST /detect HTTP/1.1" 200 OK
+2026-10-30 11:00:01,727 INFO groundedguard.api {"request_id": "11e0d90272f54d29", "method": "POST", "path": "/detect", "status": 200, "latency_ms": 16.25, "tasks": ["summary"], "n_inputs": 1, "response_chars": [396], "context_chars": [1718]}
+INFO:     127.0.0.1:48378 - "POST /detect HTTP/1.1" 200 OK
+2026-10-30 11:00:01,744 INFO groundedguard.api {"request_id": "7fad2ad2376b4283", "method": "POST", "path": "/detect", "status": 200, "latency_ms": 16.03, "tasks": ["summary"], "n_inputs": 1, "response_chars": [560], "context_chars": [1621]}
+INFO:     127.0.0.1:48378 - "POST /detect HTTP/1.1" 200 OK
+2026-10-30 11:00:01,764 INFO groundedguard.api {"request_id": "c34b7b7d82d74fc2", "method": "POST", "path": "/detect", "status": 200, "latency_ms": 19.1, "tasks": ["summary"], "n_inputs": 1, "response_chars": [892], "context_chars": [4603]}
+INFO:     127.0.0.1:48378 - "POST /detect HTTP/1.1" 200 OK
+2026-10-30 11:00:01,787 INFO groundedguard.api {"request_id": "f8df8cbe6c054b8e", "method": "POST", "path": "/detect", "status": 200, "latency_ms": 21.71, "tasks": ["summary"], "n_inputs": 1, "response_chars": [804], "context_chars": [5814]}
+INFO:     127.0.0.1:48378 - "POST /detect HTTP/1.1" 200 OK
+2026-10-30 11:00:01,805 INFO groundedguard.api {"request_id": "f03e7b91ddde4437", "method": "POST", "path": "/detect", "status": 200, "latency_ms": 16.31, "tasks": ["qa"], "n_inputs": 1, "response_chars": [579], "context_chars": [884]}
+INFO:     127.0.0.1:48378 - "POST /detect HTTP/1.1" 200 OK
+2026-10-30 11:00:01,822 INFO groundedguard.api {"request_id": "c5f22c529abc4f5c", "method": "POST", "path": "/detect", "status": 200, "latency_ms": 16.41, "tasks": ["qa"], "n_inputs": 1, "response_chars": [395], "context_chars": [1226]}
+INFO:     127.0.0.1:48378 - "POST /detect HTTP/1.1" 200 OK
+2026-10-30 11:00:01,840 INFO groundedguard.api {"request_id": "72e121612baa407e", "method": "POST", "path": "/detect", "status": 200, "latency_ms": 16.49, "tasks": ["qa"], "n_inputs": 1, "response_chars": [639], "context_chars": [1160]}
+INFO:     127.0.0.1:48378 - "POST /detect HTTP/1.1" 200 OK
+2026-10-30 11:00:01,857 INFO groundedguard.api {"request_id": "2bfee138fe804de2", "method": "POST", "path": "/detect", "status": 200, "latency_ms": 15.96, "tasks": ["qa"], "n_inputs": 1, "response_chars": [800], "context_chars": [1226]}
+INFO:     127.0.0.1:48378 - "POST /detect HTTP/1.1" 200 OK
+2026-10-30 11:00:01,875 INFO groundedguard.api {"request_id": "063254013a0843f5", "method": "POST", "path": "/detect", "status": 200, "latency_ms": 16.6, "tasks": ["qa"], "n_inputs": 1, "response_chars": [605], "context_chars": [1108]}
+INFO:     127.0.0.1:48378 - "POST /detect HTTP/1.1" 200 OK
+2026-10-30 11:00:01,895 INFO groundedguard.api {"request_id": "3aaef9c54c9942d6", "method": "POST", "path": "/detect", "status": 200, "latency_ms": 19.13, "tasks": ["summary"], "n_inputs": 1, "response_chars": [1062], "context_chars": [4993]}
+INFO:     127.0.0.1:48378 - "POST /detect HTTP/1.1" 200 OK
+2026-10-30 11:00:01,915 INFO groundedguard.api {"request_id": "6ff98e77758849db", "method": "POST", "path": "/detect", "status": 200, "latency_ms": 18.48, "tasks": ["data2txt"], "n_inputs": 1, "response_chars": [1442], "context_chars": [2736]}
+INFO:     127.0.0.1:48378 - "POST /detect HTTP/1.1" 200 OK
+2026-10-30 11:00:01,934 INFO groundedguard.api {"request_id": "0c27905be4a14683", "method": "POST", "path": "/detect", "status": 200, "latency_ms": 17.62, "tasks": ["data2txt"], "n_inputs": 1, "response_chars": [762], "context_chars": [2736]}
+INFO:     127.0.0.1:48378 - "POST /detect HTTP/1.1" 200 OK
+2026-10-30 11:00:01,950 INFO groundedguard.api {"request_id": "8c985d3a84514bef", "method": "POST", "path": "/detect", "status": 200, "latency_ms": 14.8, "tasks": ["qa"], "n_inputs": 1, "response_chars": [1104], "context_chars": [1796]}
+INFO:     127.0.0.1:48378 - "POST /detect HTTP/1.1" 200 OK
+2026-10-30 11:00:01,965 INFO groundedguard.api {"request_id": "234441e441234721", "method": "POST", "path": "/detect", "status": 200, "latency_ms": 14.45, "tasks": ["data2txt"], "n_inputs": 1, "response_chars": [732], "context_chars": [1822]}
+INFO:     127.0.0.1:48378 - "POST /detect HTTP/1.1" 200 OK
+2026-10-30 11:00:01,981 INFO groundedguard.api {"request_id": "9aded48993ba4320", "method": "POST", "path": "/detect", "status": 200, "latency_ms": 14.48, "tasks": ["data2txt"], "n_inputs": 1, "response_chars": [896], "context_chars": [1369]}
+INFO:     127.0.0.1:48378 - "POST /detect HTTP/1.1" 200 OK
+2026-10-30 11:00:01,997 INFO groundedguard.api {"request_id": "99ac15ae3502499d", "method": "POST", "path": "/detect", "status": 200, "latency_ms": 15.39, "tasks": ["summary"], "n_inputs": 1, "response_chars": [474], "context_chars": [2655]}
+INFO:     127.0.0.1:48378 - "POST /detect HTTP/1.1" 200 OK
+2026-10-30 11:00:02,013 INFO groundedguard.api {"request_id": "6bd4495b2fba44e5", "method": "POST", "path": "/detect", "status": 200, "latency_ms": 14.39, "tasks": ["data2txt"], "n_inputs": 1, "response_chars": [951], "context_chars": [1666]}
+INFO:     127.0.0.1:48378 - "POST /detect HTTP/1.1" 200 OK
+2026-10-30 11:00:02,029 INFO groundedguard.api {"request_id": "520628a0ed2d4bdc", "method": "POST", "path": "/detect", "status": 200, "latency_ms": 15.21, "tasks": ["summary"], "n_inputs": 1, "response_chars": [384], "context_chars": [1609]}
+INFO:     127.0.0.1:48378 - "POST /detect HTTP/1.1" 200 OK
+2026-10-30 11:00:02,045 INFO groundedguard.api {"request_id": "9a61eb3fc2ff4032", "method": "POST", "path": "/detect", "status": 200, "latency_ms": 15.71, "tasks": ["qa"], "n_inputs": 1, "response_chars": [690], "context_chars": [1177]}
+INFO:     127.0.0.1:48378 - "POST /detect HTTP/1.1" 200 OK
+2026-10-30 11:00:02,064 INFO groundedguard.api {"request_id": "e77b58bf52954bbe", "method": "POST", "path": "/detect", "status": 200, "latency_ms": 17.08, "tasks": ["summary"], "n_inputs": 1, "response_chars": [766], "context_chars": [3252]}
+INFO:     127.0.0.1:48378 - "POST /detect HTTP/1.1" 200 OK
+2026-10-30 11:00:02,081 INFO groundedguard.api {"request_id": "09a092f4f59549db", "method": "POST", "path": "/detect", "status": 200, "latency_ms": 15.61, "tasks": ["qa"], "n_inputs": 1, "response_chars": [484], "context_chars": [1160]}
+INFO:     127.0.0.1:48378 - "POST /detect HTTP/1.1" 200 OK
+2026-10-30 11:00:02,097 INFO groundedguard.api {"request_id": "552966133f8143b0", "method": "POST", "path": "/detect", "status": 200, "latency_ms": 15.56, "tasks": ["qa"], "n_inputs": 1, "response_chars": [1169], "context_chars": [1986]}
+INFO:     127.0.0.1:48378 - "POST /detect HTTP/1.1" 200 OK
+2026-10-30 11:00:02,113 INFO groundedguard.api {"request_id": "007f090c4452418a", "method": "POST", "path": "/detect", "status": 200, "latency_ms": 14.4, "tasks": ["qa"], "n_inputs": 1, "response_chars": [842], "context_chars": [987]}
+INFO:     127.0.0.1:48378 - "POST /detect HTTP/1.1" 200 OK
+2026-10-30 11:00:02,128 INFO groundedguard.api {"request_id": "254176cb53e04d70", "method": "POST", "path": "/detect", "status": 200, "latency_ms": 14.92, "tasks": ["qa"], "n_inputs": 1, "response_chars": [449], "context_chars": [1331]}
+INFO:     127.0.0.1:48378 - "POST /detect HTTP/1.1" 200 OK
+2026-10-30 11:00:02,145 INFO groundedguard.api {"request_id": "be6f856128b6453a", "method": "POST", "path": "/detect", "status": 200, "latency_ms": 15.5, "tasks": ["qa"], "n_inputs": 1, "response_chars": [949], "context_chars": [1776]}
+INFO:     127.0.0.1:48378 - "POST /detect HTTP/1.1" 200 OK
+2026-10-30 11:00:02,160 INFO groundedguard.api {"request_id": "b8457b47c5634d52", "method": "POST", "path": "/detect", "status": 200, "latency_ms": 14.37, "tasks": ["qa"], "n_inputs": 1, "response_chars": [908], "context_chars": [1679]}
+INFO:     127.0.0.1:48378 - "POST /detect HTTP/1.1" 200 OK
+2026-10-30 11:00:02,179 INFO groundedguard.api {"request_id": "1855204e6baa496b", "method": "POST", "path": "/detect", "status": 200, "latency_ms": 17.19, "tasks": ["qa"], "n_inputs": 1, "response_chars": [1021], "context_chars": [1986]}
+INFO:     127.0.0.1:48378 - "POST /detect HTTP/1.1" 200 OK
+2026-10-30 11:00:02,197 INFO groundedguard.api {"request_id": "8621eff270a9417d", "method": "POST", "path": "/detect", "status": 200, "latency_ms": 17.21, "tasks": ["data2txt"], "n_inputs": 1, "response_chars": [1355], "context_chars": [2557]}
+INFO:     127.0.0.1:48378 - "POST /detect HTTP/1.1" 200 OK
+2026-10-30 11:00:02,220 INFO groundedguard.api {"request_id": "51d96437d23f4702", "method": "POST", "path": "/detect", "status": 200, "latency_ms": 21.44, "tasks": ["summary"], "n_inputs": 1, "response_chars": [719], "context_chars": [5814]}
+INFO:     127.0.0.1:48378 - "POST /detect HTTP/1.1" 200 OK
+2026-10-30 11:00:02,237 INFO groundedguard.api {"request_id": "e3544fff80b94fda", "method": "POST", "path": "/detect", "status": 200, "latency_ms": 16.12, "tasks": ["qa"], "n_inputs": 1, "response_chars": [674], "context_chars": [949]}
+INFO:     127.0.0.1:48378 - "POST /detect HTTP/1.1" 200 OK
+2026-10-30 11:00:02,254 INFO groundedguard.api {"request_id": "d9c745413a754e22", "method": "POST", "path": "/detect", "status": 200, "latency_ms": 15.96, "tasks": ["summary"], "n_inputs": 1, "response_chars": [467], "context_chars": [1549]}
+INFO:     127.0.0.1:48378 - "POST /detect HTTP/1.1" 200 OK
+2026-10-30 11:00:02,272 INFO groundedguard.api {"request_id": "1b947454803f49c4", "method": "POST", "path": "/detect", "status": 200, "latency_ms": 16.53, "tasks": ["qa"], "n_inputs": 1, "response_chars": [668], "context_chars": [1679]}
+INFO:     127.0.0.1:48378 - "POST /detect HTTP/1.1" 200 OK
+2026-10-30 11:00:02,290 INFO groundedguard.api {"request_id": "365cd17fccf24954", "method": "POST", "path": "/detect", "status": 200, "latency_ms": 17.11, "tasks": ["data2txt"], "n_inputs": 1, "response_chars": [1259], "context_chars": [2114]}
+INFO:     127.0.0.1:48378 - "POST /detect HTTP/1.1" 200 OK
+2026-10-30 11:00:02,310 INFO groundedguard.api {"request_id": "6cce7b203df84746", "method": "POST", "path": "/detect", "status": 200, "latency_ms": 18.24, "tasks": ["summary"], "n_inputs": 1, "response_chars": [846], "context_chars": [4122]}
+INFO:     127.0.0.1:48378 - "POST /detect HTTP/1.1" 200 OK
+2026-10-30 11:00:02,328 INFO groundedguard.api {"request_id": "c0d48e12b38047e2", "method": "POST", "path": "/detect", "status": 200, "latency_ms": 17.37, "tasks": ["data2txt"], "n_inputs": 1, "response_chars": [827], "context_chars": [2536]}
+INFO:     127.0.0.1:48378 - "POST /detect HTTP/1.1" 200 OK
+2026-10-30 11:00:02,348 INFO groundedguard.api {"request_id": "19f2d612d71c499e", "method": "POST", "path": "/detect", "status": 200, "latency_ms": 18.65, "tasks": ["summary"], "n_inputs": 1, "response_chars": [716], "context_chars": [4603]}
+INFO:     127.0.0.1:48378 - "POST /detect HTTP/1.1" 200 OK
+2026-10-30 11:00:02,373 INFO groundedguard.api {"request_id": "2b61cbc9c6cd457a", "method": "POST", "path": "/detect", "status": 200, "latency_ms": 23.24, "tasks": ["qa"], "n_inputs": 1, "response_chars": [947], "context_chars": [1363]}
+INFO:     127.0.0.1:48378 - "POST /detect HTTP/1.1" 200 OK
+2026-10-30 11:00:02,393 INFO groundedguard.api {"request_id": "7b5b73c7b23a4925", "method": "POST", "path": "/detect", "status": 200, "latency_ms": 18.38, "tasks": ["data2txt"], "n_inputs": 1, "response_chars": [1128], "context_chars": [1721]}
+INFO:     127.0.0.1:48378 - "POST /detect HTTP/1.1" 200 OK
+2026-10-30 11:00:02,410 INFO groundedguard.api {"request_id": "42261e14f41f4672", "method": "POST", "path": "/detect", "status": 200, "latency_ms": 16.17, "tasks": ["qa"], "n_inputs": 1, "response_chars": [546], "context_chars": [1679]}
+INFO:     127.0.0.1:48378 - "POST /detect HTTP/1.1" 200 OK
+2026-10-30 11:00:02,427 INFO groundedguard.api {"request_id": "96ea4169066947ba", "method": "POST", "path": "/detect", "status": 200, "latency_ms": 15.96, "tasks": ["qa"], "n_inputs": 1, "response_chars": [644], "context_chars": [2060]}
+INFO:     127.0.0.1:48378 - "POST /detect HTTP/1.1" 200 OK
+2026-10-30 11:00:02,446 INFO groundedguard.api {"request_id": "ff496f655c6c4ec1", "method": "POST", "path": "/detect", "status": 200, "latency_ms": 17.22, "tasks": ["qa"], "n_inputs": 1, "response_chars": [1645], "context_chars": [765]}
+INFO:     127.0.0.1:48378 - "POST /detect HTTP/1.1" 200 OK
+2026-10-30 11:00:02,463 INFO groundedguard.api {"request_id": "ceb742fdb7fc4ce3", "method": "POST", "path": "/detect", "status": 200, "latency_ms": 16.65, "tasks": ["qa"], "n_inputs": 1, "response_chars": [1178], "context_chars": [1847]}
+INFO:     127.0.0.1:48378 - "POST /detect HTTP/1.1" 200 OK
+2026-10-30 11:00:02,481 INFO groundedguard.api {"request_id": "f84d3f63e8a9493e", "method": "POST", "path": "/detect", "status": 200, "latency_ms": 16.45, "tasks": ["qa"], "n_inputs": 1, "response_chars": [874], "context_chars": [896]}
+INFO:     127.0.0.1:48378 - "POST /detect HTTP/1.1" 200 OK
+2026-10-30 11:00:02,499 INFO groundedguard.api {"request_id": "50f7cd856f0c4d4d", "method": "POST", "path": "/detect", "status": 200, "latency_ms": 17.06, "tasks": ["data2txt"], "n_inputs": 1, "response_chars": [1474], "context_chars": [2417]}
+INFO:     127.0.0.1:48378 - "POST /detect HTTP/1.1" 200 OK
+2026-10-30 11:00:02,527 INFO groundedguard.api {"request_id": "fd1d028a488042d3", "method": "POST", "path": "/detect", "status": 200, "latency_ms": 26.02, "tasks": ["summary"], "n_inputs": 1, "response_chars": [1050], "context_chars": [7978]}
+INFO:     127.0.0.1:48378 - "POST /detect HTTP/1.1" 200 OK
+2026-10-30 11:00:02,543 INFO groundedguard.api {"request_id": "7f49ea843281439a", "method": "POST", "path": "/detect", "status": 200, "latency_ms": 15.5, "tasks": ["data2txt"], "n_inputs": 1, "response_chars": [735], "context_chars": [1768]}
+INFO:     127.0.0.1:48378 - "POST /detect HTTP/1.1" 200 OK
+2026-10-30 11:00:02,559 INFO groundedguard.api {"request_id": "bc2084d6f83c4b0d", "method": "POST", "path": "/detect", "status": 200, "latency_ms": 14.74, "tasks": ["data2txt"], "n_inputs": 1, "response_chars": [793], "context_chars": [1369]}
+INFO:     127.0.0.1:48378 - "POST /detect HTTP/1.1" 200 OK
+2026-10-30 11:00:02,574 INFO groundedguard.api {"request_id": "03c3789db3b34b41", "method": "POST", "path": "/detect", "status": 200, "latency_ms": 14.33, "tasks": ["summary"], "n_inputs": 1, "response_chars": [442], "context_chars": [1549]}
+INFO:     127.0.0.1:48378 - "POST /detect HTTP/1.1" 200 OK
+2026-10-30 11:00:02,591 INFO groundedguard.api {"request_id": "30c3d737b389467d", "method": "POST", "path": "/detect", "status": 200, "latency_ms": 15.35, "tasks": ["qa"], "n_inputs": 1, "response_chars": [409], "context_chars": [1622]}
+INFO:     127.0.0.1:48378 - "POST /detect HTTP/1.1" 200 OK
+2026-10-30 11:00:02,607 INFO groundedguard.api {"request_id": "f9f7f73d3de34483", "method": "POST", "path": "/detect", "status": 200, "latency_ms": 15.3, "tasks": ["data2txt"], "n_inputs": 1, "response_chars": [1292], "context_chars": [2278]}
+INFO:     127.0.0.1:48378 - "POST /detect HTTP/1.1" 200 OK
+2026-10-30 11:00:02,623 INFO groundedguard.api {"request_id": "8923efcdcfa34937", "method": "POST", "path": "/detect", "status": 200, "latency_ms": 14.89, "tasks": ["data2txt"], "n_inputs": 1, "response_chars": [1008], "context_chars": [1481]}
+INFO:     127.0.0.1:48378 - "POST /detect HTTP/1.1" 200 OK
+2026-10-30 11:00:02,646 INFO groundedguard.api {"request_id": "cb01bc8c73884b9c", "method": "POST", "path": "/detect", "status": 200, "latency_ms": 22.47, "tasks": ["summary"], "n_inputs": 1, "response_chars": [1735], "context_chars": [6261]}
+INFO:     127.0.0.1:48378 - "POST /detect HTTP/1.1" 200 OK
+2026-10-30 11:00:02,662 INFO groundedguard.api {"request_id": "6a1a027acad140da", "method": "POST", "path": "/detect", "status": 200, "latency_ms": 14.18, "tasks": ["qa"], "n_inputs": 1, "response_chars": [372], "context_chars": [1021]}
+INFO:     127.0.0.1:48378 - "POST /detect HTTP/1.1" 200 OK
+2026-10-30 11:00:02,678 INFO groundedguard.api {"request_id": "f104ec6a1279478b", "method": "POST", "path": "/detect", "status": 200, "latency_ms": 15.73, "tasks": ["data2txt"], "n_inputs": 1, "response_chars": [802], "context_chars": [2053]}
+INFO:     127.0.0.1:48378 - "POST /detect HTTP/1.1" 200 OK
+2026-10-30 11:00:02,695 INFO groundedguard.api {"request_id": "159fec811330481d", "method": "POST", "path": "/detect", "status": 200, "latency_ms": 15.66, "tasks": ["data2txt"], "n_inputs": 1, "response_chars": [918], "context_chars": [1713]}
+INFO:     127.0.0.1:48378 - "POST /detect HTTP/1.1" 200 OK
+2026-10-30 11:00:02,742 INFO groundedguard.api {"request_id": "23ffe7b3935f4f54", "method": "POST", "path": "/detect", "status": 200, "latency_ms": 17.62, "tasks": ["qa"], "n_inputs": 1, "response_chars": [540], "context_chars": [1331]}
+INFO:     127.0.0.1:48394 - "POST /detect HTTP/1.1" 200 OK
+2026-10-30 11:00:02,757 INFO groundedguard.api {"request_id": "c6e4548d5dc7423b", "method": "POST", "path": "/detect", "status": 200, "latency_ms": 31.23, "tasks": ["data2txt"], "n_inputs": 1, "response_chars": [827], "context_chars": [1777]}
+INFO:     127.0.0.1:48402 - "POST /detect HTTP/1.1" 200 OK
+2026-10-30 11:00:02,772 INFO groundedguard.api {"request_id": "adf1fb820dd944e0", "method": "POST", "path": "/detect", "status": 200, "latency_ms": 43.77, "tasks": ["qa"], "n_inputs": 1, "response_chars": [2334], "context_chars": [1177]}
+INFO:     127.0.0.1:48406 - "POST /detect HTTP/1.1" 200 OK
+2026-10-30 11:00:02,786 INFO groundedguard.api {"request_id": "8db0e2dcd1ab48e8", "method": "POST", "path": "/detect", "status": 200, "latency_ms": 58.11, "tasks": ["qa"], "n_inputs": 1, "response_chars": [395], "context_chars": [1226]}
+INFO:     127.0.0.1:48418 - "POST /detect HTTP/1.1" 200 OK
+2026-10-30 11:00:02,801 INFO groundedguard.api {"request_id": "991ae0ef6f5747f2", "method": "POST", "path": "/detect", "status": 200, "latency_ms": 57.23, "tasks": ["summary"], "n_inputs": 1, "response_chars": [668], "context_chars": [3252]}
+INFO:     127.0.0.1:48394 - "POST /detect HTTP/1.1" 200 OK
+2026-10-30 11:00:02,822 INFO groundedguard.api {"request_id": "4d69f16f7384419c", "method": "POST", "path": "/detect", "status": 200, "latency_ms": 64.06, "tasks": ["summary"], "n_inputs": 1, "response_chars": [1078], "context_chars": [6017]}
+INFO:     127.0.0.1:48402 - "POST /detect HTTP/1.1" 200 OK
+2026-10-30 11:00:02,837 INFO groundedguard.api {"request_id": "d21e8ffe8f4a46a0", "method": "POST", "path": "/detect", "status": 200, "latency_ms": 63.08, "tasks": ["qa"], "n_inputs": 1, "response_chars": [377], "context_chars": [1679]}
+INFO:     127.0.0.1:48406 - "POST /detect HTTP/1.1" 200 OK
+2026-10-30 11:00:02,852 INFO groundedguard.api {"request_id": "553aa097a9d14eb7", "method": "POST", "path": "/detect", "status": 200, "latency_ms": 64.44, "tasks": ["qa"], "n_inputs": 1, "response_chars": [639], "context_chars": [1160]}
+INFO:     127.0.0.1:48418 - "POST /detect HTTP/1.1" 200 OK
+2026-10-30 11:00:02,867 INFO groundedguard.api {"request_id": "3094f1dd8ca245e2", "method": "POST", "path": "/detect", "status": 200, "latency_ms": 64.55, "tasks": ["summary"], "n_inputs": 1, "response_chars": [571], "context_chars": [2009]}
+INFO:     127.0.0.1:48394 - "POST /detect HTTP/1.1" 200 OK
+2026-10-30 11:00:02,882 INFO groundedguard.api {"request_id": "5c44f269f667479e", "method": "POST", "path": "/detect", "status": 200, "latency_ms": 58.15, "tasks": ["data2txt"], "n_inputs": 1, "response_chars": [1432], "context_chars": [2053]}
+INFO:     127.0.0.1:48402 - "POST /detect HTTP/1.1" 200 OK
+2026-10-30 11:00:02,913 INFO groundedguard.api {"request_id": "4af69e93b2404600", "method": "POST", "path": "/detect", "status": 200, "latency_ms": 74.74, "tasks": ["summary"], "n_inputs": 1, "response_chars": [2042], "context_chars": [7978]}
+INFO:     127.0.0.1:48406 - "POST /detect HTTP/1.1" 200 OK
+2026-10-30 11:00:02,928 INFO groundedguard.api {"request_id": "85de5832cc9d469f", "method": "POST", "path": "/detect", "status": 200, "latency_ms": 74.99, "tasks": ["qa"], "n_inputs": 1, "response_chars": [800], "context_chars": [1226]}
+INFO:     127.0.0.1:48418 - "POST /detect HTTP/1.1" 200 OK
+2026-10-30 11:00:02,943 INFO groundedguard.api {"request_id": "ba2a1e9c2a474769", "method": "POST", "path": "/detect", "status": 200, "latency_ms": 74.89, "tasks": ["qa"], "n_inputs": 1, "response_chars": [996], "context_chars": [1749]}
+INFO:     127.0.0.1:48394 - "POST /detect HTTP/1.1" 200 OK
+2026-10-30 11:00:02,958 INFO groundedguard.api {"request_id": "9e00db12fc6146ba", "method": "POST", "path": "/detect", "status": 200, "latency_ms": 74.57, "tasks": ["data2txt"], "n_inputs": 1, "response_chars": [1259], "context_chars": [1735]}
+INFO:     127.0.0.1:48402 - "POST /detect HTTP/1.1" 200 OK
+2026-10-30 11:00:02,972 INFO groundedguard.api {"request_id": "3de80dd83cc5424e", "method": "POST", "path": "/detect", "status": 200, "latency_ms": 57.61, "tasks": ["data2txt"], "n_inputs": 1, "response_chars": [772], "context_chars": [2940]}
+INFO:     127.0.0.1:48406 - "POST /detect HTTP/1.1" 200 OK
+2026-10-30 11:00:02,987 INFO groundedguard.api {"request_id": "496214fc53554d35", "method": "POST", "path": "/detect", "status": 200, "latency_ms": 58.41, "tasks": ["qa"], "n_inputs": 1, "response_chars": [605], "context_chars": [1108]}
+INFO:     127.0.0.1:48418 - "POST /detect HTTP/1.1" 200 OK
+2026-10-30 11:00:03,002 INFO groundedguard.api {"request_id": "91e1c615d4ef4373", "method": "POST", "path": "/detect", "status": 200, "latency_ms": 58.21, "tasks": ["summary"], "n_inputs": 1, "response_chars": [494], "context_chars": [2437]}
+INFO:     127.0.0.1:48394 - "POST /detect HTTP/1.1" 200 OK
+2026-10-30 11:00:03,017 INFO groundedguard.api {"request_id": "43732b342d414b53", "method": "POST", "path": "/detect", "status": 200, "latency_ms": 58.01, "tasks": ["qa"], "n_inputs": 1, "response_chars": [883], "context_chars": [1571]}
+INFO:     127.0.0.1:48402 - "POST /detect HTTP/1.1" 200 OK
+2026-10-30 11:00:03,031 INFO groundedguard.api {"request_id": "41eb92e2952f4ede", "method": "POST", "path": "/detect", "status": 200, "latency_ms": 57.09, "tasks": ["data2txt"], "n_inputs": 1, "response_chars": [737], "context_chars": [1777]}
+INFO:     127.0.0.1:48406 - "POST /detect HTTP/1.1" 200 OK
+2026-10-30 11:00:03,049 INFO groundedguard.api {"request_id": "eb2774490e83484d", "method": "POST", "path": "/detect", "status": 200, "latency_ms": 60.86, "tasks": ["summary"], "n_inputs": 1, "response_chars": [1062], "context_chars": [4993]}
+INFO:     127.0.0.1:48418 - "POST /detect HTTP/1.1" 200 OK
+2026-10-30 11:00:03,064 INFO groundedguard.api {"request_id": "40f20002ed16490d", "method": "POST", "path": "/detect", "status": 200, "latency_ms": 59.96, "tasks": ["summary"], "n_inputs": 1, "response_chars": [405], "context_chars": [1679]}
+INFO:     127.0.0.1:48394 - "POST /detect HTTP/1.1" 200 OK
+2026-10-30 11:00:03,079 INFO groundedguard.api {"request_id": "1feb6c0d6aef4e48", "method": "POST", "path": "/detect", "status": 200, "latency_ms": 60.93, "tasks": ["summary"], "n_inputs": 1, "response_chars": [506], "context_chars": [2401]}
+INFO:     127.0.0.1:48402 - "POST /detect HTTP/1.1" 200 OK
+2026-10-30 11:00:03,093 INFO groundedguard.api {"request_id": "1929afbc328e46b5", "method": "POST", "path": "/detect", "status": 200, "latency_ms": 61.06, "tasks": ["summary"], "n_inputs": 1, "response_chars": [548], "context_chars": [2437]}
+INFO:     127.0.0.1:48406 - "POST /detect HTTP/1.1" 200 OK
+2026-10-30 11:00:03,110 INFO groundedguard.api {"request_id": "d7de50da8d324416", "method": "POST", "path": "/detect", "status": 200, "latency_ms": 59.42, "tasks": ["data2txt"], "n_inputs": 1, "response_chars": [1442], "context_chars": [2736]}
+INFO:     127.0.0.1:48418 - "POST /detect HTTP/1.1" 200 OK
+2026-10-30 11:00:03,125 INFO groundedguard.api {"request_id": "d391a0bbb2cc4522", "method": "POST", "path": "/detect", "status": 200, "latency_ms": 60.38, "tasks": ["summary"], "n_inputs": 1, "response_chars": [400], "context_chars": [2055]}
+INFO:     127.0.0.1:48394 - "POST /detect HTTP/1.1" 200 OK
+2026-10-30 11:00:03,140 INFO groundedguard.api {"request_id": "387949ba8baf4b2b", "method": "POST", "path": "/detect", "status": 200, "latency_ms": 60.55, "tasks": ["qa"], "n_inputs": 1, "response_chars": [1196], "context_chars": [1858]}
+INFO:     127.0.0.1:48402 - "POST /detect HTTP/1.1" 200 OK
+2026-10-30 11:00:03,155 INFO groundedguard.api {"request_id": "8581731bd9de4ea0", "method": "POST", "path": "/detect", "status": 200, "latency_ms": 60.77, "tasks": ["qa"], "n_inputs": 1, "response_chars": [488], "context_chars": [1331]}
+INFO:     127.0.0.1:48406 - "POST /detect HTTP/1.1" 200 OK
+2026-10-30 11:00:03,170 INFO groundedguard.api {"request_id": "941f42169a304c2b", "method": "POST", "path": "/detect", "status": 200, "latency_ms": 58.93, "tasks": ["data2txt"], "n_inputs": 1, "response_chars": [762], "context_chars": [2736]}
+INFO:     127.0.0.1:48418 - "POST /detect HTTP/1.1" 200 OK
+2026-10-30 11:00:03,185 INFO groundedguard.api {"request_id": "5a8a5f4a13bc4b82", "method": "POST", "path": "/detect", "status": 200, "latency_ms": 58.98, "tasks": ["summary"], "n_inputs": 1, "response_chars": [446], "context_chars": [2046]}
+INFO:     127.0.0.1:48394 - "POST /detect HTTP/1.1" 200 OK
+2026-10-30 11:00:03,199 INFO groundedguard.api {"request_id": "b58ab90d696b43f2", "method": "POST", "path": "/detect", "status": 200, "latency_ms": 57.49, "tasks": ["summary"], "n_inputs": 1, "response_chars": [418], "context_chars": [1137]}
+INFO:     127.0.0.1:48402 - "POST /detect HTTP/1.1" 200 OK
+2026-10-30 11:00:03,214 INFO groundedguard.api {"request_id": "1d7f4b8a61af4ce8", "method": "POST", "path": "/detect", "status": 200, "latency_ms": 57.71, "tasks": ["qa"], "n_inputs": 1, "response_chars": [472], "context_chars": [2078]}
+INFO:     127.0.0.1:48406 - "POST /detect HTTP/1.1" 200 OK
+2026-10-30 11:00:03,229 INFO groundedguard.api {"request_id": "8941158d94784aa3", "method": "POST", "path": "/detect", "status": 200, "latency_ms": 56.66, "tasks": ["qa"], "n_inputs": 1, "response_chars": [1104], "context_chars": [1796]}
+INFO:     127.0.0.1:48418 - "POST /detect HTTP/1.1" 200 OK
+2026-10-30 11:00:03,243 INFO groundedguard.api {"request_id": "e8cd831a4908430d", "method": "POST", "path": "/detect", "status": 200, "latency_ms": 56.64, "tasks": ["qa"], "n_inputs": 1, "response_chars": [925], "context_chars": [1095]}
+INFO:     127.0.0.1:48394 - "POST /detect HTTP/1.1" 200 OK
+2026-10-30 11:00:03,258 INFO groundedguard.api {"request_id": "179b9c65781b4f94", "method": "POST", "path": "/detect", "status": 200, "latency_ms": 57.88, "tasks": ["qa"], "n_inputs": 1, "response_chars": [505], "context_chars": [1177]}
+INFO:     127.0.0.1:48402 - "POST /detect HTTP/1.1" 200 OK
+2026-10-30 11:00:03,278 INFO groundedguard.api {"request_id": "4bb7405b3ebe4522", "method": "POST", "path": "/detect", "status": 200, "latency_ms": 63.26, "tasks": ["data2txt"], "n_inputs": 1, "response_chars": [734], "context_chars": [4382]}
+INFO:     127.0.0.1:48406 - "POST /detect HTTP/1.1" 200 OK
+2026-10-30 11:00:03,293 INFO groundedguard.api {"request_id": "3d9a560b35ed40ad", "method": "POST", "path": "/detect", "status": 200, "latency_ms": 63.01, "tasks": ["data2txt"], "n_inputs": 1, "response_chars": [732], "context_chars": [1822]}
+INFO:     127.0.0.1:48418 - "POST /detect HTTP/1.1" 200 OK
+2026-10-30 11:00:03,307 INFO groundedguard.api {"request_id": "3042e1fda9734086", "method": "POST", "path": "/detect", "status": 200, "latency_ms": 61.53, "tasks": ["summary"], "n_inputs": 1, "response_chars": [402], "context_chars": [1518]}
+INFO:     127.0.0.1:48394 - "POST /detect HTTP/1.1" 200 OK
+2026-10-30 11:00:03,322 INFO groundedguard.api {"request_id": "44f6ed59811a4cd4", "method": "POST", "path": "/detect", "status": 200, "latency_ms": 62.55, "tasks": ["data2txt"], "n_inputs": 1, "response_chars": [633], "context_chars": [2940]}
+INFO:     127.0.0.1:48402 - "POST /detect HTTP/1.1" 200 OK
+2026-10-30 11:00:03,337 INFO groundedguard.api {"request_id": "5115e6f5c83347c4", "method": "POST", "path": "/detect", "status": 200, "latency_ms": 57.92, "tasks": ["summary"], "n_inputs": 1, "response_chars": [440], "context_chars": [2061]}
+INFO:     127.0.0.1:48406 - "POST /detect HTTP/1.1" 200 OK
+2026-10-30 11:00:03,352 INFO groundedguard.api {"request_id": "5f3cf3f1b6384c43", "method": "POST", "path": "/detect", "status": 200, "latency_ms": 57.5, "tasks": ["data2txt"], "n_inputs": 1, "response_chars": [896], "context_chars": [1369]}
+INFO:     127.0.0.1:48418 - "POST /detect HTTP/1.1" 200 OK
+2026-10-30 11:00:03,366 INFO groundedguard.api {"request_id": "5a3e4f15e84a4835", "method": "POST", "path": "/detect", "status": 200, "latency_ms": 58.24, "tasks": ["qa"], "n_inputs": 1, "response_chars": [282], "context_chars": [899]}
+INFO:     127.0.0.1:48394 - "POST /detect HTTP/1.1" 200 OK
+2026-10-30 11:00:03,381 INFO groundedguard.api {"request_id": "35ba85c489cb4013", "method": "POST", "path": "/detect", "status": 200, "latency_ms": 57.69, "tasks": ["data2txt"], "n_inputs": 1, "response_chars": [555], "context_chars": [1406]}
+INFO:     127.0.0.1:48402 - "POST /detect HTTP/1.1" 200 OK
+2026-10-30 11:00:03,395 INFO groundedguard.api {"request_id": "6e586bd77a9a4a55", "method": "POST", "path": "/detect", "status": 200, "latency_ms": 56.54, "tasks": ["qa"], "n_inputs": 1, "response_chars": [707], "context_chars": [1160]}
+INFO:     127.0.0.1:48406 - "POST /detect HTTP/1.1" 200 OK
+2026-10-30 11:00:03,415 INFO groundedguard.api {"request_id": "2a193b493807466e", "method": "POST", "path": "/detect", "status": 200, "latency_ms": 61.57, "tasks": ["summary"], "n_inputs": 1, "response_chars": [474], "context_chars": [2655]}
+INFO:     127.0.0.1:48418 - "POST /detect HTTP/1.1" 200 OK
+2026-10-30 11:00:03,430 INFO groundedguard.api {"request_id": "dd9f6add759e4b76", "method": "POST", "path": "/detect", "status": 200, "latency_ms": 62.08, "tasks": ["qa"], "n_inputs": 1, "response_chars": [1304], "context_chars": [1749]}
+INFO:     127.0.0.1:48394 - "POST /detect HTTP/1.1" 200 OK
+2026-10-30 11:00:03,445 INFO groundedguard.api {"request_id": "10f8e77500434629", "method": "POST", "path": "/detect", "status": 200, "latency_ms": 62.78, "tasks": ["summary"], "n_inputs": 1, "response_chars": [965], "context_chars": [3304]}
+INFO:     127.0.0.1:48402 - "POST /detect HTTP/1.1" 200 OK
+2026-10-30 11:00:03,460 INFO groundedguard.api {"request_id": "76dc5ce7d2954387", "method": "POST", "path": "/detect", "status": 200, "latency_ms": 62.98, "tasks": ["data2txt"], "n_inputs": 1, "response_chars": [785], "context_chars": [2278]}
+INFO:     127.0.0.1:48406 - "POST /detect HTTP/1.1" 200 OK
+2026-10-30 11:00:03,475 INFO groundedguard.api {"request_id": "fa4b4b7b2af94aac", "method": "POST", "path": "/detect", "status": 200, "latency_ms": 58.07, "tasks": ["data2txt"], "n_inputs": 1, "response_chars": [951], "context_chars": [1666]}
+INFO:     127.0.0.1:48418 - "POST /detect HTTP/1.1" 200 OK
+2026-10-30 11:00:03,490 INFO groundedguard.api {"request_id": "b19c929e1da14f8b", "method": "POST", "path": "/detect", "status": 200, "latency_ms": 58.91, "tasks": ["data2txt"], "n_inputs": 1, "response_chars": [970], "context_chars": [1908]}
+INFO:     127.0.0.1:48394 - "POST /detect HTTP/1.1" 200 OK
+2026-10-30 11:00:03,505 INFO groundedguard.api {"request_id": "1d7c92190e9142e5", "method": "POST", "path": "/detect", "status": 200, "latency_ms": 58.16, "tasks": ["data2txt"], "n_inputs": 1, "response_chars": [612], "context_chars": [1777]}
+INFO:     127.0.0.1:48402 - "POST /detect HTTP/1.1" 200 OK
+2026-10-30 11:00:03,522 INFO groundedguard.api {"request_id": "9d228bf64ae14fe8", "method": "POST", "path": "/detect", "status": 200, "latency_ms": 61.09, "tasks": ["summary"], "n_inputs": 1, "response_chars": [942], "context_chars": [5044]}
+INFO:     127.0.0.1:48406 - "POST /detect HTTP/1.1" 200 OK
+2026-10-30 11:00:03,537 INFO groundedguard.api {"request_id": "a0ac06d14fef4b3a", "method": "POST", "path": "/detect", "status": 200, "latency_ms": 61.06, "tasks": ["summary"], "n_inputs": 1, "response_chars": [384], "context_chars": [1609]}
+INFO:     127.0.0.1:48418 - "POST /detect HTTP/1.1" 200 OK
+2026-10-30 11:00:03,561 INFO groundedguard.api {"request_id": "e61fcf7ba5fc4d56", "method": "POST", "path": "/detect", "status": 200, "latency_ms": 69.33, "tasks": ["summary"], "n_inputs": 1, "response_chars": [880], "context_chars": [7671]}
+INFO:     127.0.0.1:48394 - "POST /detect HTTP/1.1" 200 OK
+2026-10-30 11:00:03,577 INFO groundedguard.api {"request_id": "94186a191b3b4a17", "method": "POST", "path": "/detect", "status": 200, "latency_ms": 71.72, "tasks": ["summary"], "n_inputs": 1, "response_chars": [423], "context_chars": [1552]}
+INFO:     127.0.0.1:48402 - "POST /detect HTTP/1.1" 200 OK
+2026-10-30 11:00:03,596 INFO groundedguard.api {"request_id": "479a5cdc9f4e413c", "method": "POST", "path": "/detect", "status": 200, "latency_ms": 71.49, "tasks": ["summary"], "n_inputs": 1, "response_chars": [514], "context_chars": [2306]}
+INFO:     127.0.0.1:48406 - "POST /detect HTTP/1.1" 200 OK
+2026-10-30 11:00:03,611 INFO groundedguard.api {"request_id": "1b0ae308d80b4ddd", "method": "POST", "path": "/detect", "status": 200, "latency_ms": 72.86, "tasks": ["qa"], "n_inputs": 1, "response_chars": [690], "context_chars": [1177]}
+INFO:     127.0.0.1:48418 - "POST /detect HTTP/1.1" 200 OK
+2026-10-30 11:00:03,625 INFO groundedguard.api {"request_id": "613f77bce37e4e65", "method": "POST", "path": "/detect", "status": 200, "latency_ms": 61.43, "tasks": ["qa"], "n_inputs": 1, "response_chars": [278], "context_chars": [1284]}
+INFO:     127.0.0.1:48394 - "POST /detect HTTP/1.1" 200 OK
+2026-10-30 11:00:03,640 INFO groundedguard.api {"request_id": "234e9084d7484fb3", "method": "POST", "path": "/detect", "status": 200, "latency_ms": 61.82, "tasks": ["data2txt"], "n_inputs": 1, "response_chars": [1436], "context_chars": [1666]}
+INFO:     127.0.0.1:48402 - "POST /detect HTTP/1.1" 200 OK
+2026-10-30 11:00:03,655 INFO groundedguard.api {"request_id": "f473837468764804", "method": "POST", "path": "/detect", "status": 200, "latency_ms": 56.68, "tasks": ["qa"], "n_inputs": 1, "response_chars": [496], "context_chars": [913]}
+INFO:     127.0.0.1:48406 - "POST /detect HTTP/1.1" 200 OK
+2026-10-30 11:00:03,670 INFO groundedguard.api {"request_id": "28e4fc6ab9a64c37", "method": "POST", "path": "/detect", "status": 200, "latency_ms": 57.22, "tasks": ["summary"], "n_inputs": 1, "response_chars": [766], "context_chars": [3252]}
+INFO:     127.0.0.1:48418 - "POST /detect HTTP/1.1" 200 OK
+2026-10-30 11:00:03,686 INFO groundedguard.api {"request_id": "2d47afea9abb449d", "method": "POST", "path": "/detect", "status": 200, "latency_ms": 59.82, "tasks": ["data2txt"], "n_inputs": 1, "response_chars": [757], "context_chars": [3236]}
+INFO:     127.0.0.1:48394 - "POST /detect HTTP/1.1" 200 OK
+2026-10-30 11:00:03,701 INFO groundedguard.api {"request_id": "81041d0a5a0b4487", "method": "POST", "path": "/detect", "status": 200, "latency_ms": 58.63, "tasks": ["data2txt"], "n_inputs": 1, "response_chars": [829], "context_chars": [1721]}
+INFO:     127.0.0.1:48402 - "POST /detect HTTP/1.1" 200 OK
+2026-10-30 11:00:03,715 INFO groundedguard.api {"request_id": "458d3fe4d64149e0", "method": "POST", "path": "/detect", "status": 200, "latency_ms": 59.23, "tasks": ["data2txt"], "n_inputs": 1, "response_chars": [819], "context_chars": [1781]}
+INFO:     127.0.0.1:48406 - "POST /detect HTTP/1.1" 200 OK
+2026-10-30 11:00:03,733 INFO groundedguard.api {"request_id": "1f859badc2dc4b8d", "method": "POST", "path": "/detect", "status": 200, "latency_ms": 61.79, "tasks": ["qa"], "n_inputs": 1, "response_chars": [484], "context_chars": [1160]}
+INFO:     127.0.0.1:48418 - "POST /detect HTTP/1.1" 200 OK
+2026-10-30 11:00:03,749 INFO groundedguard.api {"request_id": "761768034bd149ff", "method": "POST", "path": "/detect", "status": 200, "latency_ms": 61.51, "tasks": ["summary"], "n_inputs": 1, "response_chars": [560], "context_chars": [2786]}
+INFO:     127.0.0.1:48394 - "POST /detect HTTP/1.1" 200 OK
+2026-10-30 11:00:03,763 INFO groundedguard.api {"request_id": "fa4b3144e02842b4", "method": "POST", "path": "/detect", "status": 200, "latency_ms": 61.96, "tasks": ["qa"], "n_inputs": 1, "response_chars": [104], "context_chars": [884]}
+INFO:     127.0.0.1:48402 - "POST /detect HTTP/1.1" 200 OK
+2026-10-30 11:00:03,778 INFO groundedguard.api {"request_id": "5c9877e314aa4c1a", "method": "POST", "path": "/detect", "status": 200, "latency_ms": 60.37, "tasks": ["data2txt"], "n_inputs": 1, "response_chars": [888], "context_chars": [1573]}
+INFO:     127.0.0.1:48406 - "POST /detect HTTP/1.1" 200 OK
+2026-10-30 11:00:03,793 INFO groundedguard.api {"request_id": "31e379f13b54490a", "method": "POST", "path": "/detect", "status": 200, "latency_ms": 56.24, "tasks": ["qa"], "n_inputs": 1, "response_chars": [1169], "context_chars": [1986]}
+INFO:     127.0.0.1:48418 - "POST /detect HTTP/1.1" 200 OK
+2026-10-30 11:00:03,808 INFO groundedguard.api {"request_id": "90f8015adfaa424c", "method": "POST", "path": "/detect", "status": 200, "latency_ms": 56.66, "tasks": ["summary"], "n_inputs": 1, "response_chars": [695], "context_chars": [2786]}
+INFO:     127.0.0.1:48394 - "POST /detect HTTP/1.1" 200 OK
+2026-10-30 11:00:03,823 INFO groundedguard.api {"request_id": "d57b3b6efa42465e", "method": "POST", "path": "/detect", "status": 200, "latency_ms": 57.11, "tasks": ["qa"], "n_inputs": 1, "response_chars": [802], "context_chars": [1341]}
+INFO:     127.0.0.1:48402 - "POST /detect HTTP/1.1" 200 OK
+2026-10-30 11:00:03,837 INFO groundedguard.api {"request_id": "71f677d24bfd4cbb", "method": "POST", "path": "/detect", "status": 200, "latency_ms": 57.83, "tasks": ["summary"], "n_inputs": 1, "response_chars": [304], "context_chars": [2401]}
+INFO:     127.0.0.1:48406 - "POST /detect HTTP/1.1" 200 OK
+2026-10-30 11:00:03,852 INFO groundedguard.api {"request_id": "dee4a9424e3c48b1", "method": "POST", "path": "/detect", "status": 200, "latency_ms": 57.77, "tasks": ["qa"], "n_inputs": 1, "response_chars": [842], "context_chars": [987]}
+INFO:     127.0.0.1:48418 - "POST /detect HTTP/1.1" 200 OK
+2026-10-30 11:00:03,866 INFO groundedguard.api {"request_id": "b0e9fb2b0cf640fd", "method": "POST", "path": "/detect", "status": 200, "latency_ms": 57.51, "tasks": ["summary"], "n_inputs": 1, "response_chars": [595], "context_chars": [1718]}
+INFO:     127.0.0.1:48394 - "POST /detect HTTP/1.1" 200 OK
+2026-10-30 11:00:03,881 INFO groundedguard.api {"request_id": "107aa3f4820f4cb9", "method": "POST", "path": "/detect", "status": 200, "latency_ms": 57.36, "tasks": ["data2txt"], "n_inputs": 1, "response_chars": [1295], "context_chars": [2053]}
+INFO:     127.0.0.1:48402 - "POST /detect HTTP/1.1" 200 OK
+2026-10-30 11:00:03,898 INFO groundedguard.api {"request_id": "1ac7419c55464820", "method": "POST", "path": "/detect", "status": 200, "latency_ms": 59.05, "tasks": ["summary"], "n_inputs": 1, "response_chars": [1241], "context_chars": [4263]}
+INFO:     127.0.0.1:48406 - "POST /detect HTTP/1.1" 200 OK
+2026-10-30 11:00:03,913 INFO groundedguard.api {"request_id": "4ae6e24214984584", "method": "POST", "path": "/detect", "status": 200, "latency_ms": 59.84, "tasks": ["qa"], "n_inputs": 1, "response_chars": [449], "context_chars": [1331]}
+INFO:     127.0.0.1:48418 - "POST /detect HTTP/1.1" 200 OK
+2026-10-30 11:00:03,927 INFO groundedguard.api {"request_id": "32d00549883144b2", "method": "POST", "path": "/detect", "status": 200, "latency_ms": 60.06, "tasks": ["summary"], "n_inputs": 1, "response_chars": [550], "context_chars": [2061]}
+INFO:     127.0.0.1:48394 - "POST /detect HTTP/1.1" 200 OK
+2026-10-30 11:00:03,942 INFO groundedguard.api {"request_id": "67da689700e14454", "method": "POST", "path": "/detect", "status": 200, "latency_ms": 60.0, "tasks": ["data2txt"], "n_inputs": 1, "response_chars": [870], "context_chars": [2127]}
+INFO:     127.0.0.1:48402 - "POST /detect HTTP/1.1" 200 OK
+2026-10-30 11:00:03,956 INFO groundedguard.api {"request_id": "e4e03d59b3bb46be", "method": "POST", "path": "/detect", "status": 200, "latency_ms": 56.47, "tasks": ["summary"], "n_inputs": 1, "response_chars": [592], "context_chars": [2444]}
+INFO:     127.0.0.1:48406 - "POST /detect HTTP/1.1" 200 OK
+2026-10-30 11:00:03,971 INFO groundedguard.api {"request_id": "e42249e1deef4c09", "method": "POST", "path": "/detect", "status": 200, "latency_ms": 57.84, "tasks": ["qa"], "n_inputs": 1, "response_chars": [949], "context_chars": [1776]}
+INFO:     127.0.0.1:48418 - "POST /detect HTTP/1.1" 200 OK
+2026-10-30 11:00:03,986 INFO groundedguard.api {"request_id": "9e5a9837f57f400a", "method": "POST", "path": "/detect", "status": 200, "latency_ms": 57.95, "tasks": ["summary"], "n_inputs": 1, "response_chars": [476], "context_chars": [2306]}
+INFO:     127.0.0.1:48394 - "POST /detect HTTP/1.1" 200 OK
+2026-10-30 11:00:04,001 INFO groundedguard.api {"request_id": "d13fbe82fa4f4941", "method": "POST", "path": "/detect", "status": 200, "latency_ms": 57.79, "tasks": ["summary"], "n_inputs": 1, "response_chars": [565], "context_chars": [2291]}
+INFO:     127.0.0.1:48402 - "POST /detect HTTP/1.1" 200 OK
+2026-10-30 11:00:04,018 INFO groundedguard.api {"request_id": "b067ced572d64694", "method": "POST", "path": "/detect", "status": 200, "latency_ms": 60.21, "tasks": ["data2txt"], "n_inputs": 1, "response_chars": [1063], "context_chars": [3380]}
+INFO:     127.0.0.1:48406 - "POST /detect HTTP/1.1" 200 OK
+2026-10-30 11:00:04,032 INFO groundedguard.api {"request_id": "4ca77f2f2fbe4eeb", "method": "POST", "path": "/detect", "status": 200, "latency_ms": 59.92, "tasks": ["qa"], "n_inputs": 1, "response_chars": [908], "context_chars": [1679]}
+INFO:     127.0.0.1:48418 - "POST /detect HTTP/1.1" 200 OK
+2026-10-30 11:00:04,048 INFO groundedguard.api {"request_id": "c02cdf4200b74dcb", "method": "POST", "path": "/detect", "status": 200, "latency_ms": 61.42, "tasks": ["data2txt"], "n_inputs": 1, "response_chars": [1260], "context_chars": [2536]}
+INFO:     127.0.0.1:48394 - "POST /detect HTTP/1.1" 200 OK
+2026-10-30 11:00:04,063 INFO groundedguard.api {"request_id": "27fb5151c82d4a7f", "method": "POST", "path": "/detect", "status": 200, "latency_ms": 61.03, "tasks": ["qa"], "n_inputs": 1, "response_chars": [247], "context_chars": [1021]}
+INFO:     127.0.0.1:48402 - "POST /detect HTTP/1.1" 200 OK
+2026-10-30 11:00:04,077 INFO groundedguard.api {"request_id": "16e15eb73ca146ad", "method": "POST", "path": "/detect", "status": 200, "latency_ms": 58.47, "tasks": ["qa"], "n_inputs": 1, "response_chars": [573], "context_chars": [2128]}
+INFO:     127.0.0.1:48406 - "POST /detect HTTP/1.1" 200 OK
+2026-10-30 11:00:04,092 INFO groundedguard.api {"request_id": "dd16d35533df4345", "method": "POST", "path": "/detect", "status": 200, "latency_ms": 58.44, "tasks": ["qa"], "n_inputs": 1, "response_chars": [1021], "context_chars": [1986]}
+INFO:     127.0.0.1:48418 - "POST /detect HTTP/1.1" 200 OK
+2026-10-30 11:00:04,107 INFO groundedguard.api {"request_id": "d0ebd6e041004c81", "method": "POST", "path": "/detect", "status": 200, "latency_ms": 56.72, "tasks": ["qa"], "n_inputs": 1, "response_chars": [1374], "context_chars": [1622]}
+INFO:     127.0.0.1:48394 - "POST /detect HTTP/1.1" 200 OK
+2026-10-30 11:00:04,124 INFO groundedguard.api {"request_id": "19681cfa4d7d4677", "method": "POST", "path": "/detect", "status": 200, "latency_ms": 60.04, "tasks": ["summary"], "n_inputs": 1, "response_chars": [992], "context_chars": [4263]}
+INFO:     127.0.0.1:48402 - "POST /detect HTTP/1.1" 200 OK
+2026-10-30 11:00:04,138 INFO groundedguard.api {"request_id": "3377dc6e8438498a", "method": "POST", "path": "/detect", "status": 200, "latency_ms": 60.04, "tasks": ["data2txt"], "n_inputs": 1, "response_chars": [1091], "context_chars": [1781]}
+INFO:     127.0.0.1:48406 - "POST /detect HTTP/1.1" 200 OK
+2026-10-30 11:00:04,153 INFO groundedguard.api {"request_id": "168e83d62b474465", "method": "POST", "path": "/detect", "status": 200, "latency_ms": 60.3, "tasks": ["data2txt"], "n_inputs": 1, "response_chars": [1355], "context_chars": [2557]}
+INFO:     127.0.0.1:48418 - "POST /detect HTTP/1.1" 200 OK
+2026-10-30 11:00:04,167 INFO groundedguard.api {"request_id": "e5f5e1c2dbbc4fe6", "method": "POST", "path": "/detect", "status": 200, "latency_ms": 59.9, "tasks": ["summary"], "n_inputs": 1, "response_chars": [468], "context_chars": [2009]}
+INFO:     127.0.0.1:48394 - "POST /detect HTTP/1.1" 200 OK
+2026-10-30 11:00:04,182 INFO groundedguard.api {"request_id": "194dcf023312402c", "method": "POST", "path": "/detect", "status": 200, "latency_ms": 57.28, "tasks": ["summary"], "n_inputs": 1, "response_chars": [338], "context_chars": [1137]}
+INFO:     127.0.0.1:48402 - "POST /detect HTTP/1.1" 200 OK
+2026-10-30 11:00:04,197 INFO groundedguard.api {"request_id": "76145bb1ed3c4b53", "method": "POST", "path": "/detect", "status": 200, "latency_ms": 57.46, "tasks": ["summary"], "n_inputs": 1, "response_chars": [635], "context_chars": [2444]}
+INFO:     127.0.0.1:48406 - "POST /detect HTTP/1.1" 200 OK
+2026-10-30 11:00:04,217 INFO groundedguard.api {"request_id": "505a8a08788a4749", "method": "POST", "path": "/detect", "status": 200, "latency_ms": 61.97, "tasks": ["summary"], "n_inputs": 1, "response_chars": [719], "context_chars": [5814]}
+INFO:     127.0.0.1:48418 - "POST /detect HTTP/1.1" 200 OK
+2026-10-30 11:00:04,237 INFO groundedguard.api {"request_id": "0a5a6cc3a4f743bc", "method": "POST", "path": "/detect", "status": 200, "latency_ms": 67.87, "tasks": ["data2txt"], "n_inputs": 1, "response_chars": [1184], "context_chars": [4382]}
+INFO:     127.0.0.1:48394 - "POST /detect HTTP/1.1" 200 OK
+2026-10-30 11:00:04,251 INFO groundedguard.api {"request_id": "be32d64eaeb64d9e", "method": "POST", "path": "/detect", "status": 200, "latency_ms": 68.58, "tasks": ["qa"], "n_inputs": 1, "response_chars": [721], "context_chars": [1868]}
+INFO:     127.0.0.1:48402 - "POST /detect HTTP/1.1" 200 OK
+2026-10-30 11:00:04,266 INFO groundedguard.api {"request_id": "ef4727dcb8824a7d", "method": "POST", "path": "/detect", "status": 200, "latency_ms": 68.33, "tasks": ["qa"], "n_inputs": 1, "response_chars": [1402], "context_chars": [1886]}
+INFO:     127.0.0.1:48406 - "POST /detect HTTP/1.1" 200 OK
+2026-10-30 11:00:04,280 INFO groundedguard.api {"request_id": "b9a1c19834804a40", "method": "POST", "path": "/detect", "status": 200, "latency_ms": 62.77, "tasks": ["qa"], "n_inputs": 1, "response_chars": [674], "context_chars": [949]}
+INFO:     127.0.0.1:48418 - "POST /detect HTTP/1.1" 200 OK
+2026-10-30 11:00:04,298 INFO groundedguard.api {"request_id": "8c092ea8780b4dbf", "method": "POST", "path": "/detect", "status": 200, "latency_ms": 60.34, "tasks": ["summary"], "n_inputs": 1, "response_chars": [844], "context_chars": [4683]}
+INFO:     127.0.0.1:48394 - "POST /detect HTTP/1.1" 200 OK
+2026-10-30 11:00:04,312 INFO groundedguard.api {"request_id": "61bd4aeaa90d4578", "method": "POST", "path": "/detect", "status": 200, "latency_ms": 59.93, "tasks": ["summary"], "n_inputs": 1, "response_chars": [455], "context_chars": [2055]}
+INFO:     127.0.0.1:48402 - "POST /detect HTTP/1.1" 200 OK
+2026-10-30 11:00:04,327 INFO groundedguard.api {"request_id": "3ce6ba8aa3eb4764", "method": "POST", "path": "/detect", "status": 200, "latency_ms": 59.25, "tasks": ["data2txt"], "n_inputs": 1, "response_chars": [1303], "context_chars": [2114]}
+INFO:     127.0.0.1:48406 - "POST /detect HTTP/1.1" 200 OK
+2026-10-30 11:00:04,341 INFO groundedguard.api {"request_id": "2917a6fc91c14a0b", "method": "POST", "path": "/detect", "status": 200, "latency_ms": 60.06, "tasks": ["summary"], "n_inputs": 1, "response_chars": [467], "context_chars": [1549]}
+INFO:     127.0.0.1:48418 - "POST /detect HTTP/1.1" 200 OK
+2026-10-30 11:00:04,356 INFO groundedguard.api {"request_id": "da05a4d5b4544214", "method": "POST", "path": "/detect", "status": 200, "latency_ms": 56.77, "tasks": ["qa"], "n_inputs": 1, "response_chars": [477], "context_chars": [2128]}
+INFO:     127.0.0.1:48394 - "POST /detect HTTP/1.1" 200 OK
+2026-10-30 11:00:04,370 INFO groundedguard.api {"request_id": "87f172f8df47444b", "method": "POST", "path": "/detect", "status": 200, "latency_ms": 56.89, "tasks": ["qa"], "n_inputs": 1, "response_chars": [287], "context_chars": [896]}
+INFO:     127.0.0.1:48402 - "POST /detect HTTP/1.1" 200 OK
+2026-10-30 11:00:04,385 INFO groundedguard.api {"request_id": "250bcd7d56464e44", "method": "POST", "path": "/detect", "status": 200, "latency_ms": 56.03, "tasks": ["data2txt"], "n_inputs": 1, "response_chars": [727], "context_chars": [2057]}
+INFO:     127.0.0.1:48406 - "POST /detect HTTP/1.1" 200 OK
+2026-10-30 11:00:04,399 INFO groundedguard.api {"request_id": "765ad2ba1ffe4c2e", "method": "POST", "path": "/detect", "status": 200, "latency_ms": 56.82, "tasks": ["qa"], "n_inputs": 1, "response_chars": [668], "context_chars": [1679]}
+INFO:     127.0.0.1:48418 - "POST /detect HTTP/1.1" 200 OK
+2026-10-30 11:00:04,414 INFO groundedguard.api {"request_id": "d2f8bfe3ff92466c", "method": "POST", "path": "/detect", "status": 200, "latency_ms": 56.0, "tasks": ["qa"], "n_inputs": 1, "response_chars": [427], "context_chars": [953]}
+INFO:     127.0.0.1:48394 - "POST /detect HTTP/1.1" 200 OK
+2026-10-30 11:00:04,428 INFO groundedguard.api {"request_id": "3bec3cfad1b644fc", "method": "POST", "path": "/detect", "status": 200, "latency_ms": 56.87, "tasks": ["summary"], "n_inputs": 1, "response_chars": [586], "context_chars": [2024]}
+INFO:     127.0.0.1:48402 - "POST /detect HTTP/1.1" 200 OK
+2026-10-30 11:00:04,443 INFO groundedguard.api {"request_id": "a1ce4ff5ad1c4492", "method": "POST", "path": "/detect", "status": 200, "latency_ms": 56.22, "tasks": ["qa"], "n_inputs": 1, "response_chars": [816], "context_chars": [1331]}
+INFO:     127.0.0.1:48406 - "POST /detect HTTP/1.1" 200 OK
+2026-10-30 11:00:04,458 INFO groundedguard.api {"request_id": "f192840ecfb44c0a", "method": "POST", "path": "/detect", "status": 200, "latency_ms": 57.1, "tasks": ["data2txt"], "n_inputs": 1, "response_chars": [1259], "context_chars": [2114]}
+INFO:     127.0.0.1:48418 - "POST /detect HTTP/1.1" 200 OK
+2026-10-30 11:00:04,472 INFO groundedguard.api {"request_id": "b4ad7119c4b84d1f", "method": "POST", "path": "/detect", "status": 200, "latency_ms": 57.97, "tasks": ["qa"], "n_inputs": 1, "response_chars": [994], "context_chars": [2060]}
+INFO:     127.0.0.1:48394 - "POST /detect HTTP/1.1" 200 OK
+2026-10-30 11:00:04,487 INFO groundedguard.api {"request_id": "6ba8f47b53584a5c", "method": "POST", "path": "/detect", "status": 200, "latency_ms": 57.77, "tasks": ["summary"], "n_inputs": 1, "response_chars": [353], "context_chars": [1552]}
+INFO:     127.0.0.1:48402 - "POST /detect HTTP/1.1" 200 OK
+2026-10-30 11:00:04,504 INFO groundedguard.api {"request_id": "0603770dfe3442b4", "method": "POST", "path": "/detect", "status": 200, "latency_ms": 59.7, "tasks": ["data2txt"], "n_inputs": 1, "response_chars": [1319], "context_chars": [2940]}
+INFO:     127.0.0.1:48406 - "POST /detect HTTP/1.1" 200 OK
+2026-10-30 11:00:04,520 INFO groundedguard.api {"request_id": "301d0d0460864365", "method": "POST", "path": "/detect", "status": 200, "latency_ms": 61.37, "tasks": ["summary"], "n_inputs": 1, "response_chars": [846], "context_chars": [4122]}
+INFO:     127.0.0.1:48418 - "POST /detect HTTP/1.1" 200 OK
+2026-10-30 11:00:04,534 INFO groundedguard.api {"request_id": "6fa3766e211a44f7", "method": "POST", "path": "/detect", "status": 200, "latency_ms": 60.34, "tasks": ["qa"], "n_inputs": 1, "response_chars": [631], "context_chars": [913]}
+INFO:     127.0.0.1:48394 - "POST /detect HTTP/1.1" 200 OK
+2026-10-30 11:00:04,549 INFO groundedguard.api {"request_id": "68bad03298d44d12", "method": "POST", "path": "/detect", "status": 200, "latency_ms": 61.08, "tasks": ["qa"], "n_inputs": 1, "response_chars": [562], "context_chars": [1940]}
+INFO:     127.0.0.1:48402 - "POST /detect HTTP/1.1" 200 OK
+2026-10-30 11:00:04,567 INFO groundedguard.api {"request_id": "730ade551e9c4651", "method": "POST", "path": "/detect", "status": 200, "latency_ms": 62.33, "tasks": ["summary"], "n_inputs": 1, "response_chars": [869], "context_chars": [4902]}
+INFO:     127.0.0.1:48406 - "POST /detect HTTP/1.1" 200 OK
+2026-10-30 11:00:04,582 INFO groundedguard.api {"request_id": "6c1603dc36914c23", "method": "POST", "path": "/detect", "status": 200, "latency_ms": 59.82, "tasks": ["data2txt"], "n_inputs": 1, "response_chars": [827], "context_chars": [2536]}
+INFO:     127.0.0.1:48418 - "POST /detect HTTP/1.1" 200 OK
+2026-10-30 11:00:04,597 INFO groundedguard.api {"request_id": "447891656d6a43f8", "method": "POST", "path": "/detect", "status": 200, "latency_ms": 60.47, "tasks": ["data2txt"], "n_inputs": 1, "response_chars": [682], "context_chars": [1463]}
+INFO:     127.0.0.1:48394 - "POST /detect HTTP/1.1" 200 OK
+2026-10-30 11:00:04,611 INFO groundedguard.api {"request_id": "999ae4d4bbbf4a5a", "method": "POST", "path": "/detect", "status": 200, "latency_ms": 61.23, "tasks": ["summary"], "n_inputs": 1, "response_chars": [365], "context_chars": [1518]}
+INFO:     127.0.0.1:48402 - "POST /detect HTTP/1.1" 200 OK
+2026-10-30 11:00:04,626 INFO groundedguard.api {"request_id": "66c6b5df38cd48a9", "method": "POST", "path": "/detect", "status": 200, "latency_ms": 57.77, "tasks": ["summary"], "n_inputs": 1, "response_chars": [614], "context_chars": [2401]}
+INFO:     127.0.0.1:48406 - "POST /detect HTTP/1.1" 200 OK
+2026-10-30 11:00:04,643 INFO groundedguard.api {"request_id": "17fc13c0c13146fe", "method": "POST", "path": "/detect", "status": 200, "latency_ms": 59.83, "tasks": ["summary"], "n_inputs": 1, "response_chars": [716], "context_chars": [4603]}
+INFO:     127.0.0.1:48418 - "POST /detect HTTP/1.1" 200 OK
+2026-10-30 11:00:04,657 INFO groundedguard.api {"request_id": "002620b5e34c451e", "method": "POST", "path": "/detect", "status": 200, "latency_ms": 58.68, "tasks": ["summary"], "n_inputs": 1, "response_chars": [395], "context_chars": [2061]}
+INFO:     127.0.0.1:48394 - "POST /detect HTTP/1.1" 200 OK
+2026-10-30 11:00:04,672 INFO groundedguard.api {"request_id": "7ee4bb0d46824dbd", "method": "POST", "path": "/detect", "status": 200, "latency_ms": 59.74, "tasks": ["qa"], "n_inputs": 1, "response_chars": [1121], "context_chars": [1820]}
+INFO:     127.0.0.1:48402 - "POST /detect HTTP/1.1" 200 OK
+2026-10-30 11:00:04,686 INFO groundedguard.api {"request_id": "397ba60ddc144d76", "method": "POST", "path": "/detect", "status": 200, "latency_ms": 59.87, "tasks": ["qa"], "n_inputs": 1, "response_chars": [1030], "context_chars": [2006]}
+INFO:     127.0.0.1:48406 - "POST /detect HTTP/1.1" 200 OK
+2026-10-30 11:00:04,701 INFO groundedguard.api {"request_id": "1e44b67d2acc4210", "method": "POST", "path": "/detect", "status": 200, "latency_ms": 56.67, "tasks": ["qa"], "n_inputs": 1, "response_chars": [947], "context_chars": [1363]}
+INFO:     127.0.0.1:48418 - "POST /detect HTTP/1.1" 200 OK
+2026-10-30 11:00:04,716 INFO groundedguard.api {"request_id": "4b01de41034c45d9", "method": "POST", "path": "/detect", "status": 200, "latency_ms": 57.37, "tasks": ["data2txt"], "n_inputs": 1, "response_chars": [615], "context_chars": [1511]}
+INFO:     127.0.0.1:48394 - "POST /detect HTTP/1.1" 200 OK
+2026-10-30 11:00:04,730 INFO groundedguard.api {"request_id": "e09ba61333574120", "method": "POST", "path": "/detect", "status": 200, "latency_ms": 57.36, "tasks": ["qa"], "n_inputs": 1, "response_chars": [894], "context_chars": [1776]}
+INFO:     127.0.0.1:48402 - "POST /detect HTTP/1.1" 200 OK
+2026-10-30 11:00:04,745 INFO groundedguard.api {"request_id": "23c5f959d50a4e2e", "method": "POST", "path": "/detect", "status": 200, "latency_ms": 57.78, "tasks": ["summary"], "n_inputs": 1, "response_chars": [656], "context_chars": [2655]}
+INFO:     127.0.0.1:48406 - "POST /detect HTTP/1.1" 200 OK
+2026-10-30 11:00:04,760 INFO groundedguard.api {"request_id": "08eabb3130274ea9", "method": "POST", "path": "/detect", "status": 200, "latency_ms": 57.15, "tasks": ["data2txt"], "n_inputs": 1, "response_chars": [1128], "context_chars": [1721]}
+INFO:     127.0.0.1:48418 - "POST /detect HTTP/1.1" 200 OK
+2026-10-30 11:00:04,774 INFO groundedguard.api {"request_id": "c27c6103af2c427b", "method": "POST", "path": "/detect", "status": 200, "latency_ms": 57.77, "tasks": ["qa"], "n_inputs": 1, "response_chars": [993], "context_chars": [1284]}
+INFO:     127.0.0.1:48394 - "POST /detect HTTP/1.1" 200 OK
+2026-10-30 11:00:04,789 INFO groundedguard.api {"request_id": "661baaf07189403f", "method": "POST", "path": "/detect", "status": 200, "latency_ms": 57.81, "tasks": ["data2txt"], "n_inputs": 1, "response_chars": [1172], "context_chars": [1994]}
+INFO:     127.0.0.1:48402 - "POST /detect HTTP/1.1" 200 OK
+2026-10-30 11:00:04,804 INFO groundedguard.api {"request_id": "1788805fe5e34ae7", "method": "POST", "path": "/detect", "status": 200, "latency_ms": 57.34, "tasks": ["qa"], "n_inputs": 1, "response_chars": [920], "context_chars": [1847]}
+INFO:     127.0.0.1:48406 - "POST /detect HTTP/1.1" 200 OK
+2026-10-30 11:00:04,818 INFO groundedguard.api {"request_id": "3c371fab1bae4381", "method": "POST", "path": "/detect", "status": 200, "latency_ms": 57.19, "tasks": ["qa"], "n_inputs": 1, "response_chars": [546], "context_chars": [1679]}
+INFO:     127.0.0.1:48418 - "POST /detect HTTP/1.1" 200 OK
+2026-10-30 11:00:04,833 INFO groundedguard.api {"request_id": "2e03b30443274040", "method": "POST", "path": "/detect", "status": 200, "latency_ms": 57.35, "tasks": ["summary"], "n_inputs": 1, "response_chars": [862], "context_chars": [2096]}
+INFO:     127.0.0.1:48394 - "POST /detect HTTP/1.1" 200 OK
+2026-10-30 11:00:04,847 INFO groundedguard.api {"request_id": "370bb5b4e9a64d9b", "method": "POST", "path": "/detect", "status": 200, "latency_ms": 57.15, "tasks": ["qa"], "n_inputs": 1, "response_chars": [242], "context_chars": [1668]}
+INFO:     127.0.0.1:48402 - "POST /detect HTTP/1.1" 200 OK
+2026-10-30 11:00:04,862 INFO groundedguard.api {"request_id": "33b4c0a5a82e45f3", "method": "POST", "path": "/detect", "status": 200, "latency_ms": 56.32, "tasks": ["data2txt"], "n_inputs": 1, "response_chars": [653], "context_chars": [1406]}
+INFO:     127.0.0.1:48406 - "POST /detect HTTP/1.1" 200 OK
+2026-10-30 11:00:04,876 INFO groundedguard.api {"request_id": "74ad506441024d84", "method": "POST", "path": "/detect", "status": 200, "latency_ms": 56.65, "tasks": ["qa"], "n_inputs": 1, "response_chars": [644], "context_chars": [2060]}
+INFO:     127.0.0.1:48418 - "POST /detect HTTP/1.1" 200 OK
+2026-10-30 11:00:04,891 INFO groundedguard.api {"request_id": "85828ec410c34297", "method": "POST", "path": "/detect", "status": 200, "latency_ms": 56.11, "tasks": ["qa"], "n_inputs": 1, "response_chars": [1131], "context_chars": [1858]}
+INFO:     127.0.0.1:48394 - "POST /detect HTTP/1.1" 200 OK
+2026-10-30 11:00:04,905 INFO groundedguard.api {"request_id": "136112737ca94634", "method": "POST", "path": "/detect", "status": 200, "latency_ms": 56.3, "tasks": ["data2txt"], "n_inputs": 1, "response_chars": [1173], "context_chars": [2563]}
+INFO:     127.0.0.1:48402 - "POST /detect HTTP/1.1" 200 OK
+2026-10-30 11:00:04,922 INFO groundedguard.api {"request_id": "b41c834e63fd4e9f", "method": "POST", "path": "/detect", "status": 200, "latency_ms": 58.07, "tasks": ["summary"], "n_inputs": 1, "response_chars": [681], "context_chars": [2610]}
+INFO:     127.0.0.1:48406 - "POST /detect HTTP/1.1" 200 OK
+2026-10-30 11:00:04,937 INFO groundedguard.api {"request_id": "5cffa4df306f43fa", "method": "POST", "path": "/detect", "status": 200, "latency_ms": 59.94, "tasks": ["qa"], "n_inputs": 1, "response_chars": [1645], "context_chars": [765]}
+INFO:     127.0.0.1:48418 - "POST /detect HTTP/1.1" 200 OK
+2026-10-30 11:00:04,951 INFO groundedguard.api {"request_id": "83c2856cb4b14ad5", "method": "POST", "path": "/detect", "status": 200, "latency_ms": 59.55, "tasks": ["summary"], "n_inputs": 1, "response_chars": [409], "context_chars": [1609]}
+INFO:     127.0.0.1:48394 - "POST /detect HTTP/1.1" 200 OK
+2026-10-30 11:00:04,976 INFO groundedguard.api {"request_id": "fdc22842ab3b401a", "method": "POST", "path": "/detect", "status": 200, "latency_ms": 70.02, "tasks": ["summary"], "n_inputs": 1, "response_chars": [1021], "context_chars": [7978]}
+INFO:     127.0.0.1:48402 - "POST /detect HTTP/1.1" 200 OK
+2026-10-30 11:00:04,991 INFO groundedguard.api {"request_id": "2d4f1f48f4b04187", "method": "POST", "path": "/detect", "status": 200, "latency_ms": 67.53, "tasks": ["data2txt"], "n_inputs": 1, "response_chars": [995], "context_chars": [1466]}
+INFO:     127.0.0.1:48406 - "POST /detect HTTP/1.1" 200 OK
+2026-10-30 11:00:05,006 INFO groundedguard.api {"request_id": "62d021d16f484123", "method": "POST", "path": "/detect", "status": 200, "latency_ms": 67.56, "tasks": ["qa"], "n_inputs": 1, "response_chars": [1178], "context_chars": [1847]}
+INFO:     127.0.0.1:48418 - "POST /detect HTTP/1.1" 200 OK
+2026-10-30 11:00:05,020 INFO groundedguard.api {"request_id": "db969dbbb58543c6", "method": "POST", "path": "/detect", "status": 200, "latency_ms": 68.25, "tasks": ["qa"], "n_inputs": 1, "response_chars": [674], "context_chars": [836]}
+INFO:     127.0.0.1:48394 - "POST /detect HTTP/1.1" 200 OK
+2026-10-30 11:00:05,036 INFO groundedguard.api {"request_id": "e1e05a26fa2e4564", "method": "POST", "path": "/detect", "status": 200, "latency_ms": 59.0, "tasks": ["data2txt"], "n_inputs": 1, "response_chars": [1431], "context_chars": [2417]}
+INFO:     127.0.0.1:48402 - "POST /detect HTTP/1.1" 200 OK
+2026-10-30 11:00:05,053 INFO groundedguard.api {"request_id": "d3eef34d7e0a48a0", "method": "POST", "path": "/detect", "status": 200, "latency_ms": 61.29, "tasks": ["data2txt"], "n_inputs": 1, "response_chars": [954], "context_chars": [3130]}
+INFO:     127.0.0.1:48406 - "POST /detect HTTP/1.1" 200 OK
+2026-10-30 11:00:05,068 INFO groundedguard.api {"request_id": "d3668ad2ac644079", "method": "POST", "path": "/detect", "status": 200, "latency_ms": 60.26, "tasks": ["qa"], "n_inputs": 1, "response_chars": [874], "context_chars": [896]}
+INFO:     127.0.0.1:48418 - "POST /detect HTTP/1.1" 200 OK
+2026-10-30 11:00:05,082 INFO groundedguard.api {"request_id": "57b5940adc8f43bb", "method": "POST", "path": "/detect", "status": 200, "latency_ms": 61.16, "tasks": ["qa"], "n_inputs": 1, "response_chars": [824], "context_chars": [1858]}
+INFO:     127.0.0.1:48394 - "POST /detect HTTP/1.1" 200 OK
+2026-10-30 11:00:05,101 INFO groundedguard.api {"request_id": "ff4b451006034bd5", "method": "POST", "path": "/detect", "status": 200, "latency_ms": 63.16, "tasks": ["data2txt"], "n_inputs": 1, "response_chars": [604], "context_chars": [1894]}
+INFO:     127.0.0.1:48402 - "POST /detect HTTP/1.1" 200 OK
+2026-10-30 11:00:05,116 INFO groundedguard.api {"request_id": "a1974c5d0214442d", "method": "POST", "path": "/detect", "status": 200, "latency_ms": 60.77, "tasks": ["data2txt"], "n_inputs": 1, "response_chars": [684], "context_chars": [1466]}
+INFO:     127.0.0.1:48406 - "POST /detect HTTP/1.1" 200 OK
+2026-10-30 11:00:05,133 INFO groundedguard.api {"request_id": "bc60322bc92c4849", "method": "POST", "path": "/detect", "status": 200, "latency_ms": 64.1, "tasks": ["data2txt"], "n_inputs": 1, "response_chars": [1474], "context_chars": [2417]}
+INFO:     127.0.0.1:48418 - "POST /detect HTTP/1.1" 200 OK
+2026-10-30 11:00:05,160 INFO groundedguard.api {"request_id": "08f67cf6db46489b", "method": "POST", "path": "/detect", "status": 200, "latency_ms": 76.41, "tasks": ["summary"], "n_inputs": 1, "response_chars": [1618], "context_chars": [7978]}
+INFO:     127.0.0.1:48394 - "POST /detect HTTP/1.1" 200 OK
+2026-10-30 11:00:05,174 INFO groundedguard.api {"request_id": "4454923ee46842f6", "method": "POST", "path": "/detect", "status": 200, "latency_ms": 71.98, "tasks": ["summary"], "n_inputs": 1, "response_chars": [348], "context_chars": [1056]}
+INFO:     127.0.0.1:48402 - "POST /detect HTTP/1.1" 200 OK
+2026-10-30 11:00:05,189 INFO groundedguard.api {"request_id": "fdc7d277d5344331", "method": "POST", "path": "/detect", "status": 200, "latency_ms": 70.37, "tasks": ["data2txt"], "n_inputs": 1, "response_chars": [842], "context_chars": [1573]}
+INFO:     127.0.0.1:48406 - "POST /detect HTTP/1.1" 200 OK
+2026-10-30 11:00:05,213 INFO groundedguard.api {"request_id": "d4ade67c4b51473f", "method": "POST", "path": "/detect", "status": 200, "latency_ms": 78.98, "tasks": ["summary"], "n_inputs": 1, "response_chars": [1050], "context_chars": [7978]}
+INFO:     127.0.0.1:48418 - "POST /detect HTTP/1.1" 200 OK
+2026-10-30 11:00:05,228 INFO groundedguard.api {"request_id": "4617dbd0e7694b66", "method": "POST", "path": "/detect", "status": 200, "latency_ms": 66.6, "tasks": ["qa"], "n_inputs": 1, "response_chars": [934], "context_chars": [2060]}
+INFO:     127.0.0.1:48394 - "POST /detect HTTP/1.1" 200 OK
+2026-10-30 11:00:05,243 INFO groundedguard.api {"request_id": "b17326641b154879", "method": "POST", "path": "/detect", "status": 200, "latency_ms": 66.38, "tasks": ["qa"], "n_inputs": 1, "response_chars": [636], "context_chars": [975]}
+INFO:     127.0.0.1:48402 - "POST /detect HTTP/1.1" 200 OK
+2026-10-30 11:00:05,257 INFO groundedguard.api {"request_id": "19ca22e5984d4a64", "method": "POST", "path": "/detect", "status": 200, "latency_ms": 67.1, "tasks": ["qa"], "n_inputs": 1, "response_chars": [605], "context_chars": [1759]}
+INFO:     127.0.0.1:48406 - "POST /detect HTTP/1.1" 200 OK
+2026-10-30 11:00:05,272 INFO groundedguard.api {"request_id": "2f76c938ecf04f67", "method": "POST", "path": "/detect", "status": 200, "latency_ms": 57.32, "tasks": ["data2txt"], "n_inputs": 1, "response_chars": [735], "context_chars": [1768]}
+INFO:     127.0.0.1:48418 - "POST /detect HTTP/1.1" 200 OK
+2026-10-30 11:00:05,286 INFO groundedguard.api {"request_id": "31e290446ebe4726", "method": "POST", "path": "/detect", "status": 200, "latency_ms": 56.2, "tasks": ["qa"], "n_inputs": 1, "response_chars": [383], "context_chars": [913]}
+INFO:     127.0.0.1:48394 - "POST /detect HTTP/1.1" 200 OK
+2026-10-30 11:00:05,300 INFO groundedguard.api {"request_id": "f1747d6abd2448d0", "method": "POST", "path": "/detect", "status": 200, "latency_ms": 56.83, "tasks": ["summary"], "n_inputs": 1, "response_chars": [354], "context_chars": [2401]}
+INFO:     127.0.0.1:48402 - "POST /detect HTTP/1.1" 200 OK
+2026-10-30 11:00:05,314 INFO groundedguard.api {"request_id": "cb01cd9d6ab14cb6", "method": "POST", "path": "/detect", "status": 200, "latency_ms": 56.35, "tasks": ["qa"], "n_inputs": 1, "response_chars": [417], "context_chars": [883]}
+INFO:     127.0.0.1:48406 - "POST /detect HTTP/1.1" 200 OK
+2026-10-30 11:00:05,329 INFO groundedguard.api {"request_id": "8b79f1d17ff5417d", "method": "POST", "path": "/detect", "status": 200, "latency_ms": 55.39, "tasks": ["data2txt"], "n_inputs": 1, "response_chars": [793], "context_chars": [1369]}
+INFO:     127.0.0.1:48418 - "POST /detect HTTP/1.1" 200 OK
+2026-10-30 11:00:05,344 INFO groundedguard.api {"request_id": "9d8de98a93004a9a", "method": "POST", "path": "/detect", "status": 200, "latency_ms": 56.37, "tasks": ["data2txt"], "n_inputs": 1, "response_chars": [756], "context_chars": [1735]}
+INFO:     127.0.0.1:48394 - "POST /detect HTTP/1.1" 200 OK
+2026-10-30 11:00:05,361 INFO groundedguard.api {"request_id": "f6480d78cb7f4a84", "method": "POST", "path": "/detect", "status": 200, "latency_ms": 59.34, "tasks": ["qa"], "n_inputs": 1, "response_chars": [1087], "context_chars": [1847]}
+INFO:     127.0.0.1:48402 - "POST /detect HTTP/1.1" 200 OK
+2026-10-30 11:00:05,377 INFO groundedguard.api {"request_id": "968c6523a882440c", "method": "POST", "path": "/detect", "status": 200, "latency_ms": 61.32, "tasks": ["summary"], "n_inputs": 1, "response_chars": [460], "context_chars": [2046]}
+INFO:     127.0.0.1:48406 - "POST /detect HTTP/1.1" 200 OK
+2026-10-30 11:00:05,391 INFO groundedguard.api {"request_id": "c95246d929254969", "method": "POST", "path": "/detect", "status": 200, "latency_ms": 61.28, "tasks": ["summary"], "n_inputs": 1, "response_chars": [442], "context_chars": [1549]}
+INFO:     127.0.0.1:48418 - "POST /detect HTTP/1.1" 200 OK
+2026-10-30 11:00:05,406 INFO groundedguard.api {"request_id": "c0051895dacf4788", "method": "POST", "path": "/detect", "status": 200, "latency_ms": 61.34, "tasks": ["qa"], "n_inputs": 1, "response_chars": [866], "context_chars": [1210]}
+INFO:     127.0.0.1:48394 - "POST /detect HTTP/1.1" 200 OK
+2026-10-30 11:00:05,420 INFO groundedguard.api {"request_id": "a50cd28b87a04ebd", "method": "POST", "path": "/detect", "status": 200, "latency_ms": 56.94, "tasks": ["qa"], "n_inputs": 1, "response_chars": [772], "context_chars": [1160]}
+INFO:     127.0.0.1:48402 - "POST /detect HTTP/1.1" 200 OK
+2026-10-30 11:00:05,435 INFO groundedguard.api {"request_id": "32abd44d986d42f5", "method": "POST", "path": "/detect", "status": 200, "latency_ms": 56.8, "tasks": ["data2txt"], "n_inputs": 1, "response_chars": [970], "context_chars": [2536]}
+INFO:     127.0.0.1:48406 - "POST /detect HTTP/1.1" 200 OK
+2026-10-30 11:00:05,450 INFO groundedguard.api {"request_id": "04b9b681045341fb", "method": "POST", "path": "/detect", "status": 200, "latency_ms": 57.66, "tasks": ["qa"], "n_inputs": 1, "response_chars": [409], "context_chars": [1622]}
+INFO:     127.0.0.1:48418 - "POST /detect HTTP/1.1" 200 OK
+2026-10-30 11:00:05,470 INFO groundedguard.api {"request_id": "3a6ebc6008f54fa1", "method": "POST", "path": "/detect", "status": 200, "latency_ms": 62.45, "tasks": ["summary"], "n_inputs": 1, "response_chars": [953], "context_chars": [5814]}
+INFO:     127.0.0.1:48394 - "POST /detect HTTP/1.1" 200 OK
+2026-10-30 11:00:05,485 INFO groundedguard.api {"request_id": "4aec805cad05419a", "method": "POST", "path": "/detect", "status": 200, "latency_ms": 63.58, "tasks": ["qa"], "n_inputs": 1, "response_chars": [1385], "context_chars": [953]}
+INFO:     127.0.0.1:48402 - "POST /detect HTTP/1.1" 200 OK
+2026-10-30 11:00:05,501 INFO groundedguard.api {"request_id": "dcfd2bab9ee24fe5", "method": "POST", "path": "/detect", "status": 200, "latency_ms": 63.97, "tasks": ["data2txt"], "n_inputs": 1, "response_chars": [1540], "context_chars": [2593]}
+INFO:     127.0.0.1:48406 - "POST /detect HTTP/1.1" 200 OK
+2026-10-30 11:00:05,516 INFO groundedguard.api {"request_id": "4f363141181c4fe1", "method": "POST", "path": "/detect", "status": 200, "latency_ms": 65.15, "tasks": ["data2txt"], "n_inputs": 1, "response_chars": [1292], "context_chars": [2278]}
+INFO:     127.0.0.1:48418 - "POST /detect HTTP/1.1" 200 OK
+2026-10-30 11:00:05,531 INFO groundedguard.api {"request_id": "62137c8c1502438e", "method": "POST", "path": "/detect", "status": 200, "latency_ms": 59.51, "tasks": ["summary"], "n_inputs": 1, "response_chars": [545], "context_chars": [2444]}
+INFO:     127.0.0.1:48394 - "POST /detect HTTP/1.1" 200 OK
+2026-10-30 11:00:05,545 INFO groundedguard.api {"request_id": "55cf9e7264eb4d5c", "method": "POST", "path": "/detect", "status": 200, "latency_ms": 59.42, "tasks": ["summary"], "n_inputs": 1, "response_chars": [744], "context_chars": [2729]}
+INFO:     127.0.0.1:48402 - "POST /detect HTTP/1.1" 200 OK
+2026-10-30 11:00:05,560 INFO groundedguard.api {"request_id": "1d32b60c677e480a", "method": "POST", "path": "/detect", "status": 200, "latency_ms": 57.47, "tasks": ["summary"], "n_inputs": 1, "response_chars": [396], "context_chars": [1718]}
+INFO:     127.0.0.1:48406 - "POST /detect HTTP/1.1" 200 OK
+2026-10-30 11:00:05,574 INFO groundedguard.api {"request_id": "a5bb52acf5bd47d5", "method": "POST", "path": "/detect", "status": 200, "latency_ms": 57.36, "tasks": ["data2txt"], "n_inputs": 1, "response_chars": [1008], "context_chars": [1481]}
+INFO:     127.0.0.1:48418 - "POST /detect HTTP/1.1" 200 OK
+2026-10-30 11:00:05,589 INFO groundedguard.api {"request_id": "93279dd2acbe4566", "method": "POST", "path": "/detect", "status": 200, "latency_ms": 57.02, "tasks": ["qa"], "n_inputs": 1, "response_chars": [1183], "context_chars": [822]}
+INFO:     127.0.0.1:48394 - "POST /detect HTTP/1.1" 200 OK
+2026-10-30 11:00:05,603 INFO groundedguard.api {"request_id": "886eed8531654ead", "method": "POST", "path": "/detect", "status": 200, "latency_ms": 56.26, "tasks": ["qa"], "n_inputs": 1, "response_chars": [1030], "context_chars": [1571]}
+INFO:     127.0.0.1:48402 - "POST /detect HTTP/1.1" 200 OK
+2026-10-30 11:00:05,618 INFO groundedguard.api {"request_id": "32e1b22c35f64ce4", "method": "POST", "path": "/detect", "status": 200, "latency_ms": 56.9, "tasks": ["summary"], "n_inputs": 1, "response_chars": [560], "context_chars": [1621]}
+INFO:     127.0.0.1:48406 - "POST /detect HTTP/1.1" 200 OK
+2026-10-30 11:00:05,644 INFO groundedguard.api {"request_id": "78531c32226f4c24", "method": "POST", "path": "/detect", "status": 200, "latency_ms": 67.3, "tasks": ["summary"], "n_inputs": 1, "response_chars": [1735], "context_chars": [6261]}
+INFO:     127.0.0.1:48418 - "POST /detect HTTP/1.1" 200 OK
+2026-10-30 11:00:05,658 INFO groundedguard.api {"request_id": "63b21940f2a94d57", "method": "POST", "path": "/detect", "status": 200, "latency_ms": 68.64, "tasks": ["data2txt"], "n_inputs": 1, "response_chars": [1153], "context_chars": [1430]}
+INFO:     127.0.0.1:48394 - "POST /detect HTTP/1.1" 200 OK
+2026-10-30 11:00:05,673 INFO groundedguard.api {"request_id": "509eabfb12dd4645", "method": "POST", "path": "/detect", "status": 200, "latency_ms": 68.61, "tasks": ["qa"], "n_inputs": 1, "response_chars": [749], "context_chars": [898]}
+INFO:     127.0.0.1:48402 - "POST /detect HTTP/1.1" 200 OK
+2026-10-30 11:00:05,690 INFO groundedguard.api {"request_id": "bcd5e03ac18a4ec3", "method": "POST", "path": "/detect", "status": 200, "latency_ms": 71.89, "tasks": ["summary"], "n_inputs": 1, "response_chars": [892], "context_chars": [4603]}
+INFO:     127.0.0.1:48406 - "POST /detect HTTP/1.1" 200 OK
+2026-10-30 11:00:05,705 INFO groundedguard.api {"request_id": "79135c3d5de94688", "method": "POST", "path": "/detect", "status": 200, "latency_ms": 59.37, "tasks": ["qa"], "n_inputs": 1, "response_chars": [372], "context_chars": [1021]}
+INFO:     127.0.0.1:48418 - "POST /detect HTTP/1.1" 200 OK
+2026-10-30 11:00:05,720 INFO groundedguard.api {"request_id": "1c9822ace32c4fe9", "method": "POST", "path": "/detect", "status": 200, "latency_ms": 59.8, "tasks": ["qa"], "n_inputs": 1, "response_chars": [1162], "context_chars": [2006]}
+INFO:     127.0.0.1:48394 - "POST /detect HTTP/1.1" 200 OK
+2026-10-30 11:00:05,737 INFO groundedguard.api {"request_id": "cd988990514547c3", "method": "POST", "path": "/detect", "status": 200, "latency_ms": 62.57, "tasks": ["summary"], "n_inputs": 1, "response_chars": [1123], "context_chars": [3681]}
+INFO:     127.0.0.1:48402 - "POST /detect HTTP/1.1" 200 OK
+2026-10-30 11:00:05,757 INFO groundedguard.api {"request_id": "52594d36a47d43c2", "method": "POST", "path": "/detect", "status": 200, "latency_ms": 64.5, "tasks": ["summary"], "n_inputs": 1, "response_chars": [804], "context_chars": [5814]}
+INFO:     127.0.0.1:48406 - "POST /detect HTTP/1.1" 200 OK
+2026-10-30 11:00:05,775 INFO groundedguard.api {"request_id": "97b0269318124108", "method": "POST", "path": "/detect", "status": 200, "latency_ms": 69.0, "tasks": ["data2txt"], "n_inputs": 1, "response_chars": [802], "context_chars": [2053]}
+INFO:     127.0.0.1:48418 - "POST /detect HTTP/1.1" 200 OK
+2026-10-30 11:00:05,790 INFO groundedguard.api {"request_id": "24540161d8594ab2", "method": "POST", "path": "/detect", "status": 200, "latency_ms": 69.22, "tasks": ["summary"], "n_inputs": 1, "response_chars": [370], "context_chars": [1718]}
+INFO:     127.0.0.1:48394 - "POST /detect HTTP/1.1" 200 OK
+2026-10-30 11:00:05,804 INFO groundedguard.api {"request_id": "7c874201082b4d09", "method": "POST", "path": "/detect", "status": 200, "latency_ms": 66.74, "tasks": ["data2txt"], "n_inputs": 1, "response_chars": [885], "context_chars": [1406]}
+INFO:     127.0.0.1:48402 - "POST /detect HTTP/1.1" 200 OK
+2026-10-30 11:00:05,818 INFO groundedguard.api {"request_id": "eccdb5d90fdd41a8", "method": "POST", "path": "/detect", "status": 200, "latency_ms": 60.65, "tasks": ["qa"], "n_inputs": 1, "response_chars": [579], "context_chars": [884]}
+INFO:     127.0.0.1:48406 - "POST /detect HTTP/1.1" 200 OK
+2026-10-30 11:00:05,835 INFO groundedguard.api {"request_id": "ba18900300f641df", "method": "POST", "path": "/detect", "status": 200, "latency_ms": 57.66, "tasks": ["data2txt"], "n_inputs": 1, "response_chars": [918], "context_chars": [1713]}
+INFO:     127.0.0.1:48418 - "POST /detect HTTP/1.1" 200 OK
+2026-10-30 11:00:28,751 INFO groundedguard.api {"request_id": "2e40cf4f28df4b83", "method": "POST", "path": "/detect", "status": 200, "latency_ms": 16.31, "tasks": ["qa"], "n_inputs": 1, "response_chars": [60], "context_chars": [296]}
+INFO:     127.0.0.1:34136 - "POST /detect HTTP/1.1" 200 OK
+2026-10-30 11:00:28,905 INFO groundedguard.api {"request_id": "ccc4d8b020a9409d", "method": "POST", "path": "/detect", "status": 200, "latency_ms": 15.74, "tasks": ["summary"], "n_inputs": 1, "response_chars": [92], "context_chars": [153]}
+INFO:     127.0.0.1:34152 - "POST /detect HTTP/1.1" 200 OK
+2026-10-30 11:00:29,051 INFO groundedguard.api {"request_id": "6342020d84584697", "method": "POST", "path": "/detect", "status": 200, "latency_ms": 15.1, "tasks": ["data2txt"], "n_inputs": 1, "response_chars": [107], "context_chars": [153]}
+INFO:     127.0.0.1:34156 - "POST /detect HTTP/1.1" 200 OK
+2026-10-30 11:11:17,638 INFO groundedguard.api {"request_id": "2eb1789f4fad4f00", "method": "GET", "path": "/health", "status": 200, "latency_ms": 0.72}
+INFO:     127.0.0.1:34428 - "GET /health HTTP/1.1" 200 OK
+2026-10-30 11:11:17,803 INFO groundedguard.api {"request_id": "8ddcfeac4859434f", "method": "POST", "path": "/detect", "status": 200, "latency_ms": 27.16, "tasks": ["qa"], "n_inputs": 1, "response_chars": [60], "context_chars": [296]}
+INFO:     127.0.0.1:34438 - "POST /detect HTTP/1.1" 200 OK
+2026-10-30 11:11:35,285 INFO groundedguard.api {"request_id": "ee0b8e64c80f4261", "method": "POST", "path": "/detect", "status": 200, "latency_ms": 25.69, "tasks": ["qa"], "n_inputs": 1, "response_chars": [86], "context_chars": [482]}
+INFO:     127.0.0.1:47830 - "POST /detect HTTP/1.1" 200 OK
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [2291440]

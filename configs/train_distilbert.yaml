@@ -1,0 +1,26 @@
+# Module 4: DistilBERT token classifier trained on MIN-over-windows scores.
+# Every key can be overridden from the CLI, e.g. --lr 2e-5 --epochs 6 --pos_weight full
+
+model_name: distilbert-base-uncased   # must match the tokenizer used to build *_windows.pkl
+lr: 3.0e-5
+weight_decay: 0.01
+warmup_ratio: 0.1                     # linear warmup over this fraction of the exact total steps
+epochs: 4
+grad_clip: 1.0
+max_windows_per_batch: 32             # train batches: whole responses, <= this many windows
+eval_max_windows_per_batch: 64
+max_tokens_per_batch: null              # optional padded-token budget per batch (null: windows only)
+eval_max_tokens_per_batch: null
+attn_implementation: null             # null: library default
+bf16: true
+seed: 42
+pos_weight: sqrt                      # sqrt (= sqrt(neg/pos) on train tokens) | full (neg/pos) | <number> | none
+aggregation: min                      # min | softmin  (same in training and dev evaluation)
+tau: 1.0                              # softmin temperature; ignored for min
+windows_suffix: ""                    # "" -> *_windows.pkl (stride 128); "_s64" -> *_windows_s64.pkl
+num_workers: 2
+log_every: 200                        # steps between progress lines
+runs_csv: outputs/module4/runs.csv # one row per run is appended here
+
+max_train_responses: null             # e.g. 64 for an overfit smoke test
+eval_on_train: false                  # also evaluate on the (sub)set of train responses every epoch

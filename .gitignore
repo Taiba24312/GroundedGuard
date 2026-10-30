@@ -1,0 +1,25 @@
+# data and model weights are not redistributed
+/data/
+/checkpoints/
+*.pkl
+
+# large per-response predictions
+outputs/module*/preds*
+
+# Module 4 training logs (the run table and dev diagnostics are kept)
+outputs/module4/*
+!outputs/module4/runs.csv
+!outputs/module4/diagnostics.json
+
+# Python / tooling
+__pycache__/
+*.pyc
+.pytest_cache/
+.vscode/
+
+# reports that quote RAGTruth text (the dataset is not redistributed)
+outputs/module*/error_analysis_examples.*
+outputs/module1/samples.json
+outputs/module1/span_mismatches.json
+outputs/module2/context_examples.json
+outputs/module2/windowing_examples*.json

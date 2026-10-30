@@ -1,0 +1,49 @@
+=== demo 1: fully supported
+{
+  "has_hallucination": false,
+  "response_score": 0.01798621006309986,
+  "spans": [],
+  "threshold": 0.91,
+  "model": "distilbert-base-uncased (B_min_full_e8)",
+  "windowed": false,
+  "n_windows": 1,
+  "latency_ms": 528.4082151483744
+}
+
+The Riverside Public Library opened in 1998. Members can borrow up to 15 items at a time for three weeks.
+
+=== demo 2: changed number (15 -> 25 items)
+{
+  "has_hallucination": false,
+  "response_score": 0.13386748731136322,
+  "spans": [],
+  "threshold": 0.91,
+  "model": "distilbert-base-uncased (B_min_full_e8)",
+  "windowed": false,
+  "n_windows": 1,
+  "latency_ms": 536.7863809224218
+}
+
+The Riverside Public Library opened in 1998. Members can borrow up to 25 items at a time for three weeks.
+
+=== demo 3: added unsupported fact
+{
+  "has_hallucination": true,
+  "response_score": 0.9902915358543396,
+  "spans": [
+    {
+      "start": 106,
+      "end": 165,
+      "text": "The library also has a rooftop café that serves free coffee",
+      "score": 0.9902915358543396
+    }
+  ],
+  "threshold": 0.91,
+  "model": "distilbert-base-uncased (B_min_full_e8)",
+  "windowed": false,
+  "n_windows": 1,
+  "latency_ms": 531.6619190853089
+}
+
+The Riverside Public Library opened in 1998. Members can borrow up to 15 items at a time for three weeks. [[The library also has a rooftop café that serves free coffee]] to members.
+

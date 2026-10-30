@@ -1,0 +1,87 @@
+{
+  "dropped_low_quality": {
+    "test|incorrect_refusal": 24,
+    "test|truncated": 1,
+    "train|incorrect_refusal": 120,
+    "train|truncated": 28
+  },
+  "dropped_low_quality_with_labels": 23,
+  "spans_raw": 14226,
+  "spans_after_merge": 14098,
+  "splits": {
+    "train": {
+      "responses": 14047,
+      "sources": 2365,
+      "hallucinated_%": 44.73,
+      "by_task": {
+        "Data2txt": {
+          "responses": 4995,
+          "hallucinated_%": 69.31
+        },
+        "QA": {
+          "responses": 4597,
+          "hallucinated_%": 31.48
+        },
+        "Summary": {
+          "responses": 4455,
+          "hallucinated_%": 30.84
+        }
+      }
+    },
+    "dev": {
+      "responses": 895,
+      "sources": 150,
+      "hallucinated_%": 46.37,
+      "by_task": {
+        "Data2txt": {
+          "responses": 300,
+          "hallucinated_%": 70.0
+        },
+        "QA": {
+          "responses": 295,
+          "hallucinated_%": 33.56
+        },
+        "Summary": {
+          "responses": 300,
+          "hallucinated_%": 35.33
+        }
+      }
+    },
+    "test": {
+      "responses": 2675,
+      "sources": 450,
+      "hallucinated_%": 35.25,
+      "by_task": {
+        "Data2txt": {
+          "responses": 900,
+          "hallucinated_%": 64.33
+        },
+        "QA": {
+          "responses": 875,
+          "hallucinated_%": 18.29
+        },
+        "Summary": {
+          "responses": 900,
+          "hallucinated_%": 22.67
+        }
+      }
+    }
+  },
+  "dev_source_ids_sample": [
+    "11350",
+    "11354",
+    "11365",
+    "11396",
+    "11416",
+    "11428",
+    "11430",
+    "11773",
+    "11800",
+    "11803"
+  ],
+  "context_chars_by_task": {
+    "QA": 1396.9,
+    "Summary": 3316.7,
+    "Data2txt": 2301.4
+  }
+}
